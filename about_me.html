@@ -22,6 +22,33 @@
       <link rel="stylesheet" href="assets/css/default.css">
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="icon" href="png_favicon.png" type=" image/png" />
+      <style>
+         .map-card{                   
+         background-color: #fff;
+         -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+         border-radius: 10px;
+         -webkit-box-shadow: 7px 7px 30px 0px rgba(8, 0, 42, 0.1);
+         -moz-box-shadow: 7px 7px 30px 0px rgba(8, 0, 42, 0.1);
+         box-shadow: 7px 7px 30px 0px rgba(8, 0, 42, 0.1);
+         float:left;
+         }
+
+    @media screen and (min-width: 770px) {
+    .map-card {height: 300px;}
+    .bing-map {width: 300px;}
+     }
+    /* 设置了浏览器宽度不小于px时 */
+
+    @media screen and (max-width: 770px) {
+    .map-card {height: 600px;} 
+    .bing-map {width: 100%;background-color: #9ce3f9;padding-bottom: 0;font-size: 0;}
+    }
+    /* 设置了浏览器宽度不大于px时*/
+
+
+</style>
+
 
    </head>
    <body>
@@ -144,7 +171,7 @@
 
          <!-- bg shape area start -->
          <div class="bg-shape">
-            <img src="assets/img/index/background/cold-light.png" alt="">
+            <img src="assets/img/index/background/zone.png" alt="">
          </div>
          <!-- bg shape area end -->
 
@@ -193,7 +220,58 @@
                                  <p>I'm Mr Sunny.很高兴认识你！</p>
                               </div>
                            </div>
-                           <div class="product__proprietor-body fix">
+
+
+
+
+
+                           <div style="float: left;width: 200px;">
+
+                           </div>
+
+                           <div>
+
+                           </div>
+                           <ul class="mb-10 fix">
+                              <li>
+                                 <span>出生日期：2004-10-8</span>
+                                 <h6>Birth:  Oct.8th,2004</h6>
+                              </li>
+                              
+                              <li>
+                                 <span>性别：  男</span>
+                                 <h6>Gender:   Male</h6>
+                              </li>
+                              <li>
+                                 <span>国籍：  中国</span>
+                                 <h6>Nationality:  PROC</h6>
+                              </li>
+                              <li>
+                                 <span>民族：  汉</span>
+                                 <h6>Ethnicity:   Han Chinese</h6> 
+                              </li>
+                              <li>
+                                 <span>坐标：  江苏·东台</span>
+                                 <h6>Locate: Dongtai,Jiangsu</h6>
+                              </li>
+                              <li>
+                                 <span>血型：  AB型</span>
+                                 <h6>Blood Type:  AB</h6>
+                              </li>
+                              <li>
+                                 <span>身高：  170+ cm</span>
+                                 <h6>Hight:1.7m+</h6>
+                              </li>
+                              <li>
+                                 <span>体重：  70+ kg</span>
+                                 <h6>Weight:70kg+</h6>
+                              </li>
+                           </ul>
+
+
+
+
+                           <!-- <div class="product__proprietor-body fix">
                               <ul class="mb-10 fix">
                                  <li>
                                     <h6>Birthday:  Oct.8th,2004</h6>
@@ -214,15 +292,15 @@
                                  </li>
                                  <li>
                                     <h6>Hight:</h6>
-                                    <span>身高：  -- cm</span>
+                                    <span>身高：  170+ cm</span>
                                  </li>
                                  <li>
                                     <h6>Weight:</h6>
-                                    <span>体重：  -- kg</span>
+                                    <span>体重：  70+ kg</span>
                                  </li>
                               </ul>
                              
-                           </div>
+                           </div> -->
                         </div>
 
 
@@ -257,7 +335,12 @@
                                     <p>就是玩儿。
                                        <br>开个玩笑🙃，其实是为了填个人网页。
                                     </p>
-                                    
+                                    <h3 class="product__overview-title">我喜欢的颜色、歌曲、动漫……？</h3>
+                                    <p>我喜欢的歌曲请参考<a href="recommend/recommend_music.html".html"><font color="#5f3afc">>我的歌单</font></a>
+                                       <br>我喜欢的动漫请参考<a href="recommend/recommend_media.html".html"><font color="#5f3afc">>我的推荐的影视、番剧和漫画</font></a>
+                                       <br>我喜欢的游戏暂时请参考<a href="recommend/recommend_android.html".html"><font color="#5f3afc">>推荐的安卓应用</font></a>中的内容，正在计划设计独立板块，敬请期待。
+                                       <br>其他内容暂时保密，如果你想知道可以尝试与我取得联系。
+                                    </p>
 
                                        <h3 class="product__overview-title">我的教育经历</h3>
 
@@ -358,23 +441,154 @@
                                     </div>
                                  </div>
                                  <div class="tab-pane fade" id="support" role="tabpanel" aria-labelledby="support-tab">
-                                    <div class="product__support">
-                                     
-                                       <div class="product__proprietor-text"></div>
-                                       
-                                       <p><h3><img src="assets/img/about/contact-way/phone.png">    +86 158 5102 2027<img src="assets/img/about/contact-way/v.png"></h3>
-                                          <h3><img src="assets/img/about/contact-way/mail.png">    224214<img src="assets/img/about/contact-way/v.png"></h3>
-                                          <h3><img src="assets/img/about/contact-way/email.png">    3551249151@qq.com<img src="assets/img/about/contact-way/v.png"></h3>
-                                          <h3><img src="assets/img/about/contact-way/wechat.png">    qiusen1008<img src="assets/img/about/contact-way/v.png"></h3>
-                                          <h3><img src="assets/img/about/contact-way/tencent-qq.png">    1791248252<img src="assets/img/about/contact-way/v.png"></h3>
-                                          <h3><img src="assets/img/about/contact-way/sina-weibo.png">    @MrSunny35989</h3>
-                                          <h3><img src="assets/img/about/contact-way/bilibili.png">    1218977296</h3>
-                                          <h3><img src="assets/img/about/contact-way/twitter.png">    @MrSunny69009861</h3>
-                                          <h3>……</h3>
-                                       </p>
+
+
+                                    <div style="width: 100%;
+                                    text-align: left;background-image: url(assets/img/index/background/map-dongtai.png);background-repeat: no-repeat;background-position: right bottom;background-size: 293px 195px ;
+                                   " class="map-card">
+                            
+                                    <div style="float: left;height: 300px;" class="bing-map">
                                        <div>
+                                          <iframe width="300" height="300" frameborder="0" src="https://cn.bing.com/maps/embed?h=300&w=300&cp=pfwsg9v0m4dj&lvl=8&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+                                          </iframe>
+                                       </div> 
+                                    </div>
+                                    <div style="height: 300px;padding: 15px;float: left;">
+                                       <span>&nbsp;
+                                          <br>&nbsp;台南董贤 现梁垛镇</span>
+                                       <h3><span>&nbsp;江苏省 东台县级市</span></h3>
+                                       <p>&nbsp;
+                                          <br>&nbsp;
+                                          <br>地址：中华人民共和国江苏省盐城市
+                                          <br><span style="color: #fff;">————</span>东台市梁垛镇董贤村五组
+                                          <br>邮编：224214(董贤)
+                                          <br><span style="color: #fff;">————</span>224200(台城)
+                                          <br>政府官网：<a href="http://dongtai.yancheng.gov.cn/" target="_blank;">dongtai.yancheng.gov.cn</a>
+
+                                       </p>
+
+
+
+                                    </div>                               
+                                     </div>
+
+                                     <p>&nbsp;
+                                     </p>
+
+                                        <div style="width: 100%;height: auto;
+                                        -webkit-border-radius: 6px;
+                                        -moz-border-radius: 6px;
+                                        border-radius: 6px;
+                                        -webkit-box-shadow:  7px 7px 30px 0px  rgba(8, 0, 42, 0.08);
+                                        -moz-box-shadow:  7px 7px 30px 0px  rgba(8, 0, 42, 0.08);
+                                        box-shadow:  7px 7px 30px 0px  rgba(8, 0, 42, 0.08);
+                                        text-align: left;
+                                        background-color: #ffffff;
+                                        padding: 15px 15px;
+                                        margin-bottom: 25px;
+                                       ">
+ 
+                                          <table style="font-size: 21px;">
+                                             <tr style="height: 35px;">
+                                                <td>
+                                                   <img src="assets/img/about/contact-way/phone.png" style="height: 27px;float:left;">
+                                                </td>
+                                                <td><span style="float: left;"><b>&nbsp;+86&nbsp;15851022027</b></span>
+                                             </tr>
+
+                                             <tr style="height: 35px;">
+                                                <td>
+                                                   <img src="assets/img/about/contact-way/mail.png" style="height: 27px;float:left;">
+                                                </td>
+                                                <td><span style="float: left;"><b>&nbsp;224214</b></span>
+                                             </tr>
+
+                                             <tr style="height: 35px;">
+                                                <td>
+                                                   <img src="assets/img/about/contact-way/email.png" style="height: 27px;float:left;">
+                                                </td>
+                                                <td><span style="float: left;"><b>&nbsp;3551249151@qq.com</b></span>
+                                             </tr>
+
+                                             <tr style="height: 35px;">
+                                                <td>
+                                                   <img src="assets/img/about/contact-way/wechat.png" style="height: 27px;float:left;">
+                                                </td>
+                                                <td><span style="float: left;"><b>&nbsp;qiusen1008</b></span>
+                                             </tr>
+
+                                             <tr style="height: 35px;">
+                                                <td>
+                                                   <img src="assets/img/about/contact-way/tencent-qq.png" style="height: 27px;float:left;">
+                                                </td>
+                                                <td><span style="float: left;"><b>&nbsp;1791248252</b></span>
+                                             </tr>
+
+                                             <tr style="height: 35px;">
+                                                <td>
+                                                   <img src="assets/img/about/contact-way/sina-weibo.png" style="height: 27px;float:left;">
+                                                </td>
+                                                <td><span style="float: left;"><b>&nbsp;@MrSunny35989</b></span>
+                                             </tr>
+
+                                             <tr style="height: 35px;">
+                                                <td>
+                                                   <img src="assets/img/about/contact-way/bilibili.png" style="height: 27px;float:left;">
+                                                </td>
+                                                <td><span style="float: left;"><b>&nbsp;1218977296</b></span>
+                                             </tr>
+
+                                             <tr style="height: 35px;">
+                                                <td>
+                                                   <img src="assets/img/about/contact-way/twitter.png" style="height: 27px;float:left;">
+                                                </td>
+                                                <td><span style="float: left;"><b>&nbsp;@MrSunny69009861</b></span>
+                                             </tr>
+
+                                             <tr style="height: 35px;">
+                                               <td><span><b>&nbsp;……</b></span></td>
+                                             </tr>
+
+                                         </table>
                                        </div>
 
+
+                                    <div class="product__support">
+                                     
+                                       <!-- <div class="product__proprietor-text"></div> -->
+
+
+                                       <!-- <div style="width: 100%;height: auto;
+                                       -webkit-border-radius: 6px;
+                                       -moz-border-radius: 6px;
+                                       border-radius: 6px;
+                                       -webkit-box-shadow: 0px 30px 50px 0px rgba(8, 0, 42, 0.08);
+                                       -moz-box-shadow: 0px 30px 50px 0px rgba(8, 0, 42, 0.08);
+                                       box-shadow: 0px 30px 50px 0px rgba(8, 0, 42, 0.08);
+                                       text-align: left;
+                                       background-color: #fff;
+                                       margin-bottom: 25px;">
+                               
+                                       <div style="float: left;height: 300px;">
+                                          <div>
+                                             <iframe width="270" height="300" frameborder="0" src="https://cn.bing.com/maps/embed?h=300&w=270&cp=pfzfc2v0n4sf&lvl=8&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+                                             </iframe>                                             
+                                          </div> 
+                                       </div>
+                                       <div style="height: 300px;padding: 15px;float: left;">
+                                          <span>中华人民共和国 江苏省 盐城地级市 东台县级市 梁垛镇(台南) 董贤村</span>
+                                       </div>                               
+                                        </div> -->
+                               
+
+
+
+
+
+
+
+
+                                       
 
 
 
@@ -446,11 +660,11 @@
                                  </li>
                                  <li>
                                     <h6>Hight:</h6>
-                                    <span>--</span>
+                                    <span>170+cm</span>
                                  </li>
                                  <li>
                                     <h6>Weight:</h6>
-                                    <span>--</span>
+                                    <span>70+kg</span>
                                  </li>
                               </ul>
                               <a href="blog.html" class="m-btn m-btn-2 w-100 mb-20"> <span></span> 在其他平台关注我</a>
