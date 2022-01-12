@@ -23,6 +23,46 @@
       <link rel="stylesheet" href="../assets/css/style.css">
       <link rel="icon" href="../png_favicon.png" type=" image/png" />
 
+      <style>
+                     .music-card{overflow:hidden;                     
+                     height: 133px;
+                     background-color: #fff;
+                     -webkit-border-radius: 10px;
+                     -moz-border-radius: 10px;
+                     border-radius: 10px;
+                     -webkit-box-shadow: 0px 30px 70px 0px rgba(8, 0, 42, 0.1);
+                     -moz-box-shadow: 0px 30px 70px 0px rgba(8, 0, 42, 0.1);
+                     box-shadow: 0px 30px 70px 0px rgba(8, 0, 42, 0.1);
+                     float:left;
+                     }
+
+                @media screen and (min-width: 1201px) {
+                .music-card {width: 45%;margin: 10px 15px;}
+                
+                 }
+                /* 设置了浏览器宽度不小于1201px时 */
+
+                @media screen and (max-width: 1200px) {
+                .music-card {width: 40%;margin: 15px;} 
+                .hide-blue {display:none;}
+                .irc-line2 {font-size: 0;}
+                }
+                /* 设置了浏览器宽度不大于1200px时*/
+
+                @media screen and (max-width: 992px) {
+                .music-card {width: 95%;margin: 15px;} 
+                .irc-line2 {font-size: 0;}
+                }
+                /* 设置了浏览器宽度不大于992px时 */
+
+                @media screen and (max-width: 436px) {
+                .music-card {width: 95%;margin: 15px;} 
+                .hide-blue {display:none;}
+                .irc-line2 {font-size: 0;}
+               }
+                /* 设置了浏览器宽度不大于436px时  */
+
+      </style>
 
    </head>
    <body>
@@ -144,42 +184,160 @@
 
       <main>
 
-         <!-- hero area start -->
-         <section class="hero__area hero__height-3 grey-bg-16 d-flex align-items-center">
-            <div class="hero__shape">
-               <img class="circle-2 circle-3" src="../assets/img/index/background/bac-3.png" alt="circle">
-               <img class="dot dot-2" src="../assets/img/index/background/bac-1.png" alt="circle">
-               <img class="triangle triangle-2" src="../assets/img/index/background/bac-5.png" alt="circle">
+         <!-- bg shape area start -->
+         <div class="bg-shape">
+            <img src="../assets/img/index/background/colorful-light.png" alt="">
+         </div>
+         <!-- bg shape area end -->
+
+
+
+                  <!-- support area start -->
+         <section class="support__area po-rel-z1 pt-100 pb-100">
+            <div class="support__shape wow fadeInLeft" data-wow-delay=".9s">
+               <img src="../assets/img/bg/support-bg.png" alt="">
             </div>
             <div class="container">
-               <div class="row">
-                  <div class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1">
-                     <div class="hero__content hero__content-2 text-center mt-10">
-
-                        
-                        <div class="nofind">
-                           <img src="../assets/img/404/work.png" style="width: 100%;">
-                        </div>
-                        
-
-
-                        <h2 class="hero__title">
-                            页面正在施工，敬请期待……
-                       </h2>
-                        <p>  </p>
-                        <a href="../index.html" class="m-btn m-btn-2">返回首页 <span></span> </a>
-                        <br>&nbsp;
-                        <br>&nbsp;
-                        <br>&nbsp;
-
-                      
-                        </div>
+               <div class="row align-items-end">
+                           
+                  <div class="col-xxl-6 col-xl-6 col-lg col-md-8">
+                     <div class="section__title-wrapper mb-50">
+                        <h2 class="section__title">推荐的歌曲 <br> Recommend songs</h2>
+                        <p>Where there is music,just for pleasure.</p>
                      </div>
                   </div>
+
+                  <!-- <div class="col-xxl-6 col-xl-6 col-lg col-md-4">
+                     <div class="trending__more d-flex justify-content-md-end  mb-50">
+                        <a href="product.html" class="m-btn m-btn-border"><span></span>Explore Cloneables</a>
+                     </div>
+                  </div> -->
+
                </div>
-            </div>
-         </section>
-         <!-- hero area end -->
+
+               <div class="row" style="width: 100%;">
+
+                  
+                  <div class="music-card">
+                     <div style="margin: 10px 15px 10px 0px;float: left;height: 110px;">
+                     <img src="https://y.qq.com/music/photo_new/T002R300x300M000003bWgWF41bZAA_1.jpg?max_age=2592000" style="height: 100%;"></div>
+                     <div class="trending__content">
+                        <h3 class="trending__title" style="margin-top: 12px;"><a href="https://y.qq.com/n/ryqq/songDetail/00059XI82Fy6F3" target="_blank">Dive Back In Time</a></h3>
+                        <div style="height:55px ;">
+                        <p  class="irc1">
+                        It didn't take too long to realize
+                        <br> <span class="irc-line2">Something has changed……</span>
+                        <br>&nbsp;
+                        </p>
+                        </div>
+                        <div class="trending__meta d-flex justify-content-between">
+                           <div class="trending__tag">
+                              <a href="https://y.qq.com/n/ryqq/singer/001vpAri1KaKJw"  target="_blank">白鲨JAWS</a></div>
+                           <div class="trending__price hide-blue">
+                              <a href="https://y.qq.com/n/ryqq/songDetail/00059XI82Fy6F3"  target="_blank">
+                              <span style="margin-right: 12px;"><img src="../assets/img/recommend/music/logo/qqyy.png" style="height: 25px;"></span></a>
+                  </div></div></div></div>
+
+
+                  <div class="music-card">
+                     <div style="margin: 10px 15px 10px 0px;float: left;height: 110px;">
+                     <img src="https://y.qq.com/music/photo_new/T002R300x300M000000A2zt73JBL4s_1.jpg?max_age=2592000" style="height: 100%;"></div>
+                     <div class="trending__content">
+                        <h3 class="trending__title" style="margin-top: 12px;"><a href="https://y.qq.com/n/ryqq/songDetail/00059XI82Fy6F3" target="_blank">放个大招给你看</a></h3>
+                        <div style="height:55px ;">
+                        <p  class="irc1">
+                           想把自己放进冰箱
+                        <br> <span class="irc-line2">呆上一天没人阻挡……</span>
+                        <br>&nbsp;
+                        </p>
+                        </div>
+                        <div class="trending__meta d-flex justify-content-between">
+                           <div class="trending__tag">
+                              <a href="https://y.qq.com/n/ryqq/singer/0023dQD40to8NP">永彬Ryan.B</a></div>
+                           <div class="trending__price hide-blue">
+                              <a href="https://y.qq.com/n/ryqq/songDetail/00059XI82Fy6F3"  target="_blank">
+                              <span style="margin-right: 12px;"><img src="../assets/img/recommend/music/logo/qqyy.png" style="height: 25px;"></span></a>
+                  </div></div></div></div>
+
+                  <div class="music-card">
+                     <div style="margin: 10px 15px 10px 0px;float: left;height: 110px;">
+                     <img src="https://y.qq.com/music/photo_new/T002R300x300M000002eIBob2CyY41_1.jpg?max_age=2592000" style="height: 100%;"></div>
+                     <div class="trending__content">
+                        <h3 class="trending__title" style="margin-top: 12px;"><a href="https://y.qq.com/n/ryqq/songDetail/000KDPfR0FMjQR" target="_blank">左手右手</a></h3>
+                        <div style="height:55px ;">
+                        <p  class="irc1">
+                           当困难来临的时候
+                        <br> <span class="irc-line2">请你举起你的左手……</span>
+                        <br>&nbsp;
+                        </p>
+                        </div>
+                        <div class="trending__meta d-flex justify-content-between">
+                           <div class="trending__tag">
+                              <a href="https://y.qq.com/n/ryqq/singer/002b2Xil1tGQyf">杨沛宜</a></div>
+                           <div class="trending__price hide-blue">
+                              <a href="https://y.qq.com/n/ryqq/songDetail/000KDPfR0FMjQR"  target="_blank">
+                              <span style="margin-right: 12px;"><img src="../assets/img/recommend/music/logo/qqyy.png" style="height: 25px;"></span></a>
+                  </div></div></div></div>
+
+                  <div class="music-card">
+                     <div style="margin: 10px 15px 10px 0px;float: left;height: 110px;">
+                     <img src="https://p2.music.126.net/qc0gcknlYRDkwkiwdHnJTA==/2507986023022549.jpg" style="height: 100%;"></div>
+                     <div class="trending__content">
+                        <h3 class="trending__title" style="margin-top: 12px;"><a href="https://music.163.com/#/song?id=26609388&market=baiduqk" target="_blank">星空下的梦想</a></h3>
+                        <div style="height:55px ;">
+                        <p  class="irc1">
+                           看看星光看月亮
+                        <br> <span class="irc-line2">看看我的心……</span>
+                        <br>&nbsp;
+                        </p>
+                        </div>
+                        <div class="trending__meta d-flex justify-content-between">
+                           <div class="trending__tag">
+                              <a href="https://music.163.com/artist?id=12468130">杨沛宜</a></div>
+                           <div class="trending__price hide-blue">
+                              <a href="https://music.163.com/#/song?id=26609388&market=baiduqk"  target="_blank">
+                              <span style="margin-right: 12px;"><img src="../assets/img/recommend/music/logo/wyyyy.png" style="height: 25px;"></span></a>
+                  </div></div></div></div>
+
+
+                  <div class="music-card">
+                     <div style="margin: 10px 15px 10px 0px;float: left;height: 110px;">
+                     <img src="https://p1.music.126.net/A59-h_qsGXsq0wDbGVPNbg==/109951165981250182.jpg" style="height: 100%;"></div>
+                     <div class="trending__content">
+                        <h3 class="trending__title" style="margin-top: 12px;"><a href="https://music.163.com/#/song?id=461347998&market=baiduqk" target="_blank">Sth.Just Like This</a></h3>
+                        <div style="height:55px ;">
+                        <p  class="irc1">
+                           I've been reading books of old……
+                        <br> <span class="irc-line2">我曾饱览古老的书籍</span>
+                        <br>&nbsp;
+                        </p>
+                        </div>
+                        <div class="trending__meta d-flex justify-content-between">
+                           <div class="trending__tag">
+                              <a href="https://music.163.com/artist?id=893484">烟鬼酷玩</a></div>
+                           <div class="trending__price hide-blue">
+                              <a href="https://music.163.com/#/song?id=461347998&market=baiduqk"  target="_blank">
+                              <span style="margin-right: 12px;"><img src="../assets/img/recommend/music/logo/wyyyy.png" style="height: 25px;"></span></a>
+                  </div></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               </div>
+
+
+               </div>
+               </section>
 
 
             </main>
