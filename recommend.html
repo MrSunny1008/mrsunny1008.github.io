@@ -23,6 +23,49 @@
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="icon" href="png_favicon.png" type=" image/png" />
 
+      <style>
+         .music-card{overflow:hidden;                     
+         height: 133px;
+         background-color: #fff;
+         -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+         border-radius: 10px;
+         -webkit-box-shadow: 0px 30px 70px 0px rgba(8, 0, 42, 0.1);
+         -moz-box-shadow: 0px 30px 70px 0px rgba(8, 0, 42, 0.1);
+         box-shadow: 0px 30px 70px 0px rgba(8, 0, 42, 0.1);
+         float:left;
+         }
+
+    @media screen and (min-width: 1201px) {
+    .music-card {width: 45%;margin: 10px 15px;}
+    
+     }
+    /* 设置了浏览器宽度不小于1201px时 */
+
+    @media screen and (max-width: 1200px) {
+    .music-card {width: 40%;margin: 15px;} 
+    .hide-blue {display:none;}
+    .irc-line2 {font-size: 0;}
+    }
+    /* 设置了浏览器宽度不大于1200px时*/
+
+    @media screen and (max-width: 992px) {
+    .music-card {width: 95%;margin: 15px;} 
+    .irc-line2 {font-size: 0;}
+    }
+    /* 设置了浏览器宽度不大于992px时 */
+
+    @media screen and (max-width: 436px) {
+    .music-card {width: 95%;margin: 15px;} 
+    .hide-blue {display:none;}
+    .irc-line2 {font-size: 0;}
+   }
+    /* 设置了浏览器宽度不大于436px时  */
+
+</style>
+
+
+
    </head>
    <body>
       <!--[if lte IE 9]>
@@ -341,8 +384,10 @@
                   </section>
                   <!-- product area end -->
 
+
+
                   <!-- support area start -->
-         <!-- <section class="support__area po-rel-z1 pt-100 pb-100">
+         <section class="support__area po-rel-z1 pt-100 pb-100">
             <div class="support__shape wow fadeInLeft" data-wow-delay=".9s">
                <img src="assets/img/bg/support-bg.png" alt="">
             </div>
@@ -350,64 +395,66 @@
                <div class="row">
                   <div class="col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3">
                      <div class="page__title-wrapper text-center mb-60">
-                        <h2 class="page__title-2">推荐的歌曲<br> Recommend songs</h2>
+                        <h2 class="page__title-2">推荐的歌曲和铃声<br> Recommend songs</h2>
                         <p>Where there is music,just for pleasure.</p>
                      </div>
                   </div>
                </div>
-               <div class="row">
-                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
-                     <div class="support__item mb-30 text-center white-bg transition-3 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="support__icon mb-30">
-                           <img src="assets/img/support/suport-1.png" alt="">
+               <div class="row" style="width: 100%;">
+
+                  <div class="music-card">
+                     <div style="margin: 10px 15px 10px 0px;float: left;height: 110px;">
+                     <img src="https://y.qq.com/music/photo_new/T002R300x300M000003bWgWF41bZAA_1.jpg?max_age=2592000" style="height: 100%;"></div>
+                     <div class="trending__content">
+                        <h3 class="trending__title" style="margin-top: 12px;"><a href="https://y.qq.com/n/ryqq/songDetail/00059XI82Fy6F3" target="_blank">Dive Back In Time</a></h3>
+                        <div style="height:55px ;">
+                        <p  class="irc1">
+                        It didn't take too long to realize
+                        <br> <span class="irc-line2">Something has changed……</span>
+                        <br>&nbsp;
+                        </p>
                         </div>
-                        <div class="support__content">
-                           <h3 class="support__title">推荐的歌曲<br> Recommend songs</h3>
-                           <p>Where there is music,just for pleasure.</p>
-                           <a href="contact.html" class="m-btn m-btn-border m-btn-border-3">Submit Ticket</a>
+                        <div class="trending__meta d-flex justify-content-between">
+                           <div class="trending__tag">
+                              <a href="https://y.qq.com/n/ryqq/singer/001vpAri1KaKJw"  target="_blank">白鲨JAWS</a></div>
+                           <div class="trending__price hide-blue">
+                              <a href="https://y.qq.com/n/ryqq/songDetail/00059XI82Fy6F3"  target="_blank">
+                              <span style="margin-right: 12px;"><img src="assets/img/recommend/music/logo/qqyy.png" style="height: 25px;"></span></a>
+                  </div></div></div></div>
+
+
+                  <div class="music-card">
+                     <div style="margin: 10px 15px 10px 0px;float: left;height: 110px;">
+                     <img src="https://y.qq.com/music/photo_new/T002R300x300M000000A2zt73JBL4s_1.jpg?max_age=2592000" style="height: 100%;"></div>
+                     <div class="trending__content">
+                        <h3 class="trending__title" style="margin-top: 12px;"><a href="https://y.qq.com/n/ryqq/songDetail/00059XI82Fy6F3" target="_blank">放个大招给你看</a></h3>
+                        <div style="height:55px ;">
+                        <p  class="irc1">
+                           想把自己放进冰箱
+                        <br> <span class="irc-line2">呆上一天没人阻挡……</span>
+                        <br>&nbsp;
+                        </p>
                         </div>
-                     </div>
-                  </div>
-                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
-                     <div class="support__item mb-30 text-center white-bg transition-3 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="support__icon mb-30 d-flex justify-content-center align-items-end">
-                           <img src="assets/img/support/suport-2.png" alt="">
-                        </div>
-                        <div class="support__content">
-                           <h3 class="support__title">Need Customization</h3>
-                           <p>Oxford smashing Harry spend a penny get stuffed mate cup of char It's your round.</p>
-                           <a href="contact.html" class="m-btn m-btn-border m-btn-border-3">Submit Ticket</a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
-                     <div class="support__item mb-30 text-center white-bg transition-3  wow fadeInUp" data-wow-delay=".7s">
-                        <div class="support__icon mb-30 d-flex justify-content-center align-items-end">
-                           <img src="assets/img/support/suport-3.png" alt="">
-                        </div>
-                        <div class="support__content">
-                           <h3 class="support__title">Support Includes</h3>
-                           <p>Oxford smashing Harry spend a penny get stuffed mate cup of char It's your round.</p>
-                           <a href="contact.html" class="m-btn m-btn-border m-btn-border-3">Submit Ticket</a>
-                        </div>
-                     </div>
-                  </div>
+                        <div class="trending__meta d-flex justify-content-between">
+                           <div class="trending__tag">
+                              <a href="https://y.qq.com/n/ryqq/singer/0023dQD40to8NP">永彬Ryan.B</a></div>
+                           <div class="trending__price hide-blue">
+                              <a href="https://y.qq.com/n/ryqq/songDetail/00059XI82Fy6F3"  target="_blank">
+                              <span style="margin-right: 12px;"><img src="assets/img/recommend/music/logo/qqyy.png" style="height: 25px;"></span></a>
+                  </div></div></div></div>
+
+
+
                </div>
                <div class="row">
                   <div class="col-xxl-12">
-                     <div class="support__thumb text-center mt-40">
-                        <a href="#">
-                           <img src="assets/img/support/profile/s-p-1.jpg" alt="">
-                           <img src="assets/img/support/profile/s-p-2.jpg" alt="">
-                           <img src="assets/img/support/profile/s-p-3.jpg" alt="">
-                           <img src="assets/img/support/profile/s-p-4.jpg" alt="">
-                        </a>
-                        <p>Contact us directly at <a href="/cdn-cgi/l/email-protection#40333530302f3234002d21322b29346e232f2d"><span class="__cf_email__" data-cfemail="2c5f595c5c435e586c414d5e474558024f4341">[email&#160;protected]</span></a> </p>
+                     <div class="product__more text-center mt-30">
+                        <a href="recommend/recommend_music.html" class="m-btn m-btn-2"> <span></span> 查看更多</a>
                      </div>
                   </div>
                </div>
-            </div>
-         </section> -->
+   </div>
+         </section> 
          <!-- support area end -->
 
 
