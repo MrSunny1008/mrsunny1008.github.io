@@ -13,7 +13,7 @@
 ### 网站logo
 ![image](https://mrsunny1008.github.io/assets/img/index/logo/logo.png)
 ### 网站层级
-![image](https://mrsunny1008.github.io/assets/img/index/md_floder.png)
+![image](https://mrsunny1008.github.io/assets/img/about/md_floder.png)
 ### MrSunny是谁？
 MrSunny是我，我就是MrSunny……
 <br>如果你不知道我是谁，那么你就应该不会看到这里……
