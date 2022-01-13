@@ -50,4 +50,4 @@ logo由个人设计，没有进行商标注册仅个人网站使用，如有雷�
 
  &nbsp;
 ---
-&nbsp;&nbsp;&nbsp;&nbsp;Copyright.©  2021-2022  Mr.Sunny. 
+&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;<span style="font-size:15px;">Copyright.©  2021-2022  MrSunny1008.github.io <img src="https://github.githubassets.com/favicons/favicon.png" style="width:20px;"></span>
