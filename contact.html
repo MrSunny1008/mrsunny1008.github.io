@@ -23,7 +23,12 @@
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="icon" href="png_favicon.png" type=" image/png" />
 
+      <style>
+         .qr{transition: all 0.6s;}
+         .qr:hover{transform: scale(1.2);}
+      </style>
    </head>
+
    <body>
       <!--[if lte IE 9]>
       <p class="browserupgrade">你的浏览器<strong>版本过低</strong>！请 <a href="https://browsehappy.com/">升级你的浏览器</a> 后再访问网站。</p>
@@ -153,25 +158,46 @@
                <img src="assets/img/index/background/white-item.png" alt="">
             </div>
             <div class="container">
-               <div class="row">
+
+
+               <div class="row align-items-end">
+                  <div class="col-xxl-6 col-xl-6 col-lg col-md-8">
+                     <div class="section__title-wrapper mb-50">
+                        <h2 class="section__title">「風里雨里」， <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我都在这里等你！</h2>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ 如 / 非 / 必 / 要 / , / 请 / 勿 / 打 / 扰 /</p>
+
+                        <p><font color="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;功能正在进一步完善中，部分链接可能无法正常访问</font></p>
+
+                     </div>
+                  </div>
+                  <!-- <div class="col-xxl-6 col-xl-6 col-lg col-md-4">
+                     <div class="trending__more d-flex justify-content-md-end  mb-50">
+                        <a href="404.html" class="m-btn m-btn-border"><span></span>Download</a>
+                     </div>
+                  </div> -->
+               </div>
+
+
+               <!-- <div class="row">
                   <div class="col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3">
                      <div class="page__title-wrapper text-center mb-60">
+                        <h2 class="page__title-2">风里雨里 <br>我在这里等你</h2>
                         <h2 class="page__title-2">联系方式 <br>Contact Information</h2>
                         <p>/ 如 / 非 / 必 / 要 / , / 请 / 勿 / 打 / 扰 /</p>
                      </div>
                   </div>
-               </div>
+               </div> -->
                <div class="row">
                   <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
                      <div class="support__item mb-30 text-center white-bg transition-3 wow fadeInUp" data-wow-delay=".3s">
                         <div class="support__icon mb-30">
-                           <img src="assets/img/contact/icon/WX.png" alt="">
+                           <img src="assets/img/contact/icon/WX.png" alt="" onmouseover="this.src='assets/img/contact/qrcode/WeChat.jpg'" onmouseout="this.src='assets/img/contact/icon/WX.png'"/>
                         </div>
                         <div class="support__content">
                            <h3 class="support__title">微信</h3>
                            <p>WeChat：<br>qiusen1008</p>
-                           <a href="https://u.wechat.com/MHuJOcTrJOL6sBeWN-MsmEQ
-                           " class="m-btn m-btn-border m-btn-border-3" target="_blank">跳转</a>
+                           <a href="https://u.wechat.com/MAEG2uSv58Feub8qUEl7pU4" class="m-btn m-btn-border m-btn-border-3" target="_blank">跳转</a>
+                     <!-- <a target="_blank"><img src="assets/img/contact/qrcode/qrcode.png" style="float: right;background-color: blue;height: 50px;"></a> -->
                         </div>
                      </div>
                   </div>
@@ -179,7 +205,7 @@
                   <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
                      <div class="support__item mb-30 text-center white-bg transition-3 wow fadeInUp" data-wow-delay=".3s">
                         <div class="support__icon mb-30">
-                           <img src="assets/img/contact/icon/QQ.png" alt="">
+                           <img src="assets/img/contact/icon/QQ.png" alt="" onmouseover="this.src='assets/img/contact/qrcode/QQ.jpg'" onmouseout="this.src='assets/img/contact/icon/QQ.png'"/>
                         </div>
                         <div class="support__content">
                            <h3 class="support__title">QQ</h3>
@@ -298,6 +324,8 @@
         
 
 
+         
+
 
 
         
@@ -343,12 +371,9 @@
                            </div>
 
                            <div class="footer__widget-head mb-35">
-                              <a href="index.html">
-                                 <img src="assets/img/index/logo/qrcode.png" alt="" style="width: 80px;">
-                                 &nbsp;
-                                 <!-- <img src="assets/img/index/logo/qrcode.png" alt="" style="width: 80px;"> -->
-                              </a>
-                           </div>
+                              <img src="assets/img/index/logo/qrcode.png" alt="" style="width: 80px;">
+                              &nbsp;
+                        </div>
 
                         </div>
                      </div>

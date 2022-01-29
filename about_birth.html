@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <title>404页面不存在</title>
+      <title>2004-10-08</title>
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- Place favicon.ico in the root directory -->
@@ -23,21 +23,35 @@
       <link rel="stylesheet" href="assets/css/style.css">     
        <link rel="icon" href="png_favicon.png" type=" image/png" />
        <style>
-           .nofind{overflow:hidden;text-align:center;margin-left: auto;margin-right: auto;}
                @media screen and (min-width: 1201px) {
-               .nofind {width: 55vw;}
+               .background {background-size: 900px auto ;}
+               .background-fill {height: 500px;}
+               #birth-date {margin-top: 155px;}
+               #smile {height: 22vw;}
                }
                /* 设置了浏览器宽度不小于1201px时 */
+
                @media screen and (max-width: 1200px) {
-               .nofind {width: 75vw;} 
+                  .background {background-size: 80vw auto ;}
+                  .background-fill {height: 44vw;}
+                  #birth-date {margin-top: 155px;}
+                  #smile {height: 22vw;}
                }
-               /* 设置了浏览器宽度不大于1200px时  */
+               
+               
                @media screen and (max-width: 900px) {
-               .nofind {width: 85vw;} 
+                  .background {background-size: 90vw auto ;}
+                  .background-fill {height: 50vw;}
+                  #birth-date {margin-top: 155px;}
+                  #smile {height: 22vw;}
                }
                /* 设置了浏览器宽度不大于900px时  */
+               
                @media screen and (max-width: 500px) {
-               .nofind {width: 90vw;} 
+                  .background {background-size: 100vw auto ;height: 100vh;}
+                  .background-fill {height: 50vw;}
+                  #birth-date {margin-top: 125px;}
+                  #smile {height: 23vh;}
                }
                /* 设置了浏览器宽度不大于500px时  */
        </style>
@@ -164,41 +178,151 @@
       <main>
 
          <!-- hero area start -->
-         <section class="hero__area hero__height-3 grey-bg-16 d-flex align-items-center">
+         <section class="hero__area hero__height-3 grey-bg-16 d-flex align-items-center background" style="background-image: url(assets/img/about/birth/birth.jpg);background-repeat: no-repeat;background-position: bottom;background-color: #d1c4bc;">
             <div class="hero__shape">
-               <img class="circle-2 circle-3" src="assets/img/index/background/bac-3.png" alt="circle">
-               <img class="dot dot-2" src="assets/img/index/background/bac-1.png" alt="circle">
-               <img class="triangle triangle-2" src="assets/img/index/background/bac-5.png" alt="circle">
+               <!-- <img class="circle-2 circle-3" src="assets/img/about/birth/float1.png" alt="circle" style="height: 15vw;"> -->
+               <!-- <img class="dot dot-2" src="assets/img/about/birth/float3.png" alt="circle" style="height: 200px;"> -->
+               <img class="triangle triangle-2" src="assets/img/about/birth/float2.png" alt="circle" id="smile">
             </div>
             <div class="container">
-               <div class="row">
+
+               <div class="row" id="birth-date">
                   <div class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1">
                      <div class="hero__content hero__content-2 text-center mt-10">
 
                         
-                        <div class="nofind">
+                        <!-- <div class="nofind">
                            <img src="assets/img/404/404.png" style="width: 100%;">
-                        </div>
+                        </div> -->
                         
 
 
                         <h2 class="hero__title">
-                            页面不存在或已被删除
+                           公元<font style="color: #5f3afc;"> 2004 </font>年<font style="color: #5f3afc;"> 10 </font>月<font style="color: #5f3afc;"> 8 </font>日
                        </h2>
-                        <p>  </p>
-                        <a href="index.html" class="m-btn m-btn-2">返回首页 <span></span> </a>
-                        <br>&nbsp;
-                        <br>&nbsp;
-                        <br>&nbsp;
-
-                      
+                        <p>  甲申年 甲戍月 庚申日 八月 廿五 寒露 星期五</p>
+                        <p style="text-align:justify">/ 追 / 随 / 国 / 庆 / 的 / 尾 / 声 /，
+                           <br>我来到了这个世界</p>
+                        <a href="#more" class="m-btn m-btn-2">继续阅读 <span></span> </a>
                         </div>
                      </div>
-                  </div>
+                  </div> 
+
+
+                  <div class="background-fill" >&nbsp;</div>
+
                </div>
             </div>
+            <a name="more"></a>
          </section>
          <!-- hero area end -->
+
+
+                  <!-- featured area start -->
+                  <section class="featured__area pt-105 pb-95" style="background-image: url(assets/img/index/background/map.png);background-repeat: no-repeat;background-position: top right;">
+                     
+                     <div class="container">
+
+
+                        <div class="row">
+                           <div class="col-xxl-12">
+                              <div class="section__title-wrapper mb-50">
+                        <div id="show_time" class="section__title" style="color: #1a152e;">
+                           <script>  
+                           //这里代码多了几行，但是不会延迟显示，速度比较好，格式可以自定义，是理想的时间显示
+                           setInterval("fun(show_time)",1);
+                           function fun(timeID){ 
+                           var date = new Date();  //创建对象  
+                           var y = date.getFullYear();     //获取年份  
+                           var m =date.getMonth()+1;   //获取月份  返回0-11  
+                           var d = date.getDate(); // 获取日  
+                           var w = date.getDay();   //获取星期几  返回0-6   (0=星期天) 
+                           var ww = ' 星期'+'日一二三四五六'.charAt(new Date().getDay()) ;//星期几
+                           var h = date.getHours();  //时
+                           var minute = date.getMinutes()  //分
+                           var s = date.getSeconds(); //秒
+                           var sss = date.getMilliseconds() ; //毫秒
+                           if(m<10){
+                           m = "0"+m;
+                           }
+                           if(d<10){
+                           d = "0"+d;
+                           }
+                           if(h<10){
+                           h = "0"+h;
+                           }
+                           
+                           if(minute<10){
+                           minute = "0"+minute;
+                           }
+                           
+                           if(s<10){
+                           s = "0"+s;
+                           }
+                           
+                           if(sss<10){
+                           sss = "00"+sss;
+                           }else if(sss<100){
+                           sss = "0"+sss;
+                           }
+                           
+                           document.getElementById(timeID.id).innerHTML =  "公元"+y+"年"+m+"月"+d+"日 ";
+                           //document.getElementById(timeID.id).innerHTML =  y+"年"+m+"月"+d+"日 "+h+":"+minute+":"+s+"."+sss+"  "+ww;
+                           //document.write(y+"-"+m+"-"+d+"   "+h+":"+minute+":"+s);  
+                             }
+                           </script>  
+                           </div>  
+                                 <p style="margin-top: 30px;">/ 我 / 们 / 在 / 这 / 里 / 再 / 次/ 相 / 遇 /</p>
+                                 <p style="line-height: 30px;border-left: 5px solid #5f3afc;padding-left: 20px;margin-top: 30px;">
+                                    在过去的 每一分每一秒
+                                    <br>每一步 都向着一个方向
+                                    <br>每一刻 都在变的生活
+                                    <br>孕育着 我跳动的心脏
+                                    <br>谁不知道 遇到挫折都要保持坚强
+                                    <br>可没人告诉过我们 愈合原来如此凄凉
+                                    <br>漂亮的话其实 只是让我们别太紧张
+                                    <br>向着眼前的方向，我知道
+                                    <br>我不怕 千难万险的阻挡
+                                    <br>只怕 自己对自己投降
+                                    <br>已经 走到疲劳的双脚
+                                    <br>无时无刻 不想舞蹈
+                                    <br>用心跳声 盖过尖叫
+                                    <br>人生 为何要画地为牢
+                                    <br>害羞 躲在墙角里的猫
+                                    <br>也统治 自己的王朝
+                                    <br>管什么毒药解药
+                                    <br>没什么 微笑治愈不了
+                                    <br>让嘴唇 亲吻你的鬓角
+                                    <br>和甜点一起 幸福地合照
+                                    <br>我虽不才
+                                    <br>却还在 失败后走了回来
+                                    <br>长大以后 一定要扬帆远航
+                                    <br>不辜负 这美好时光
+                                    <br>能从 地球亿人之中，认识彼此
+                                    <br>定是一场 莫大的缘分
+                                    <br>能够一起遇到一些 或是美好 或是有趣的事情 更是珍贵。
+                                    <br>恰好是你，恰好是我
+                                    <br>恰好是我们 发生了故事
+                                    <br>人生的美好，正是这一种 恰好的相遇！
+                                    <br>&nbsp;
+                                    <br><span style="font-size: 20px;">&nbsp;&nbsp;<b>I'm Mr Sunny</b></span>
+                                    <br>/ 很 / 高 / 兴 / 认 / 识 / 你 /
+                                    <br>&nbsp;
+                                    </p>
+                  <div style="background-image: url(assets/img/about/birth/float1.png);background-repeat: no-repeat;background-position: bottom right;height: 170px;background-size: 300px auto ;"> &nbsp;</div>
+                              </div>
+                           </div>
+                        </div>
+
+
+
+
+                        </div>
+                     </div>
+                     
+                  </section>
+                  <!-- featured area end -->
+
 
          
       </main>
