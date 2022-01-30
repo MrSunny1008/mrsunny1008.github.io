@@ -5,7 +5,7 @@
  > **Hello! Welcome to my homepage.**
  
  这是我的[个人网站](https://mrsunny1008.github.io/index.html)的存储库
- <br>  我的个人主页网站网址为`mrsunny1008.github.io`，是一个基于GitHub公共数据库的一个静态`HTML`网站，使用`GitHub.io`的二级域名，所以无需进行备案。
+ <br>  我的个人主页网站网址为`mrsunny.top`，是一个基于GitHub公共数据库的一个静态`HTML`网站.
 网站于2021年9月开始投入使用，用于学习交流。
 <br> 如果你看到这里，我觉得你可能想搞事，但我相信你应该不会搞事😅
 
