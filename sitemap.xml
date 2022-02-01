@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url> 
 <loc>https://mrsunny.top/</loc>
@@ -105,7 +105,7 @@
 <loc>https://mrsunny.top/photos/photos_%E7%94%B5%E8%84%91%E5%A3%81%E7%BA%B8.html</loc>
 <lastmod>2022-02-01</lastmod>
 <changefreq>monthly</changefreq>
-<priority>0,7</priority>
+<priority>0.7</priority>
 </url>
 
 <url> 
