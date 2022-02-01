@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: 
+Disallow: /assets/
+Disallow: /old-website/
+Disallow: /recommend/Android-fluent/
+Sitemap: https://mrsunny.top/sitemap.xml
+Sitemap: https://mrsunny.top/sitemap.txt
