@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <title>页面正在施工，敬请期待……</title>
+      <title>MrSunny的兴趣世界</title>
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- Place favicon.ico in the root directory -->
@@ -23,23 +23,124 @@
       <link rel="stylesheet" href="assets/css/style.css">     
        <link rel="icon" href="png_favicon.png" type=" image/png" />
        <style>
-           .nofind{overflow:hidden;text-align:center;margin-left: auto;margin-right: auto;}
                @media screen and (min-width: 1201px) {
-               .nofind {width: 55vw;}
+               .background {background-size: 900px auto ;}
+               .background-fill {height: 500px;}
+               #birth-date {margin-top: 155px;}
+               #smile {height: 22vw;}
+               #pvz2-bac {
+                     background-image: url(assets/img/interest/Games/pvz/wide-background.png);
+                     background-size: 100vw auto;
+                     max-height:49vw ;
+                  }
+               #pvz-p {margin-left: 20vw;margin-right: 20vw;}
+               #mc-bac {background-size: 100% 100%;}
+               #mc-float {
+                  background-image: url(assets/img/interest/Games/mc/float.png);
+                  background-size: auto auto;
+                  background-repeat: no-repeat;
+                  background-position: right bottom;
+                  }
+                  #mc-p {margin-left: 20vw;margin-right: 20vw;}
+               #wide-hide-p {font-size: 0px;line-height: 3px;}
+               #mc-title {width: 500px;}
+               }
+               /* 设置了浏览器宽度不小于1201px时 */
+
+               @media screen and (max-width: 1200px) {
+                  .background {background-size: 80vw auto ;}
+                  .background-fill {height: 44vw;}
+                  #birth-date {margin-top: 155px;}
+                  #smile {height: 22vw;}
+                  #pvz2-bac {
+                     background-image: url(assets/img/interest/Games/pvz/wide-background.png);
+                     background-size: 100vw auto;
+                     max-height:49vw ;
+                  }
+               #pvz-p {margin-left: 20vw;margin-right: 20vw;}
+               #mc-bac {background-size: auto 100% ;}
+               #mc-float {
+                  background-image: url(assets/img/interest/Games/mc/float.png);
+                  background-size: 400px auto;
+                  background-repeat: no-repeat;
+                  background-position: right bottom;
+                  }
+                  #mc-p {margin-left: 20vw;margin-right: 20vw;}
+                  #wide-hide-p {font-size: 0px;line-height: 3px;}
+                  #mc-title {width: 460px;}
+               }
+               
+               
+               @media screen and (max-width: 900px) {
+                  .background {background-size: 90vw auto ;}
+                  .background-fill {height: 50vw;}
+                  #birth-date {margin-top: 155px;}
+                  #smile {height: 22vw;}
+                  #pvz2-bac {
+                     background-image: url(assets/img/interest/Games/pvz/mobile-background.png);
+                     background-size: 100vw auto;
+                     max-height:166vw ;
+                  }
+               #pvz-p {margin-left: 10vw;margin-right: 10vw;}
+               #mc-bac {background-size: auto 100% ;}
+               #mc-float {
+                  background-image: url(assets/img/interest/Games/mc/float.png);
+                  background-size: 300px auto;
+                  background-repeat: no-repeat;
+                  background-position: left bottom;
+                  }
+                  #mc-title {width: 70vw;}
+                  
+                  #mc-p {margin-left: 10vw;margin-right: 10vw;}
+                  #wide-hide-p {line-height: 18px;}
+               }
+               /* 设置了浏览器宽度不大于900px时  */
+               
+               @media screen and (max-width: 500px) {
+                  .background {background-size: 100vw auto ;height: 100vh;}
+                  .background-fill {height: 50vw;}
+                  #birth-date {margin-top: 125px;}
+                  #smile {height: 23vh;}
+                  #pvz2-bac {
+                     background-image: url(assets/img/interest/Games/pvz/mobile-background.png);
+                     background-size: 100vw auto;
+                     max-height:166vw ;
+                  }
+                  #pvz-title {width: 70vw;}
+               #pvz-p {margin-left: 10vw;margin-right: 10vw;}
+               #mc-bac {background-size: auto 100% ;}
+               #mc-float {
+                  background-image: url(assets/img/interest/Games/mc/float.png);
+                  background-size: 350px auto;
+                  background-repeat: no-repeat;
+                  background-position: right bottom;
+                  }
+                  #mc-title {width: 70vw;}
+                  #mc-p {margin-left: 0;margin-right: 0;}
+                  #wide-hide-p {line-height: 25px;}
+               }
+               /* 设置了浏览器宽度不大于500px时  */
+
+
+
+               .nofind{overflow:hidden;text-align:center;margin-left: auto;margin-right: auto;}
+               @media screen and (min-width: 1201px) {
+               .nofind {width: 40vw;}
                }
                /* 设置了浏览器宽度不小于1201px时 */
                @media screen and (max-width: 1200px) {
-               .nofind {width: 75vw;} 
+               .nofind {width: 55vw;} 
                }
                /* 设置了浏览器宽度不大于1200px时  */
                @media screen and (max-width: 900px) {
-               .nofind {width: 85vw;} 
+               .nofind {width: 90vw;} 
                }
                /* 设置了浏览器宽度不大于900px时  */
                @media screen and (max-width: 500px) {
-               .nofind {width: 90vw;} 
+               .nofind {width: 95vw;} 
                }
                /* 设置了浏览器宽度不大于500px时  */
+
        </style>
 
    </head>
@@ -163,30 +264,23 @@
 
       <main>
 
+
          <!-- hero area start -->
-         <section class="hero__area hero__height-3 grey-bg-16 d-flex align-items-center">
-            <div class="hero__shape">
-               <img class="circle-2 circle-3" src="assets/img/index/background/bac-3.png" alt="circle">
-               <img class="dot dot-2" src="assets/img/index/background/bac-1.png" alt="circle">
-               <img class="triangle triangle-2" src="assets/img/index/background/bac-5.png" alt="circle">
-            </div>
+         <!-- <section class="hero__area hero__height-3 grey-bg-16 d-flex align-items-center" style="background-color: #01ad49;">
             <div class="container">
                <div class="row">
                   <div class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1">
                      <div class="hero__content hero__content-2 text-center mt-10">
-
-                        
+   
                         <div class="nofind">
-                           <img src="assets/img/404/work.png" style="width: 100%;">
+                           <img src="./assets/img/blog/index-wait/facebook.jpg" style="width: 100%;">
                         </div>
                         
-
-
-                        <h2 class="hero__title">
-                           页面正在施工，敬请期待……
-                        </h2>
-                        <p>  </p>
-                        <a href="index.html" class="m-btn m-btn-2">返回首页 <span></span> </a>
+                        <h2 class="hero__title" style="color: white;">
+                            我的兴趣世界
+                       </h2>
+                        <p style="color: white;"> 这是我的兴趣介绍页面，目前仅收录游戏</p>
+                        <a href="./blog.html" class="m-btn m-btn-2" style="background-color: white;color: #5346dd;">返回博客 <span></span> </a>
                         <br>&nbsp;
                         <br>&nbsp;
                         <br>&nbsp;
@@ -197,9 +291,102 @@
                   </div>
                </div>
             </div>
-         </section>
+            
+         </section> -->
          <!-- hero area end -->
 
+
+         <!-- featured area start -->
+         <section class="featured__area pt-105 pb-95" id="pvz2-bac" style="background-repeat: no-repeat;background-position: bottom;">
+            
+            <div style="width: 80vw;text-align: center;margin-left: auto;margin-right: auto;"> 
+               <img src="./assets/img/interest/Games/pvz/header.png" id="pvz-title">
+               <h3 style="color: white;">Plants vs Zombies 2: It's About Time</h3>
+               <p style="color: white;" id="pvz-p"><br>&nbsp;《植物大战僵尸2：奇妙时空之旅》是由美国宝开游戏公司联合美国艺电公司开发的一款益智策略类塔防御战游戏，也是《植物大战僵尸》的正统续作。于2013年7月18日正式发行。</p>
+               <p>
+                  <a href="https://www.ea.com/ea-studios/popcap/plants-vs-zombies" class="m-btn m-btn-white"> <span></span> 宝开官网</a>&nbsp;&nbsp;&nbsp;
+                  <a href="https://www.ea.com/ea-studios/popcap/plants-vs-zombies" class="m-btn m-btn-white"> <span></span>拓维官网</a>
+               </p>
+               <p style="color: rgba(255, 255, 255, 0.5);">
+                  其他链接：
+                  <u><a href="http://www.jiangngame.com/"  target="_blank">江南游戏开发社</a></u>&nbsp;&nbsp;&nbsp;
+                  <u><a href="https://tieba.baidu.com/f?kw=pvz2&ie=utf-8"  target="_blank">pvz2贴吧</a></u>
+
+               </p>
+
+            </div>
+
+            <!-- <div class="container">
+
+               <div class="row" style="text-align: center;">
+                  <div class="col-xxl-12">
+                     <div class="section__title-wrapper mb-50">
+                        <div style="width: 80vw;text-align: center;"> 
+                           <img src="./assets/img/interest/Games/pvz/header.png" id="pvz-title">
+                           <h3 style="color: white;">Plants vs Zombies 2: It's About Time</h3>
+                           <p style="color: white;" id="pvz-p">《植物大战僵尸2：奇妙时空之旅》是由美国宝开游戏公司联合美国艺电公司开发的一款益智策略类塔防御战游戏，也是《植物大战僵尸》的正统续作。于2013年7月18日正式发行。</p>
+                        </div>
+                        
+                     </div>
+                  </div>
+               </div>
+
+
+
+
+               </div>
+            </div> -->
+            
+         </section>
+         <!-- featured area end -->
+
+
+                  <!-- featured area start -->
+                  <!-- <section class="featured__area pt-105 pb-95" style="padding-top: 50px;padding-bottom: 0px;">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-xxl-12">
+                              <div class="section__title-wrapper mb-50">
+                                 <h2 class="section__title">Plants vs Zombies</h2>
+                                 <p>/ 植 / 物 / 大 / 战 / 僵 / 尸 / 系 / 列 /</p>
+                              </div>
+                           <p>包括 植物大战僵尸2国际版 及其第三方改版、植物大战僵尸2中文版、植物大战僵尸二代pak版
+                              <br>但不包括花园战争系列，非常不喜欢战争题材和格斗类型的游戏。<br>&nbsp;<br>&nbsp;</p>
+                           </div>
+                        </div>
+                        </div>
+                     </div>
+                     
+                  </section> -->
+                  <!-- featured area end -->
+         
+         <p style="line-height: 10px;margin-bottom: 0px;width: 100vw;background-color: rgb(71, 102, 206);">-</p>
+
+
+         <!-- featured area start -->
+         <section class="featured__area pt-105 pb-95" id="mc-bac" style="background-repeat: no-repeat;background-position: left;background-image: url(./assets/img/interest/Games/mc/bg.jpg);padding-top: 50px;padding-bottom: 50px;">
+         <div style="width: 100%;height: 100%;" id="mc-float">
+            <div style="width: 80vw;text-align: center;margin-left: auto;margin-right: auto;"> 
+               <img src="./assets/img/interest/Games/mc/minecraft.png" id="mc-title">
+               <p style="color: white;" id="mc-p"><br>&nbsp;探索无限世界，建造世间万物，从简单纯粹的房屋到富丽堂皇的城堡。在创造模式下利用无限资源，或是在生存模式下深入挖掘世界，合成武器和盔甲，抵御危险的生物。可独自或与使用不同设备的朋友一起，体验创造、探索与生存的乐趣。<br>&nbsp;</p>
+               <p>
+                  <a href="https://www.ea.com/ea-studios/popcap/plants-vs-zombies" class="m-btn m-btn-white"> <span></span> 微软官网</a>&nbsp;&nbsp;&nbsp;
+                  <a href="https://www.ea.com/ea-studios/popcap/plants-vs-zombies" class="m-btn m-btn-white"> <span></span> 网易官网</a>
+               </p>
+               <p id="wide-hide-p">&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
+               <!-- <p style="color: rgba(255, 255, 255, 0.5);">
+                  其他链接：
+                  <u><a href="http://www.jiangngame.com/"  target="_blank">江南游戏开发社</a></u>&nbsp;&nbsp;&nbsp;
+                  <u><a href="https://tieba.baidu.com/f?kw=pvz2&ie=utf-8"  target="_blank">pvz2贴吧</a></u>
+
+               </p> -->
+            </div>     
+         </div>                
+         </section>
+         <!-- featured area end -->
+         
+         
+                
          
       </main>
 
