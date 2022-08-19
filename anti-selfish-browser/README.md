@@ -1,3 +1,30 @@
+# I'm Mr Sunny.
+
+/ 很 / 高 / 兴 / 认 / 识 / 你 /
+
+> 你好, 「我的朋友」！
+> 
+> **Hello! Welcome to my homepage.**
+
+这是github上的一个开源项目，目的是抵制`IE浏览器`和`国内(中国大陆)某些自私的浏览器`。
+
+这些浏览器为开发带来巨大困难，经过考虑决定不为这些浏览器做适配，因为没有价值，它们只是徒增开发成本，增加开发难度，浪费宝贵的生命。
+
+为此，如非必要，希望你不要使用这些浏览器。
+
+添加该项目后会自动检查你的浏览器、操作系统和语言环境，引导你使用其他浏览器，而不是显示错乱的界面。
+
+建议您桌面端使用基于Chromium打造的浏览器和其他主动兼容的浏览器，浏览器公司可能不希望自己的命运掌握在他人手中，
+但并不意味着他们有足够正当的理由让大量开发者承担本不该有的工作，甚至绑架民族情感。
+
+如果你也准备或已经搭建你自己的网站，请支持该项目。
+
+## 项目原介绍在下方
+
+**注意：原文并非简体中文，简体中文由MrSunny翻译得来，可能会有歧义，如果可以，请参考[英文原文](https://github.com/cjh0613/anti-selfish-browser/blob/master/README.md" target="_blank" rel="noopener noreferrer)和[文言](https://github.com/cjh0613/anti-selfish-browser/blob/master/README_zh.md" target="_blank" rel="noopener noreferrer)版本**
+
+---
+
 <div align="center">
   <a href="https://cjh0613.com/" target="_blank" rel="noopener noreferrer" alt="CJH0613">
     <img src="https://cdn.jsdelivr.net/gh/cjh0613/blog/images/icons/CJHicon.jpg" width="100" height="100">
@@ -7,17 +34,10 @@
 <p align="center">
 Language: <a href="https://github.com/cjh0613/anti-selfish-browser/blob/master/README.md" target="_blank" rel="noopener noreferrer">English</a>
   | <a href="https://github.com/cjh0613/anti-selfish-browser/blob/master/README_zh.md" target="_blank" rel="noopener noreferrer">文言</a>
+  | 中文(简体)
 </p>
 <p align="center">
-Now the English document is not quite perfect, welcome to submit the optimization of pull request
-</p>
-<!--Key Features • How To Use • Download • Credits • Related • License-->
-<p align="center">
-  <a href="#roadmap">Roadmap</a> •
-  <a href="#donate">Donate</a> •
-  <a href="#documentation">Documentation</a> •
-  <a href="#summary">Summary</a> •
-  <a href="#thanks">Thanks</a>
+中文简体界面只在本界面可见，查看原文档请到项目仓库
 </p>
 
 [![GitHub stars](https://img.shields.io/github/stars/cjh0613/anti-selfish-browser.svg?style=social)](https://github.com/cjh0613/anti-selfish-browser/stargazers)     [![GitHub forks](https://img.shields.io/github/forks/cjh0613/anti-selfish-browser.svg?style=social)](https://github.com/cjh0613/anti-selfish-browser/network/members)  `Please click on the top right of the page star and fork【请点击页面顶部靠右star与fork】`
@@ -26,74 +46,75 @@ Now the English document is not quite perfect, welcome to submit the optimizatio
 
 [![Stargazers repo roster for @cjh0613/anti-selfish-browser](https://reporoster.com/stars/cjh0613/anti-selfish-browser)](https://github.com/cjh0613/anti-selfish-browser/stargazers)
 
+## 项目策划
 
-## Roadmap
-[Roadmap](https://github.com/cjh0613/anti-selfish-browser/projects/1) 
+[策划，Roadmap, 开发计划、路线图](https://github.com/cjh0613/anti-selfish-browser/projects/1) 
 
-## [Donate](https://sponsor.cjh0613.com/index.html) 
+## [点击捐赠](https://sponsor.cjh0613.com/index.html)
 
-## Summary
-## Documentation
+前往 https://sponsor.cjh0613.com/ 以資作者。
 
-If ou can speak Chinese, join this group to discuss the anti-trust plan together. https://t.me/anti_monopoly
+## 文档概要
 
-Demo: use IE or Chinese browser : https://cjh0613.github.io/anti-selfish-browser
+如果你会中文，那就加入这个小组，一起讨论反垄断计划 https://t.me/anti_monopoly
 
-This is the first open source project in the world that supports 105 languages to prompt users to stop using IE.
+演示：使用IE或中国的浏览器： https://cjh0613.github.io/anti-selfish-browser
 
-When the IE browser (including the browser using the IE kernel) accesses the website, it will automatically jump to the browser upgrade page.
+这是世界上第一个支持105种语言来提示用户停止使用IE的开源项目。
 
-As of January 12, 2016, Microsoft no longer provides corresponding support and updates for IE 11 and below. Without critical browser security updates, users’ computers may be vulnerable to attacks by harmful viruses, spyware, and other malicious software, which can steal or damage your business data and information.
+当IE浏览器（包括使用IE内核的浏览器）访问网站时，会自动跳转到浏览器升级页面。
 
-And everyone has experienced the page loading speed of it.
+自 2016 年 1 月 12 日起，Microsoft 不再为 IE 11 及更低版本提供相应的支持和更新。如果没有关键的浏览器安全更新，用户的计算机可能容易受到有害病毒、间谍软件和其他恶意软件的攻击，从而窃取或损坏您的业务数据和信息。
 
-In order to be compatible with this former browser hegemony, web designers need to do a lot of code work, and the final result is always unsatisfactory. For ordinary users, the low version of IE is a precarious security risk. In the history of Windows, several major Trojan virus incidents have used IE vulnerabilities to spread. So please join us in boycotting IE.
+每个人都体验过它的页面加载速度。
 
-So, we can:
+为了兼容这个昔日的浏览器霸权，网页设计师需要做大量的代码工作，最终的结果总是不尽如人意。对于普通用户来说，低版本的IE是一个不稳定的安全风险。在Windows的历史上，有几次重大的木马病毒事件都利用IE漏洞进行传播。因此，请加入我们抵制IE。
 
-When an IE browser (including a browser using the IE kernel) accesses a website, it will redirect to a page suggesting that you update your browser.
+因此，我们可以：
 
-That's what this repo to do.
+当IE浏览器（包括使用IE内核的浏览器）访问网站时，它将重定向到建议您更新浏览器的页面。
 
-It is detected to use IE browser, and it will redirect to the tip page after judging the language.
+这就是此存储库要执行的操作。
 
-It now support **105 languages**, so that developers around the world are happy to use it, so that people around the world can switch to more advanced browsers.
+检测到它使用IE浏览器，并且在判断语言后将重定向到提示页面。
 
-In July 2021, I added some features to boycott rogue browsers in mainland China.
+现在支持 **105 种语言**，让世界各地的开发人员都乐于使用它，这样世界各地的人们就可以切换到更高级的浏览器。
 
-If you think there are some browsers in your area that also have rogue behavior, please report it [here](https://github.com/cjh0613/anti-selfish-browser/issues/2)
+2021年7月，我添加了一些功能来抵制中国大陆中的流氓浏览器。
 
-You are welcome to submit（pull request）the version of your native language.
+如果您认为您所在地区的某些浏览器也存在流氓行为，请在 [此处](https://github.com/cjh0613/anti-selfish-browser/issues/2)报告
 
-### Instructions:
+欢迎您提交（拉取请求）您的母语版本。
 
-1. Clone this project to your own server
+### 使用指南：
 
-2. Add this between the `<head></head>` of the webpage source code:
+1. 将此项目克隆到您自己的服务器
+
+2. 在网页源代码`<head></head>`之间添加此内容：
 
 ```html
-# You may need to change the CDN server
+# 你 可 能 需 要 修 改 你 的 CDN 服 务 器
 <script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.staticfile.org/layer/3.1.1/layer.min.js"></script>
 <script src="/anti-selfish-browser/Browser.js"></script>
 <script src="/anti-selfish-browser/anti-selfish-browser.js"></script>
 ```
 
-Welcome to submit versions in other languages by PR.
+欢迎通过PR提交其他语言的版本。
 
+如果您喜欢此存储库，**请单击“Star”作为支持**，谢谢！
 
-If you like this repo, please **click "Star" as support**, thank you!
+## 感谢
 
-## Thanks
-### Contributors
+### 项目贡献者：
+
 <a href="https://github.com/cjh0613/anti-selfish-browser/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=cjh0613/anti-selfish-browser" />
 </a>
 
-### Others
+### 其他内容
 
-
-Other items：
+其他项目
 
 - mumuy/browser
 - TransparentLC's blog
@@ -101,7 +122,8 @@ Other items：
 - layer
 - support.dmeng.net/upgrade-your-browser.html
 
-Machine Translate:
+以下提供的机器翻译：
+
 - Deepl
 - Google
 - Baidu
