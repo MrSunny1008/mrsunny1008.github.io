@@ -21,7 +21,10 @@
 
 ## 项目原介绍在下方
 
-**注意：原文并非简体中文，简体中文由MrSunny翻译得来，可能会有歧义，如果可以，请参考[英文原文](https://github.com/cjh0613/anti-selfish-browser/blob/master/README.md" target="_blank" rel="noopener noreferrer)和[文言](https://github.com/cjh0613/anti-selfish-browser/blob/master/README_zh.md" target="_blank" rel="noopener noreferrer)版本**
+**注意：原文并非简体中文，简体中文由MrSunny翻译得来，可能会有歧义，如果可以，请参考[英文原文](https://github.com/cjh0613/anti-selfish-browser/blob/master/README.md" target="_blank" rel="noopener noreferrer) 和 [文言](https://github.com/cjh0613/anti-selfish-browser/blob/master/README_zh.md" target="_blank" rel="noopener noreferrer)版本**
+
+[英文原文](https://github.com/cjh0613/anti-selfish-browser/blob/master/README.md" target="_blank" rel="noopener noreferrer)
+[文言](https://github.com/cjh0613/anti-selfish-browser/blob/master/README_zh.md" target="_blank" rel="noopener noreferrer)
 
 ---
 
@@ -30,7 +33,7 @@
     <img src="https://cdn.jsdelivr.net/gh/cjh0613/blog/images/icons/CJHicon.jpg" width="100" height="100">
   </a>
 </div>
-<h2 align="center">anti-selfish-browser</h2>
+<h2 align="center">抵制自私的浏览器（anti-selfish-browser）</h2>
 <p align="center">
 Language: <a href="https://github.com/cjh0613/anti-selfish-browser/blob/master/README.md" target="_blank" rel="noopener noreferrer">English</a>
   | <a href="https://github.com/cjh0613/anti-selfish-browser/blob/master/README_zh.md" target="_blank" rel="noopener noreferrer">文言</a>
