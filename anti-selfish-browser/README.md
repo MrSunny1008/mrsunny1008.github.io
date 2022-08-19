@@ -21,10 +21,7 @@
 
 ## 项目原介绍在下方
 
-**注意：原文并非简体中文，简体中文由MrSunny翻译得来，可能会有歧义，如果可以，请参考[英文原文](https://github.com/cjh0613/anti-selfish-browser/blob/master/README.md" target="_blank" rel="noopener noreferrer) 和 [文言](https://github.com/cjh0613/anti-selfish-browser/blob/master/README_zh.md" target="_blank" rel="noopener noreferrer)版本**
-
-[英文原文](https://github.com/cjh0613/anti-selfish-browser/blob/master/README.md" target="_blank" rel="noopener noreferrer)
-[文言](https://github.com/cjh0613/anti-selfish-browser/blob/master/README_zh.md" target="_blank" rel="noopener noreferrer)
+**注意：原文并非简体中文，简体中文由MrSunny翻译得来，可能会有歧义，如果可以，请参考**[英文原文](https://github.com/cjh0613/anti-selfish-browser/blob/master/README.md" target="_blank" rel="noopener noreferrer) **和** [文言](https://github.com/cjh0613/anti-selfish-browser/blob/master/README_zh.md" target="_blank" rel="noopener noreferrer)**版本**
 
 ---
 
