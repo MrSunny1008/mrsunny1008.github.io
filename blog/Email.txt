@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="utf-8">
+        <title>
+            我的邀请邮件
+        </title>
+        <link rel="icon" href="https://mrsunny.top/png_favicon.png" type=" image/png" />
+    </head>
+    <body>
+        <div style="margin:0;border:0;padding:0;width:100%">
+            <div style="background-color: white;-webkit-box-shadow: 0px 3px 10px rgb(194, 194, 194);-moz-box-shadow: 0px 3px 10px rgb(194, 194, 194);box-shadow: 0px 3px 10px rgb(194, 194, 194);margin:0;border:0;padding:0;">
+                <div style="margin-left: 3%;height: 75PX;">
+                    <br>
+                    <a href="https://mrsunny.top" target="_blank">
+                        <img src="https://mrsunny.top/assets/img/index/logo/logo.png">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div style="height: 15px;font-size: 5px;">
+                    </div>
+                    <h1 style="font-size: 28px;text-align:center;">
+                        你好! 欢迎访问我的主页
+                    </h1>
+                    <div style="margin-left: 3%; margin-right: 3%;">
+                        <p style="font-size: 18px;">
+                            <br>
+                        </p>
+                        <p style="font-size: 18px;">
+                            All：
+                        </p>
+                        <p style="font-size: 18px;">
+                                    你好! 欢迎访问我的主页！
+                        </p>
+                        <p style="font-size: 18px;">
+                                    我是你的QQ好友MrSunny.我正通过邮件向你发送通知，以便于当我更换联系方式时，你可以通过此邮件找到我的新联系方式。
+                            <br>
+                                  我的个人主页网站，网址为mrsunny.top，是一个基于GitHub公共数据库的一个静态HTML网站，使用.top.的顶级域名，无需备案。网站于2021年9月开始投入使用，用于进行交流。
+                        </p>
+                        <p style="font-size: 18px;">
+                            <b>
+                                为什么要制作这个网站？
+                            </b>
+                            <br>
+                                   就是玩儿。
+                            <br>
+                                  开个玩笑🙃，其实是为了填《留下脚印一串串·初中》等简介里个人网页，同时为了方便在我更换联系方式时能快速找到我的联系方式。你可以查看我的动态、联系方式和相册，还可以查看我分享的文件。
+                        </p>
+                        <p style="font-size: 18px;">
+                            <b>
+                                为什么显示不正常？
+                            </b>
+                            <br>
+                                  网站主要适配桌面端（宽屏），部分手机浏览器可能会布局错乱，不影响正常使用。部分功能正在完善中，可能无法使用。如果网页显示异常，如只显示文字和少量图片，可能是网速过慢，加载超时，无法加载图片、js和css，请检查你的网络后重试。
+                        </p>
+                        <p style="font-size: 18px;">
+                          <b>
+                                为什么会收到这封邮件？
+                            </b>
+                            <br>
+                                   QQ邮件会在腾讯QQ中提醒，同时会永久保存（除非注销账号），你可以随时阅读邮件来查看网址。
+                            <br>
+                                  邮件通过QQ邮箱发送，如果你收到这封邮件，即说明你是我的QQ好友，我的昵称为MrSunny，如果你不认识我或QQ通讯录没有我，请忽略并删除此封邮件，可能是QQ邮箱系统故障导致。
+                        </p>
+                        <p style="font-size: 18px;">
+                                   最后，祝生活愉快！
+                        </p>
+                        <p style="font-size: 18px; text-align: right;">
+                            MrSunny     
+                            <br>
+                            20XX年XX月XX日
+                        </p>
+                    </div>
+                    <div style="height: 10px;font-size: 5px;">
+                    </div>
+                    <div style="width: 90%;height: auto;margin-left: 5%;margin-right: 5%;line-height: 20px;text-align: center;background-color: whitesmoke;-moz-border-radius: 1em;-webkit-border-radius: 1em;border-radius: 0.75em;-webkit-box-shadow: 5px 5px 20px rgba(102, 102, 102, 0.486);-moz-box-shadow: 5px 5px 20px rgba(102, 102, 102, 0.486);box-shadow: 5px 5px 20px rgba(102, 102, 102, 0.486);">
+                        <h1 style="font-size: 25px;">
+                            <br>
+                            <br>
+                            MrSunny的个人主页
+                        </h1>
+                        <h3 style="color:#797979 ;font-size: 20px;">
+                            MrSunny.top
+                        </h3>
+                        <a href="https://mrsunny.top/" target="_blank;" style="text-decoration:none;">
+                            <div style="width: 150px;height: 40px;line-height: 40px;text-align: center;margin-left: auto;margin-right: auto;color: white;background-color: #5f3afc;-moz-border-radius: 1em;-webkit-border-radius: 1em;border-radius: 0.5em;-webkit-box-shadow: 5px 5px 16px #5e3afc73;-moz-box-shadow: 5px 5px 16px #5e3afc73;box-shadow: 5px 5px 16px #5e3afc73;">
+                                <b>
+                                    访问主页
+                                </b>
+                            </div>
+                        </a>
+                        <div style="height: 25px;font-size: 5px;">
+                        </div>
+                    </div>
+                    <div style="height: 40px;font-size: 5px;">
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #ebebef;width: 100%;">
+                <div style="margin-left: 3%;margin-right: 3%;">
+                    <br>
+                    <a href="https://mrsunny.top" target="_blank">
+                        <img src="https://mrsunny.top/assets/img/index/logo/logo.png">
+                    </a>
+                    <br>
+                    <br>
+                    <span style="font-size:16px"> / 很 / 高 / 兴 / 认 / 识 / 你！</span>
+                    <br><span style="font-size:16px;">
+                        / I'm MrSunny.
+                    </span>
+	                <br><img src="https://mrsunny.top/assets/img/index/logo/qrcode.png" style="padding:10px 5px 5px 5px;height:80px;">
+                    <p style="color:#797979 ;margin-top: 0px;">
+                        <span style="font-size:16px"> 欢迎访问</span>
+                        <br>
+                        https://mrsunny.top
+                        <br>
+                        <span style="font-size:16px">
+                            联系方式
+                        </span>
+                        <br>
+                        mrsunny1008@foxmail.com
+                    </p>
+                    <hr color="#d5d5dd" size="1px">
+                    <p style="color:#797979 ;">
+                     Copyright.©  2021-2022  Mr.Sunny. 
+                    </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+                        
