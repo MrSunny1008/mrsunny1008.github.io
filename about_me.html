@@ -6,9 +6,9 @@
       <title>Hello，I'm MrSunny! 关于我的一切</title>
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- Place favicon.ico in the root directory -->
-      <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
-      <!-- CSS here -->
+      <!-- favicon.icon-->
+      <link rel="shortcut icon" type="image/x-icon" href="assets/img/png_favicon.png">
+      <!-- CSS -->
       <link rel="stylesheet" href="assets/css/preloader.css">
       <link rel="stylesheet" href="assets/css/bootstrap.min.css">
       <link rel="stylesheet" href="assets/css/slick.css">
@@ -22,6 +22,11 @@
       <link rel="stylesheet" href="assets/css/default.css">
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="icon" href="png_favicon.png" type=" image/png" />
+      <!-- IE浏览器选项 -->    
+      <script src="anti-selfish-browser/jquery.min.js"></script>
+      <script src="anti-selfish-browser/3.1.1/layer.min.js"></script>
+      <script src="/anti-selfish-browser/Browser.js"></script>
+      <script src="/anti-selfish-browser/anti-selfish-browser.js"></script>
       <style>
          .map-card{                   
          background-color: #fff;
@@ -81,6 +86,7 @@
       </div>
       <!-- back to top end -->
 
+
       <!-- header area start -->
       <header>
          <div class="header__area header__shadow-2 white-bg" id="header-sticky">
@@ -89,7 +95,7 @@
                   <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-6">
                      <div class="logo">
                         <a href="index.html">
-                        <img src="assets/img/index/logo/logo.png" alt="logo">
+                        <img src="assets/img/index/logo/logo_hd.png" alt="logo" style="height: 30px;">
                         </a>
                      </div>
                   </div>
@@ -106,18 +112,27 @@
                                    <li><a href="recommend/recommend_website.html">推荐的网站</a></li>
                                     <li><a href="recommend/recommend_app.html">推荐应用程序</a></li>
                                     <li><a href="recommend/recommend_media.html">影视和漫画</a></li>
-                                    <li><a href="recommend/recommend_music.html">我的歌单</a></li>
+                                    <li><a href="recommend/recommend_music.html">我的歌单🎵</a></li>
+                                    <li><a href="share.html">文件分享📄</a></li>
                                  </ul>
                               </li>
+                    
+                     
 							  <li><a href="contact.html">联系方式</a></li>
                               <li class="has-dropdown">
                                  <a href="about.html">关于</a>
                                  <ul class="submenu">
                                    <li><a href="about_me.html">关于MrSunny</a></li>
                                     <li><a href="about_website.html">关于网站</a></li>
+                                    <li><a href="interest.html">关于我的兴趣爱好🏀</a></li>
+                                    <li><a href="https://qiusen.mrsunny.top">学术主页🧪</a></li>
+                                    <li><a href="https://info.mrsunny.top">网站介绍页📰</a></li>
+                                    
+                                    
                                  </ul>
                               </li>
-                           </ul>
+                           
+                        </ul>
                         </nav>
                      </div>
                   </div>
@@ -125,7 +140,7 @@
                      <div class="header__action d-flex align-items-center justify-content-end">
                         <div class="header__login header__login-2 d-none d-sm-block"> </div>
                         <div class="header__btn d-none d-xl-block">
-                           <a href="about.html" class="m-btn m-btn-2">Learn More</a>
+                           <a href="app-download.html" class="m-btn m-btn-2" target="_blank">下载应用</a>
                         </div>
                         <div class="sidebar__menu d-lg-none">
                            <div class="sidebar-toggle-btn" id="sidebar-toggle">
@@ -155,7 +170,7 @@
             <div class="sidebar__content">
                <div class="logo mb-40">
                   <a href="index.html">
-                  <img src="assets/img/index/logo/logo-white.png" alt="logo">
+                  <img src="assets/img/index/logo/logo-white_hd.png" alt="logo" style="height: 30px;">
                   </a>
                </div>
                <div class="mobile-menu"></div>
@@ -166,6 +181,8 @@
       <!-- sidebar area end -->      
       <div class="body-overlay"></div>
       <!-- sidebar area end -->
+      
+
 
       <main>
 
@@ -263,8 +280,8 @@
                                  <h6>Hight:1.7m+</h6>
                               </li>
                               <li>
-                                 <span>体重：  70+ kg</span>
-                                 <h6>Weight:70kg+</h6>
+                                 <span>体重：  870+ kg</span>
+                                 <h6>Weight:80kg+</h6>
                               </li>
                            </ul>
 
@@ -336,10 +353,10 @@
                                        <br>开个玩笑🙃，其实是为了填个人网页。
                                     </p>
                                     <h3 class="product__overview-title">我喜欢的颜色、歌曲、动漫……？</h3>
-                                    <p>我喜欢的歌曲请参考<a href="recommend/recommend_music.html".html"><font color="#5f3afc">>我的歌单</font></a>
-                                       <br>我喜欢的动漫请参考<a href="recommend/recommend_media.html".html"><font color="#5f3afc">>我的推荐的影视、番剧和漫画</font></a>
-                                       <br>我喜欢的游戏请参考<a href="interest.html"><font color="#5f3afc">>我的兴趣世界</font></a>中的内容，正在计划设计独立板块，敬请期待。
-                                       <br>其他内容暂时保密，如果你想知道可以尝试与我取得联系。
+                                    <p>我喜欢的歌曲请参考<a href="recommend/recommend_music.html"><span style="color:#5f3afc">>我的歌单</span></a>
+                                       <br>我喜欢的动漫请参考<a href="recommend/recommend_media.html"><span style="color:#5f3afc">>我的推荐的影视、番剧和漫画</span></a>
+                                       <br>我喜欢的游戏请参考<a href="interest.html"><span style="color:#5f3afc">>我的兴趣世界</span></a>中的内容，正在计划设计独立板块，敬请期待。
+                                       <br>如果你想了解可以与我取得联系。<a href="contact.html"><span style="color:#5f3afc">>联系方式</span></a>
                                     </p>
 
                                        <h3 class="product__overview-title">我的教育经历</h3>
@@ -372,7 +389,7 @@
 
 
 
-                                             <li><p>	2020.9 - 2021.8	高一8班班委会 班长	</p></li>
+<li><p>	2020.9 - 2021.8	高一8班班委会 班长	</p></li>
 <li><p>	2020.9 - 2021.6	高一 8班班委会 值日班干	</p></li>
 <li><p>	2019.9 - 2020.7	初三年级12班班委会 电教委员	</p></li>
 <li><p>	2019.9 - 2020.7	初三年级12班班委会 班长	</p></li>
@@ -392,12 +409,14 @@
                                        <div class="product__features">
                                           <h3 class="product__overview-title">荣获奖项</h3>
                                           <ol>
-                                             <li><p>	2021.2 东台市安丰中学期 末联考三等奖学金		</p></li>
-<li><p>	2021.2 东台市安丰中学优 秀学生干部		</p></li>
-<li><p>	2020.4 东台市安丰中学奖 学金三等奖		</p></li>
-<li><p>	2020.4 东台市优秀学生干部		</p></li>
-<li><p>	2020.1 东台苏东双语学校优秀学生干部		</p></li>
-<li><p>	2019.12 盐城市第五届中小学生英语读写大赛初三年级组二等奖		</p></li>
+<li><p>	2022.6 中国管理科学研究院素质教育研究所2022年5月口语测评高中一年级组全国三等奖	</p><li>   
+<li><p>	2022.6 英语口语能力人工智能分级测评四级C	</p></li>                                      
+<li><p>	2021.2 东台市安丰中学期 末联考三等奖学金		</p></li>
+<li><p>	2021.2 东台市安丰中学优 秀学生干部		</p></li>
+<li><p>	2020.4 东台市安丰中学奖 学金三等奖		</p></li>
+<li><p>	2020.4 东台市优秀学生干部		</p></li>
+<li><p>	2020.1 东台苏东双语学校优秀学生干部		</p></li>
+<li><p>	2019.12 盐城市第五届中小学生英语读写大赛初三年级组二等奖		</p></li>
 <li><p>	2019.9	东台苏东双语学校奖学金—等奖	</p></li>
 <li><p>	2019.6	东台苏东双语学校三好学生	</p></li>
 <li><p>	2019.2	东台苏东双语学校奖学金二等奖	</p></li>
@@ -421,16 +440,16 @@
 <li><p>	2015.7	东台市第—小学优秀少先队员	</p></li>
 <li><p>	2015.6	社会艺术水平考级证书硬笔书法六级合格	</p></li>
 <li><p>	2015.2	东台市第—小学优秀少先队员	</p></li>
-<li><p>	2014.12 社会艺术水平考级证书素描五级		</p></li>
+<li><p>	2014.12 社会艺术水平考级证书素描五级		</p></li>
 <li><p>	2014.6	东台市第—小学优秀少先队员	</p></li>
 <li><p>	2014.6	社会艺术水平考级证书硬笔书法五级合格	</p></li>
 <li><p>	2014.1	东台市第—小学优秀少先队员	</p></li>
-<li><p>	2013.8 墨彩杯第十届全国青少年儿童画作品电视网络展评美术儿童组—等奖		</p></li>
-<li><p>	2013.6 东台市第—小学三好学生		</p></li>
-<li><p>	2013.6 社会艺术水平考级证书硬笔书法三级合格		</p></li>
-<li><p>	2013.1 东台市第—小学三好学生		</p></li>
-<li><p>	2012.12 第二届笔畅杯全国作文大赛三等奖		</p></li>
-<li><p>	2012.10 社会艺术水平考级证书儿童画五级		</p></li>
+<li><p>	2013.8 墨彩杯第十届全国青少年儿童画作品电视网络展评美术儿童组—等奖		</p></li>
+<li><p>	2013.6 东台市第—小学三好学生		</p></li>
+<li><p>	2013.6 社会艺术水平考级证书硬笔书法三级合格		</p></li>
+<li><p>	2013.1 东台市第—小学三好学生		</p></li>
+<li><p>	2012.12 第二届笔畅杯全国作文大赛三等奖		</p></li>
+<li><p>	2012.10 社会艺术水平考级证书儿童画五级		</p></li>
 <li><p>	2012.6	东台市第—小学四好少年	</p></li>
 <li><p>	2012.6	社会艺术水平考级证书硬笔书法二级合格	</p></li>
 <li><p>	2012.1	东台市第—小学三好学生	</p></li>
@@ -511,7 +530,7 @@
                                                 <td>
                                                    <img src="assets/img/about/contact-way/email.png" style="height: 27px;float:left;">
                                                 </td>
-                                                <td><span style="float: left;"><b>&nbsp;3551249151@qq.com</b></span>
+                                                <td><span style="float: left;"><b>&nbsp;qiusen1008@foxmail.com</b></span>
                                              </tr>
 
                                              <tr style="height: 35px;">
@@ -525,21 +544,21 @@
                                                 <td>
                                                    <img src="assets/img/about/contact-way/tencent-qq.png" style="height: 27px;float:left;">
                                                 </td>
-                                                <td><span style="float: left;"><b>&nbsp;1791248252</b></span>
+                                                <td><span style="float: left;"><b>&nbsp;3551249151</b></span>
                                              </tr>
 
                                              <tr style="height: 35px;">
                                                 <td>
                                                    <img src="assets/img/about/contact-way/sina-weibo.png" style="height: 27px;float:left;">
                                                 </td>
-                                                <td><span style="float: left;"><b>&nbsp;@MrSunny35989</b></span>
+                                                <td><span style="float: left;"><b>&nbsp;@MrSunny1008</b></span>
                                              </tr>
 
                                              <tr style="height: 35px;">
                                                 <td>
                                                    <img src="assets/img/about/contact-way/bilibili.png" style="height: 27px;float:left;">
                                                 </td>
-                                                <td><span style="float: left;"><b>&nbsp;1218977296</b></span>
+                                                <td><span style="float: left;"><b>&nbsp;UID:1218977296</b></span>
                                              </tr>
 
                                              <tr style="height: 35px;">
@@ -559,38 +578,6 @@
 
                                     <div class="product__support">
                                      
-                                       <!-- <div class="product__proprietor-text"></div> -->
-
-
-                                       <!-- <div style="width: 100%;height: auto;
-                                       -webkit-border-radius: 6px;
-                                       -moz-border-radius: 6px;
-                                       border-radius: 6px;
-                                       -webkit-box-shadow: 0px 30px 50px 0px rgba(8, 0, 42, 0.08);
-                                       -moz-box-shadow: 0px 30px 50px 0px rgba(8, 0, 42, 0.08);
-                                       box-shadow: 0px 30px 50px 0px rgba(8, 0, 42, 0.08);
-                                       text-align: left;
-                                       background-color: #fff;
-                                       margin-bottom: 25px;">
-                               
-                                       <div style="float: left;height: 300px;">
-                                          <div>
-                                             <iframe width="270" height="300" frameborder="0" src="https://cn.bing.com/maps/embed?h=300&w=270&cp=pfzfc2v0n4sf&lvl=8&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
-                                             </iframe>                                             
-                                          </div> 
-                                       </div>
-                                       <div style="height: 300px;padding: 15px;float: left;">
-                                          <span>中华人民共和国 江苏省 盐城地级市 东台县级市 梁垛镇(台南) 董贤村</span>
-                                       </div>                               
-                                        </div> -->
-                               
-
-
-
-
-
-
-
 
                                        
 

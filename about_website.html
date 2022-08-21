@@ -6,9 +6,9 @@
       <title>关于MrSunny网站</title>
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- Place favicon.ico in the root directory -->
-      <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
-      <!-- CSS here -->
+      <!-- favicon.icon-->
+      <link rel="shortcut icon" type="image/x-icon" href="assets/img/png_favicon.png">
+      <!-- CSS -->
       <link rel="stylesheet" href="assets/css/preloader.css">
       <link rel="stylesheet" href="assets/css/bootstrap.min.css">
       <link rel="stylesheet" href="assets/css/slick.css">
@@ -22,13 +22,18 @@
       <link rel="stylesheet" href="assets/css/default.css">
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="icon" href="png_favicon.png" type=" image/png" />
+      <!-- IE浏览器选项 -->    
+      <script src="anti-selfish-browser/jquery.min.js"></script>
+      <script src="anti-selfish-browser/3.1.1/layer.min.js"></script>
+      <script src="/anti-selfish-browser/Browser.js"></script>
+      <script src="/anti-selfish-browser/anti-selfish-browser.js"></script>
 
    </head>
    <body>
       <!--[if lte IE 9]>
       <p class="browserupgrade">你的浏览器<strong>版本过低</strong>！请 <a href="https://browsehappy.com/">升级你的浏览器</a> 后再访问网站。</p>
       <![endif]-->
-      <p class="browserupgrade">&nbsp;&nbsp;&nbsp;全新的<strong>网站介绍页</strong>已经开放访问，点击 <u> <a href="https://info.mrsunny.top" style="color: #5f3afc;">https://info.mrsunny.top</a> </u> 即可访问网站介绍页面。</p>
+      
 
       <!-- Add your site or application content here -->  
 
@@ -54,6 +59,7 @@
       </div>
       <!-- back to top end -->
 
+
       <!-- header area start -->
       <header>
          <div class="header__area header__shadow-2 white-bg" id="header-sticky">
@@ -62,7 +68,7 @@
                   <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-6">
                      <div class="logo">
                         <a href="index.html">
-                        <img src="assets/img/index/logo/logo.png" alt="logo">
+                        <img src="assets/img/index/logo/logo_hd.png" alt="logo" style="height: 30px;">
                         </a>
                      </div>
                   </div>
@@ -79,18 +85,27 @@
                                    <li><a href="recommend/recommend_website.html">推荐的网站</a></li>
                                     <li><a href="recommend/recommend_app.html">推荐应用程序</a></li>
                                     <li><a href="recommend/recommend_media.html">影视和漫画</a></li>
-                                    <li><a href="recommend/recommend_music.html">我的歌单</a></li>
+                                    <li><a href="recommend/recommend_music.html">我的歌单🎵</a></li>
+                                    <li><a href="share.html">文件分享📄</a></li>
                                  </ul>
                               </li>
+                    
+                     
 							  <li><a href="contact.html">联系方式</a></li>
                               <li class="has-dropdown">
                                  <a href="about.html">关于</a>
                                  <ul class="submenu">
                                    <li><a href="about_me.html">关于MrSunny</a></li>
                                     <li><a href="about_website.html">关于网站</a></li>
+                                    <li><a href="interest.html">关于我的兴趣爱好🏀</a></li>
+                                    <li><a href="https://qiusen.mrsunny.top">学术主页🧪</a></li>
+                                    <li><a href="https://info.mrsunny.top">网站介绍页📰</a></li>
+                                    
+                                    
                                  </ul>
                               </li>
-                           </ul>
+                           
+                        </ul>
                         </nav>
                      </div>
                   </div>
@@ -98,7 +113,7 @@
                      <div class="header__action d-flex align-items-center justify-content-end">
                         <div class="header__login header__login-2 d-none d-sm-block"> </div>
                         <div class="header__btn d-none d-xl-block">
-                           <a href="about.html" class="m-btn m-btn-2">Learn More</a>
+                           <a href="app-download.html" class="m-btn m-btn-2" target="_blank">下载应用</a>
                         </div>
                         <div class="sidebar__menu d-lg-none">
                            <div class="sidebar-toggle-btn" id="sidebar-toggle">
@@ -128,7 +143,7 @@
             <div class="sidebar__content">
                <div class="logo mb-40">
                   <a href="index.html">
-                  <img src="assets/img/index/logo/logo-white.png" alt="logo">
+                  <img src="assets/img/index/logo/logo-white_hd.png" alt="logo" style="height: 30px;">
                   </a>
                </div>
                <div class="mobile-menu"></div>
@@ -152,6 +167,7 @@
                      <div class="section__title-wrapper text-center mb-65">
                         <h2 class="section__title">关于网站</h2>
                         <p>About the website of Mr Sunny</p>
+                        
                      </div>
                   </div>
                </div>
@@ -187,14 +203,15 @@
                                     </h2>
                                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#sale-accordion">
                                        <div class="accordion-body">
-                                          <p>MrSunny个人主页网站，网址为mrsunny1008.github.io，是一个基于GitHub公共数据库的一个静态HTML网站，使用GitHub.io的二级域名，由github托管并提供证书，服务器不在中国大陆，未使用com、cn等顶级域名，无需进行备案。<font color="red">2022年1月29日，从阿里云购买mrsunny.top.作为网站域名，初始有效期为一年，目前有考虑续费的计划。</font><br>网站于2021年9月开始投入使用，用于学习交流。</p>
+                                          <p>MrSunny个人主页网站，原网址为mrsunny1008.github.io，是一个基于GitHub公共数据库的一个静态HTML网站，使用GitHub.io的二级域名，由github托管并提供证书，服务器非中国大陆，未使用com、cn等顶级域名，无备案。<span style="color:red">2022年1月29日起更换mrsunny.top.作为网站域名，原域名仍然可以继续访问。</span><br>网站于2021年9月开始投入使用，用于学习交流。</p>
+                                          <p>- 点击  <a href="https://info.mrsunny.top" style="color: #5f3afc;">https://info.mrsunny.top</a>访问网站介绍页面。</p>
                                        </div>
                                     </div>
                                  </div>
                                  <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingTwo">
                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                          为什么要取名MrSunny？？
+                                          为什么要取名MrSunny？
                                        </button>
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#sale-accordion">
@@ -239,7 +256,7 @@
                                     </h2>
                                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#sale-accordion">
                                        <div class="accordion-body">
-                                          <p>如果以上方式都无法解决您的问题，点击<a href="contact.html"><font color="red">>联系方式</font></a>查看站长联系方式，与站长取得联系。注意，部分联系方式可能不能及时回复，望理解。</p>
+                                          <p>如果以上方式都无法解决您的问题，点击<a href="contact.html"><span style="color:red">>联系方式</span></a>查看站长联系方式，与站长取得联系。注意，部分联系方式可能不能及时回复，望理解。</p>
                                        </div>
                                     </div>
                                  </div>
@@ -319,7 +336,7 @@
                                     </h2>
                                     <div id="collapseEle" class="accordion-collapse collapse show" aria-labelledby="headingEle" data-bs-parent="#ui-accordion">
                                        <div class="accordion-body">
-                                          <p>本站不参与软件的制作、修改和发布，仅提供站外分享链接，使用前请自行进行风险评估和安全检测。如果你不信任分享的链接，请勿使用。由此造成的安全问题均由使用者自行承担。<br>本站使用公共数据库，由Github托管网页，网站安全证书由github提供，DNS域名解析由阿里云提供，<font color="red">强制使用https协议</font>、网站容易受到攻击，请注意上网安全。</p>
+                                          <p>本站不参与软件的制作、修改和发布，仅提供站外分享链接，使用前请自行进行风险评估和安全检测。如果你不信任分享的链接，请勿使用。由此造成的安全问题均由使用者自行承担。<br>本站使用公共数据库，由Github托管网页，网站安全证书由github提供，DNS域名解析由阿里云提供，<span style="color:red">强制使用https协议</span>、网站容易受到攻击，请注意上网安全。</p>
                                        </div>
                                     </div>
                                  </div>
@@ -331,7 +348,7 @@
                                     </h2>
                                     <div id="collapseTwl" class="accordion-collapse collapse" aria-labelledby="headingTwl" data-bs-parent="#ui-accordion">
                                        <div class="accordion-body">
-                                          <p>参见›版权声明</p>
+                                          <p>参见›版权问题</p>
                                        </div>
                                     </div>
                                  </div>
@@ -352,7 +369,7 @@
                            </div>
                            <div class="tab-pane fade" id="xd" role="tabpanel" aria-labelledby="xd-tab">
                               <div class="accordion" id="xd-accordion">
-                                
+
                                  <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingThi">
                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThi" aria-expanded="false" aria-controls="collapseThi">
@@ -362,24 +379,23 @@
                                     <div id="collapseThi" class="accordion-collapse collapse" aria-labelledby="headingThi" data-bs-parent="#ui-accordion">
                                        <div class="accordion-body">
                                           <p>网站主要适配桌面端（宽屏），部分手机浏览器宽度小于360px可能会导致部分布局错乱，不影响正常使用。如果网页显示异常，如只显示文字和少量图片，可能是网速过慢，加载超时，无法加载图片、js和css，请检查你的网络后重试。
-                                          <br><font color="red">请勿使用IE内核的浏览器访问网站！</font>
+                                          <br>自2022年9月起，不再支持IE内核浏览器访问，接入<a href="https://github.com/cjh0613/anti-selfish-browser" style="color: #5f3afc;">anti-selfish-browser开源项目</a>，使用部分中国大陆定制版本浏览器时，可能会有风险提示。
                                           </p>
                                        </div>
                                     </div>
                                  </div>
 
                                  
-
-
                                  <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThi">
-                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThi" aria-expanded="false" aria-controls="collapseThi">
+                                    <h2 class="accordion-header" id="headingThree">
+                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                           友情链接收录？
                                        </button>
                                     </h2>
-                                    <div id="collapseThi" class="accordion-collapse collapse" aria-labelledby="headingThi" data-bs-parent="#ui-accordion">
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#sale-accordion">
                                        <div class="accordion-body">
-                                          <p>底部的友情链接初始内容为部分推荐的网站，用于占位，你可以联系来添加互加友链。推荐使用电子邮件（3551249151@qq.com），邮件有空回复。</p>
+                                          <p>底部的友情链接初始内容为部分推荐的网站，用于占位，你可以联系来添加互加友链。推荐使用电子邮件（qiusen1008@foxmail.com），邮件有空回复。</p>
+                                          <P>点击<a href="mailto://qiusen1008@foxmail.com" style="color: #5f3afc;">向qiusen1008@foxmail.com发送邮件</a></P>
                                        </div>
                                     </div>
                                  </div>
@@ -396,6 +412,7 @@
                                        <div class="accordion-body">
                                           <p>不会吧，不会吧？不会真有人会看更新日志吧😂？<br>&nbsp;</p>
                                           <p>▷ ……
+                                             <br>▷ 2022.08.21 &nbsp; 测试学术主页；修改页面布局；高清修复logo；引入anti-selfish-browser开源项目；修复关于网站页面的部分特性，更新优化联系方式；优化博客页面布局，更新博客
                                              <br>▷ 2022.05.11 &nbsp; 更新文件分享功能
                                              <br>▷ 2022.05.01 &nbsp; 修复必应地图更换主题风格发生的意外错误，完善兴趣页面，优化操作逻辑
                                              <br>▷ 2022.04.17 &nbsp; 优化相册页面加载动画，添加跳转功能（测试）
@@ -404,7 +421,7 @@
                                              <span style="color: #5f3afc;"  target="_blank">https://info.mrsunny.top</span></a>
                                              <br>▷ 2022.02.01 &nbsp; 制作了网站sitemap和roboats。
                                              <br>▷ 2022.01.30 &nbsp; 修复了https协议不完全加密的意外错误，修复首页百度搜索显示历史记录的问题，整理第一次网站 > <a href="old-website/index.html" style="text-decoration:none;"> <span style="color: #5f3afc;"  target="_blank">点击预览</span></a>
-                                             <br>▷ 2022.01.29 &nbsp; 完善博客最新动态、资源丢失响应，增加微信QQ二维码，更新彩蛋。第一次测试使用顶级域名。
+                                             <br>▷ 2022.01.29 &nbsp; 完善博客最新动态、资源丢失响应，增加微信QQ二维码，更新彩蛋。第一次测试使用Mrsunny.top.顶级域名。
                                              <br>▷ 2022.01.22 &nbsp; 增加404错误自动响应，大量优化博客、推荐，编写相册页面
                                              <br>▷ 2022.01.10 &nbsp; 安卓应用上线测试
                                              <br>▷ 2022.01.09 &nbsp; 增加预览邮件功能、地图模块，美化关于界面
