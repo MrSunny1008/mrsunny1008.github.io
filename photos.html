@@ -28,6 +28,20 @@
       <script src="/anti-selfish-browser/Browser.js"></script>
       <script src="/anti-selfish-browser/anti-selfish-browser.js"></script>
 
+      <style>
+          @media screen and (max-width: 575px) {
+                     .photo-cover {
+                     max-width:102;
+                  }
+         }
+         /* 设置了浏览器宽度不大于575px时 */
+         @media screen and (min-width: 575px) {
+            .photo-cover {
+                     min-width: none;
+                  }    
+         }
+         /* 设置了浏览器宽度不小于575px时 */
+      </style>
    </head>
    <body>
       <!--[if lte IE 9]>
@@ -174,7 +188,7 @@
                      <div class="section__title-wrapper mb-50">
                         <h2 class="section__title">美好的时光 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;都藏在照片里</h2>
                         <p>Here are the pictures.</p>
-                        <p><font color="red">功能正在进一步完善中，部分链接可能无法正常访问</font></p>
+                        <p><span style="color:red">功能正在进一步完善中，部分链接可能无法正常访问</span></p>
 
                      </div>
                   </div>
@@ -225,7 +239,7 @@
                         <div class="trending__thumb mr-25">
                            <div class="trending__thumb-inner fix">
                               <a href="photos/photos_同学和老师.html" target="_blank">
-                              <img src="assets/img/photos/txls.png" alt="">
+                              <img src="assets/img/photos/txls_hd.jpg" alt="" class="photo-cover">
                               </a>
                            </div>
                         </div>
@@ -244,8 +258,8 @@
                      <div class="trending__item trending__item-2 d-sm-flex align-items-center transition-3 mb-30 wow fadeInUp" data-wow-delay=".3s">
                         <div class="trending__thumb mr-25">
                            <div class="trending__thumb-inner fix">
-                              <a href="photos/photos_学校留影.html" target="_blank">
-                              <img src="assets/img/photos/xx.png" alt="">
+                              <a href="photos/photos_学校留影.html" target="_blank" class="photo-cover">
+                              <img src="assets/img/photos/xx_hd.jpg" alt="" class="photo-cover">
                               </a>
                            </div>
                         </div>
@@ -265,8 +279,8 @@
                      <div class="trending__item trending__item-2 d-sm-flex align-items-center transition-3 mb-30 wow fadeInUp" data-wow-delay=".3s">
                         <div class="trending__thumb mr-25">
                            <div class="trending__thumb-inner fix">
-                              <a href="photos/photos_手机壁纸.html" target="_blank">
-                              <img src="assets/img/photos/sjbz.png" alt="">
+                              <a href="photos/photos_手机壁纸.html" target="_blank" class="photo-cover">
+                              <img src="assets/img/photos/sjbz_hd.jpg" alt="">
                               </a>
                            </div>
                         </div>
@@ -287,7 +301,7 @@
                         <div class="trending__thumb mr-25">
                            <div class="trending__thumb-inner fix">
                               <a href="photos/photos_电脑壁纸.html" target="_blank">
-                              <img src="assets/img/photos/dnbz.png" alt="">
+                              <img src="assets/img/photos/dnbz_hd.jpg" alt="" class="photo-cover">
                               </a>
                            </div>
                         </div>
@@ -307,7 +321,7 @@
                         <div class="trending__thumb mr-25">
                            <div class="trending__thumb-inner fix">
                               <a href="photos/photos_inplink.html" target="_blank">
-                              <img src="assets/img/photos/bjnh.png" alt="">
+                              <img src="assets/img/photos/bjnh_hd.jpg" alt="" class="photo-cover">
                               </a>
                            </div>
                         </div>
