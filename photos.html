@@ -31,13 +31,13 @@
       <style>
           @media screen and (max-width: 575px) {
                      .photo-cover {
-                     max-width:102;
+                     min-width: none;
                   }
          }
          /* 设置了浏览器宽度不大于575px时 */
          @media screen and (min-width: 575px) {
             .photo-cover {
-                     min-width: none;
+               max-width:102px;
                   }    
          }
          /* 设置了浏览器宽度不小于575px时 */
@@ -280,7 +280,7 @@
                         <div class="trending__thumb mr-25">
                            <div class="trending__thumb-inner fix">
                               <a href="photos/photos_手机壁纸.html" target="_blank" class="photo-cover">
-                              <img src="assets/img/photos/sjbz_hd.jpg" alt="">
+                              <img src="assets/img/photos/sjbz_hd.jpg" alt="" class="photo-cover">
                               </a>
                            </div>
                         </div>
@@ -343,7 +343,7 @@
                         <div class="trending__thumb mr-25">
                            <div class="trending__thumb-inner fix">
                               <a href="404_building.html" target="_blank">
-                              <img src="assets/img/photos/more.png" alt="" class="photo-cover">
+                              <img src="assets/img/photos/more_hd.jpg" alt="" class="photo-cover" class="photo-cover">
                               </a>
                            </div>
                         </div>
@@ -351,7 +351,7 @@
                            <div class="trending__tag trending__tag-2">
                               <a href="404_building.html" target="_blank">…</a>
                            </div>
-                           <h3 class="trending__title trending__title-2"><a href="404_building.html" target="_blank">敬请期待</a></h3>
+                           <h3 class="trending__title trending__title-2"><a href="#">敬请期待</a></h3>
                            <div class="trending__author">
                               <p>更多相册正在整理</p>
                            </div>
