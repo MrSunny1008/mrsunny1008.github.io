@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="color-scheme" content="light dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <title>MrSunny主页</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="icon" href="png_favicon.png" type=" image/png" />
+    <style></style>
+</head>
+
+<body>
+    <div class='frosted-glass'></div>
+    <div id="content">
+        <div class="search_part"><a class="logo" onclick="window.via.cmd(257);" title="书签"><img
+                    src="https://mrsunny.top/assets/img/index/logo/logo_hd.png"
+                    style="margin-left:auto;margin-right:auto;height:55px"></a>
+            <form onsubmit="return search()" class="search_bar" title="搜索"><button onclick="search()" id="search_submit"
+                    value="" aria-label="网页前进">
+                    <div class="search icon"></div>
+                </button><span><input class="search" onfocus="showButton()" onblur="hideButton()" type="text" value=""
+                        autocomplete="off" id="search_input" title="搜索"></span></form>
+        </div>
+        <div id="bookmark_part">
+            <div id="box_container">
+                <div class="box">
+                    <p class="title" style="background:none"></p>
+                    <div class="overlay"
+                        style="background: url(./icons/color/Baidu.png) no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">Baidu</p><a href="https://www.baidu.com/" title="Baidu" target="_blank"></a>
+                </div>
+                <div class="box">
+                    <p class="title" style="background:none;"></p>
+                    <div class="overlay"
+                        style="background: url('./icons/color/Sougou.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">Sougou</p><a href="https://www.sougou.com/" title="Sougou" target="_blank"></a>
+                </div>
+                <div class="box">
+                    <p class="title" style="background:none;"></p>
+                    <div class="overlay"
+                        style="background: url('./icons/color/Haosou.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">360</p><a href="https://www.so.com/" title="360" target="_blank"></a>
+                </div>
+                <div class="box">
+                    <p class="title" style="background:none;"></p>
+                    <div class="overlay"
+                        style="background: url('./icons/color/Google.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">Google</p><a href="https://www.google.com/"
+                        title="Google" target="_blank"></a>
+                </div>
+                <div class="box">
+                    <p class="title" style="background:none;"></p>
+                    <div class="overlay"
+                        style="background: url('./icons/color/Bing.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">Bing</p><a href="https://www.google.com/"
+                        title="Bing" target="_blank"></a>
+                </div>
+
+                <div class="box">
+                    <p class="title" style="background:none;"></p>
+                    <div class="overlay"
+                        style="background: url('./icons/color/Smss.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">Shenma</p><a href="https://m.sm.cn/"
+                        title="Shenma" target="_blank"></a>
+                </div> 
+                <div class="box">
+                    <p class="title" style="background:none;"></p>
+                    <div class="overlay"
+                        style="background: url('./icons/color/Chinaso.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">Chinaso</p><a href="https://www.chinaso.com/"
+                        title="Chinaso" target="_blank"></a>
+                </div> 
+                <div class="box">
+                    <p class="title" style="background:none;"></p>
+                    <div class="overlay"
+                        style="background: url('./icons/color/Toutiao.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">Toutiao</p><a href="https://www.toutiao.com/?wid=1662804125327"
+                        title="Toutiao" target="_blank"></a>
+                </div> 
+                <div class="box">
+                    <p class="title" style="background:none;"></p>
+                    <div class="overlay"
+                        style="background: url('./icons/color/Fsearch.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">Fsou</p><a href="https://fsoufsou.com/"
+                        title="new" target="_blank"></a>
+                </div> 
+
+                <div class="box">
+                    <p class="title" style="background:none;"></p>
+                    <div class="overlay"
+                        style="background: url('./icons/color/Yahoo.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">Yahoo</p><a href="https://search.yahoo.com/"
+                        title="Yahoo" target="_blank"></a>
+                </div> 
+
+                <div class="box">
+                    <p class="title" style="background:none;"></p>
+                    <div class="overlay"
+                        style="background: url('./icons/color/Yandex.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">Yandex</p><a href="https://yandex.com/"
+                        title="Yandex" target="_blank"></a>
+                </div> 
+                <div class="box">
+                    <p class="title" style="background:none;"></p>
+                    <div class="overlay"
+                        style="background: url('./icons/color/Duckduckgo.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">Duck</p><a href="https://duckduckgo.com/"
+                        title="Duck" target="_blank"></a>
+                </div> 
+                <div class="box">
+                    <p class="title" style="background:none;"></p>
+                    <div class="overlay"
+                        style="background: url('./icons/color/.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url"> </p><a href="https://www..com/"
+                        title="new" target="_blank"></a>
+                </div> 
+
+
+                <!-- 
+                <div class="box">
+                    <p class="title" style="background:none;"></p>
+                    <div class="overlay"
+                        style="background: url('./icons/color/.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url"> </p><a href="https://www..com/"
+                        title="new" target="_blank"></a>
+                </div> 
+            -->
+
+
+
+
+
+
+            </div>
+        </div>
+        <script
+            type="text/javascript">function showButton() { document.getElementById("search_submit").style.display = "block" } function hideButton() { var a = document.getElementById("search_input").value; "" == a && (document.getElementById("search_submit").style.display = "none") } function search() { var a = document.getElementById("search_input").value; return "" != a && (window.via.searchText(a), document.getElementById("search_input").value = ""), !1 }</script>
+        <script charset="gbk" src="opensug.js"></script>
+        <script
+            type="text/javascript">function show(str) { var searchbox = document.getElementById("search_input"); searchbox.innerHTML = str; searchbox.blur(); search(); } var params = { "XOffset": 0, "YOffset": 0, "fontColor": "#666666", "fontColorHI": "#FFF", "fontSize": "14px", "borderColor": "#eee", "bgcolorHI": "#7B90E3", "sugSubmit": false }; BaiduSuggestion.bind("search_input", params, show); </script>
+    </div>
+</body>
+
+</html>
