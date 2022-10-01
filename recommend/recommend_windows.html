@@ -562,7 +562,15 @@
                      <div class="row">
                         <div class="col-xxl-6 col-xl-6 col-md-6">
                            <div class="footer__copyright footer__copyright-2 wow fadeInUp" data-wow-delay=".5s">
-                              <p> Copyright.&copy;&nbsp; 2021-2022&nbsp;&nbsp;Mr.Sunny.&nbsp;</a></p>
+                              <p> Copyright.&copy;&nbsp; 2021
+                                 <span id="show_time"><script>  
+                                    setInterval("fun(show_time)",1);
+                                    function fun(timeID){ 
+                                    var date = new Date();
+                                    var y = date.getFullYear();
+                                    document.getElementById(timeID.id).innerHTML = "-"+ y;
+                                      }
+                                    </script></span>&nbsp;&nbsp;Mr.Sunny.&nbsp;</a></p>
                            </div>
                         </div>
                         <div class="col-xxl-6 col-xl-6 col-md-6">
