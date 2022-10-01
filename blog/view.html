@@ -190,7 +190,15 @@
                     </p>
                 <hr color="#d5d5dd" size=1px>
                 <p style="color:#797979 ;">
-                    Copyright.©  2021-2022  Mr.Sunny. 
+                    Copyright.©  2021
+                                 <span id="show_time"><script>  
+                                    setInterval("fun(show_time)",1);
+                                    function fun(timeID){ 
+                                    var date = new Date();
+                                    var y = date.getFullYear();
+                                    document.getElementById(timeID.id).innerHTML = "-"+ y;
+                                      }
+                                    </script></span>  Mr.Sunny. 
                 </p>
                 <br>
             </div>
