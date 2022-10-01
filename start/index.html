@@ -129,7 +129,7 @@
                      <div class="header__action d-flex align-items-center justify-content-end">
                         <div class="header__login header__login-2 d-none d-sm-block"> </div>
                         <div class="header__btn d-none d-xl-block">
-                           <a href="../app-download.html" class="m-btn m-btn-2" target="_blank">下载应用</a>
+                           <a href="../app-download.html" class="m-btn m-btn-2" target="_self">下载应用</a>
                         </div>
                         <div class="sidebar__menu d-lg-none">
                            <div class="sidebar-toggle-btn" id="sidebar-toggle">
@@ -470,7 +470,15 @@
                      <div class="row">
                         <div class="col-xxl-6 col-xl-6 col-md-6">
                            <div class="footer__copyright footer__copyright-2 wow fadeInUp" data-wow-delay=".5s">
-                              <p> Copyright.&copy;&nbsp; 2021-2022&nbsp;&nbsp;Mr.Sunny.&nbsp;</a></p>
+                              <p> Copyright.&copy;&nbsp; 2021
+                                 <span id="show_time"><script>  
+                                    setInterval("fun(show_time)",1);
+                                    function fun(timeID){ 
+                                    var date = new Date();
+                                    var y = date.getFullYear();
+                                    document.getElementById(timeID.id).innerHTML = "-"+ y;
+                                      }
+                                    </script></span>&nbsp;&nbsp;Mr.Sunny.&nbsp;</a></p>
                            </div>
                         </div>
                         <div class="col-xxl-6 col-xl-6 col-md-6">

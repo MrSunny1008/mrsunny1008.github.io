@@ -2248,7 +2248,15 @@
                         <a target="_blank" href="##">投诉建议</a> |
                         <a target="_blank" href="##">网站统计</a> |
                         <a target="_blank" href="##">手机版</a> | -->
-                        <span class="rights">Copyright © 2020-2022 MrSunny.top All Rights Reserved.</span>
+                        <span class="rights">Copyright © 2020
+                            <span id="show_time"><script>  
+                               setInterval("fun(show_time)",1);
+                               function fun(timeID){ 
+                               var date = new Date();
+                               var y = date.getFullYear();
+                               document.getElementById(timeID.id).innerHTML = "-"+ y;
+                                 }
+                               </script></span> MrSunny.top All Rights Reserved.</span>
                         <!-- <a href="https://www.miibeian.gov.cn/" rel="noreferrer" class="icp"
                             target="_blank">京ICP证080047号</a>
                         <a href="https://www.bjgaj.gov.cn/web/" class="icp" target="_blank">京公网安备110000000006号</a> -->
