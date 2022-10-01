@@ -17,11 +17,20 @@
     </style>
 </head>
 <body>
+    <!-- <script type="text/javascript">
+        var wrong = document.getElementById('btn');
+        wrong.onclick = function() { 
+        window.history.go(-1);//返回上一页
+        window.history.back(-1);//返回上一页
+       }
+    </script> -->
     <div style="margin:0;border:0;padding:0;width:100%">
         <div style="background-color: #ebebef67;margin:0;border:0;width: 100%;
         height: 150px;font-size: 15px;">
             <div style="margin-right: 10px;margin-left: 10px;">
-                <!-- <a href="index.html"><img src="assets/img/index/back.png" style="height: 20px;margin-top: 13px;margin-left: 5px;"></a> -->
+                <!-- <a href=”#” onClick="JavaScript :history.Go(-1);"><div id="btn"><img src="assets/img/index/back.png" style="height: 20px;margin-top: 13px;margin-left: 5px;"></div></a> -->
+                <a href="javascript:history.back(-1)"><img src="assets/img/index/back.png" style="height: 20px;margin-top: 13px;margin-left: 5px;"></a>
+                <a href="index.html" style="float: right;"><img src="assets/img/index/home.png" style="height: 20px;margin-top: 13px;margin-left: 5px;"></a>
             <br><table>
                 <tr>
                     <td>

@@ -2,6 +2,16 @@ User-agent: *
 Disallow: 
 Disallow: /assets/
 Disallow: /old-website/
+Disallow: /anti-selfish-browser
+Disallow: /404_none.html
+Disallow: /404_building.html
+Disallow: /404.html
+Disallow: /blog-LastCard.html
+Disallow: /blog/index-FB.html
+Disallow: /blog/index-POIZON.html
+Disallow: /blog/index-wiki.html
+Disallow: /blog/view.html
+Disallow: /blog/view-pvz2.html
 Disallow: /recommend/Android-fluent/
 Sitemap: https://mrsunny.top/sitemap.xml
 Sitemap: https://mrsunny.top/sitemap.txt
