@@ -154,8 +154,8 @@ else if(lang == 'haw'){window.location.href="/anti-selfish-browser/html/haw/plea
      }
  }
 if(selfishBrowserDetected){if(langtwo == 'zh'){
-	layer.confirm('您现在使用浏览器的是一个自私的流氓，它可能会弹出满天飞的广告，偷偷上传你的隐私信息如通讯录、聊天记录和照片（包括身份证和银行卡），捆绑安装垃圾软件，通过恶意拦截来阻止你访问它不喜欢网页。如果您执意使用这个 '+your_browser+' 浏览器访问，请点击右上角的"X"。', {
-		title:"您的浏览器是一个流氓浏览器！！",
+	layer.confirm('检测到您现在使用浏览器的是'+your_browser+'，它可能会弹出大量的广告，存在偷偷上传你的隐私信息如通讯录、聊天记录和照片，捆绑安装垃圾软件的风险，并通过恶意拦截来阻止你访问对它不利网页。如果您执意使用'+your_browser+'浏览器访问，请关闭弹窗。该弹窗仅出现在首页，我们只是告知可能存在的潜在风险，并充分尊重你选择的权利。', {
+		title:"建议您更换浏览器后访问！",
   btn: ['查看建议','了解更多'] ,//按钮
   shade: 1
 }, function(){
@@ -165,8 +165,8 @@ if(selfishBrowserDetected){if(langtwo == 'zh'){
 })
 }
 else{
-	layer.confirm('The browser you are using is a selfish rogue that may pop up ads all over the place, upload your private photos like ID card secretly, bundle and install junk software, and block your access to pages it does not like by malicious blocking. If you insist on using this '+your_browser+' browser to visit, please click the "X" in the upper right corner.', {
-		title:"Your browser is a rogue!!!!",
+	layer.confirm('The browser you are using is a selfish rogue that may pop up ads all over the place, upload your private photos like ID card secretly, bundle and install junk software, and block your access to pages it does not like by malicious blocking. If you insist on using this '+your_browser+' browser to visit, please click the "X" in the upper right corner.This pop-up window only appears on the home page. We only inform you of potential risks and fully respect your right to choose.', {
+		title:"You'd better to change your browser!",
   btn: ['Advice','More'] ,//btn
   shade: 1
 }, function(){
