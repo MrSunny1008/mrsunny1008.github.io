@@ -6,7 +6,7 @@ Disallow: /anti-selfish-browser
 Disallow: /404_none.html
 Disallow: /404_building.html
 Disallow: /404.html
-Disallow: /#test.html
+Disallow: /test.html
 Disallow: /blog-LastCard.html
 Disallow: /blog/index-FB.html
 Disallow: /blog/index-POIZON.html
