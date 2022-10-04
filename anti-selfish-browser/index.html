@@ -59,6 +59,98 @@
 				border: 1px solid #eee;
 			}
 
+			.browser {
+    display: block;
+    width: 155px;
+    height: 34px;
+    line-height: 22px;
+    float: left;
+    list-style: none
+}
+
+.browser.clearleft {
+    height: 1px
+}
+
+.browser a {
+    text-decoration: none;
+    color: #0072c6
+}
+
+.browser a:hover {
+    text-decoration: none;
+    color: #004d8c
+}
+.browser span {
+    display: block;
+    font-size: 12px;
+    line-height: 1.2
+}
+
+.browser img {
+    width: 34px;
+    height: 34px;
+    border: 0;
+    float: left;
+    margin-right: 10px
+}
+
+.browser.firefox {
+    width: 150px
+}
+
+.browser.edge {
+    width: 150px
+}
+
+.browser.ie2345 {
+    width: 170px
+}
+
+.browser.se360 {
+    width: 160px
+}
+
+.browser.qqbrowser {
+    width: 140px
+}
+
+.targetline {
+    word-break: break-all
+}
+.page {
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left
+}
+@media only screen and (max-width:959px) {
+    .page {
+        max-width: 100%;
+        padding: 20px;
+        font-size: 16px;
+        line-height: 1.5
+    }
+
+
+    .browser-list {
+        height: auto
+    }
+
+    .browser {
+        margin: 0 20px 20px 0
+    }
+}
+h2 {
+    line-height: 25px;
+    margin: 10px 0
+}
+
+ul li {
+    list-style-type: disc;
+    list-style-position: inside
+}
+
 		</style>
 	</head>
 	<body>
@@ -89,7 +181,7 @@
 
 			
 		<div class="wrapper">
-			<div class="container">
+			<div class="container" style="padding-left: 10px;padding-right:10px;">
 				<div class="module">
 					<script>
 						var info = new Browser();
@@ -168,14 +260,22 @@
 					<script>
 						document.writeln(`
 							<div class="code">
-								<p>屏幕分辨率的宽：${window.screen.width}</p>
-								<p>屏幕分辨率的高：${window.screen.height}</p>
-								<p>屏幕工作区的宽：${window.screen.availWidth}</p>
-								<p>屏幕工作区的高：${window.screen.availHeight}</p>
-								<p>网页可见区域宽：${document.documentElement.clientWidth}</p>
-								<p>网页可见区域高：${document.documentElement.clientHeight}</p>
-								<p>网页横向滚动宽：${document.documentElement.scrollLeft}</p>
-								<p>网页纵向滚动高：${document.documentElement.scrollTop}</p>
+								<p>#屏幕分辨率的宽：${window.screen.width}</p>
+								<p style="color:#9c9c9c;">window.screen.width：${window.screen.width}</p>
+								<p>#屏幕分辨率的高：${window.screen.height}</p>
+								<p style="color:#9c9c9c;">window.screen.height：${window.screen.height}</p>
+								<p>#屏幕工作区的宽：${window.screen.availWidth}</p>
+								<p style="color:#9c9c9c;">window.screen.availWidth：${window.screen.availWidth}</p>
+								<p>#屏幕工作区的高：${window.screen.availHeight}</p>
+								<p style="color:#9c9c9c;">window.screen.availHeight：${window.screen.availHeight}</p>
+								<p>#网页可见区域宽：${document.documentElement.clientWidth}</p>
+								<p style="color:#9c9c9c;">clientWidth：${document.documentElement.clientWidth}</p>
+								<p>#网页可见区域高：${document.documentElement.clientHeight}</p>
+								<p style="color:#9c9c9c;">clientHeight：${document.documentElement.clientHeight}</p>
+								<p>#网页横向滚动宽：${document.documentElement.scrollLeft}</p>
+								<p style="color:#9c9c9c;">scrollLeft：${document.documentElement.scrollLeft}</p>
+								<p>·网页纵向滚动高：${document.documentElement.scrollTop}</p>
+								<p style="color:#9c9c9c;">scrollTop：${document.documentElement.scrollTop}</p>
 							</div>
 						`);
 					</script>
@@ -200,17 +300,49 @@
 	    </script>
 
 
-
-
+<!-- <div class="page" style="padding: 10px;">
+	<h2>更先进的浏览器</h2>
+	<p style="padding-bottom: 5px;padding-right: 18px;padding-left: 10px;">安装、使用一个新的浏览器并没有您想象中的那样困难，通常不会浪费您很长的时间，但却可以保护您，使您免遭自私的浏览器的侵害，提升您的使用体验。</p>
+	<p style="padding-bottom: 5px;padding-right: 18px;padding-left: 10px;" class=targetline>推荐使用以下浏览器的最新版本，点击进入官方下载页面。如果您的电脑已安装以下浏览器的最新版本，直接使用该浏览器访问即可。</p>
+	<p style="padding-bottom: 5px;padding-right: 18px;padding-left: 10px;">另外，以下部分浏览器，如 Mozilla Firefox ，有中国内地特供版。建议下载台湾版浏览器，然后再改为您所使用语言。请注意鉴别，不建议在中国内地的软件分发平台下载。</p>
+	<div style="padding-bottom: 5px;padding-right: 18px;padding-left: 10px;">
+	<ul id=browser-list style="margin:16px 0 10px;padding:0;height:42px;height:auto;">
+	
+	<li class="browser chrome">
+	<a target="_blank" rel="noopener" href="https://www.google.cn/chrome/" id=browser-chrome-link><img src="./icon/chrome.png" width=34 height=34 alt=谷歌浏览器>谷歌浏览器 <span id=browser-chrome-badge>Google Chrome</span></a>
+	</li>
+	<li class="browser edge">
+	<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-tw/edge" id=browser-edge-link><img src="./icon/edge.png" width=34 height=34 alt=微软浏览器>微软浏览器<span id=browser-edge-badge>Microsoft Edge</span></a>
+	</li>
+	<li class="browser firefox">
+	<a target="_blank" rel="noopener" href="https://www.mozilla.org/zh-tw" id=browser-firefox-link><img src="./icon/firefox.png" width=34 height=34 alt=火狐浏览器>火狐浏览器<span id=browser-firefox-badge>Mozilla Firefox</span></a>
+	</li>
+	<li class="browser brave">
+	<a target="_blank" rel="noopener" href="https://brave.com/zh/" id=browser-brave-link><img src="./icon/brave.png" width=34 height=34 alt=brave 浏览器>Brave 浏览器 <span id=browser-brave-badge>Brave</span></a>
+	</li>
+	<li class="browser vivaldi">
+	<a target="_blank" rel="noopener" href="https://vivaldi.com/zh-hant/" id=browser-vivaldi-link><img src="./icon/vivaldi.png" width=34 height=34 alt=Vivaldi 浏览器>Vivaldi 浏览器 <span id=browser-vivaldi-badge>Vivaldi</span></a>
+	</li>
+	</ul>
+	
+	</div>
+	
+	
+</div> -->
 
 <div style="margin-left: auto;margin-right: auto; text-align: center;padding-top: 20px;">
-<a href="./html/zh-Hans/please-do-not-use-selfish-browsers.html"  target="_blank">请勿使用自私的浏览器</a>
-&nbsp;&nbsp;&nbsp;<a href="./html/zh-Hans/please-upgrade-your-browser.html"  target="_blank">请勿使用Internet Explorer</a>
+<a href="./html/zh-Hans/please-do-not-use-selfish-browsers.html"  target="_blank" style="color: #9393938c;">请勿使用自私的浏览器</a>
+<br><a href="./html/zh-Hans/please-do-not-use-selfish-browsers.html"  target="_blank" style="color: #9393938c;">please-do-not-use-selfish-browsers</a>
+
+<br><a href="./html/zh-Hans/please-upgrade-your-browser.html"  target="_blank" style="color: #9393938c;">请勿使用Internet Explorer</a>
+<br><a href="./html/zh-Hans/please-upgrade-your-browser.html"  target="_blank" style="color: #9393938c;">please-do-not-use-the-Internet-Explorer</a>
+<!-- <br>
+<br>如果您是前端开发人员或网站所有者，且相信开放互联网值得被捍卫，欢迎您加入淘汰 自私的浏览器 的行动。<a href='https://github.com/cjh0613/anti-selfish-browser' target="_blank" rel="noopener noreferrer">详情</a> -->
 </div>
 
 <div style="background-color: #ebebef;width: 100%;margin-top: 40px;">
-	<div style="width:960px;margin:0 auto;padding:10px;text-align:left">
-	<div style="margin-left: 3%;margin-right: 3%;">
+	<div class="page">
+	<div style="padding-left: 1.5%;padding-right: 3%;">
 	<br>
 	<a href="https://mrsunny.top" target="_blank">
 	<img src="https://mrsunny.top/assets/img/index/logo/logo.png">
