@@ -391,9 +391,9 @@ p {
   line-height: 40px;
   font-size: 14px;
   font-weight: 700;
-  border: 2px solid #e7e6ef;
-  color: #5f3afc;
-  background: transparent;
+  border: 2px solid #5f3afc;
+  color: #ffffff;
+  background: #5f3afc;
 }
 .m-btn-border:hover {
   color: #ffffff;
