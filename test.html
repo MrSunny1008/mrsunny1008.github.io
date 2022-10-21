@@ -23,7 +23,7 @@
       <link rel="stylesheet" href="assets/css/default.css">
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="icon" href="png_favicon.png" type=" image/png" />
-
+      <link rel="stylesheet" href="assets/css/extra-css.css">
       
       <!-- IE浏览器选项 -->    
 
@@ -33,10 +33,120 @@
       <script src="/anti-selfish-browser/anti-selfish-browser.js"></script>
 
 
-
+<style>
+   .colorful-title {
+      --theme-blue: #1a59c8;
+    --theme-blue-darker: #14459b;
+    --theme-blue-lighter: #3172e4;
+    --theme-purple: #6a0dd4;
+    --theme-purple-darker: #520aa4;
+    --theme-purple-lighter: #8323f1;
+    --theme-green: #0ad88f;
+    --theme-green-darker: #08a76f;
+    --theme-green-lighter: #20f5a9;
+    --theme-teal: #00a5b2;
+    --theme-teal-darker: #00767f;
+    --theme-teal-lighter: #00d4e5;
+    --theme-bg: #fff;
+    --theme-fg: #1a1a1a;
+    --theme-bg-alpha: hsla(0,0%,100%,0.75);
+    --theme-fg-50: rgba(26,26,26,0.5);
+    --theme-em-gradient: linear-gradient(90deg,#7209d4,#2832d4 33%,#00a5b2);
+    --theme-fg-link: #1a59c8;
+    --theme-fg-link-hover: #6a0dd4;
+    --theme-fg-link-active: #14459b;
+    --theme-fg-link-alpha: rgba(26,89,200,0.33);
+    --theme-button-bg: #1a1a1a;
+    --theme-button-bg-hover: #14459b;
+    --theme-button-bg-active: #000;
+    --theme-button-fg: #fff;
+    --theme-new-bg: #fec846;
+    --theme-new-fg: #000;
+   }
+</style>
 
    </head>
    <body>
+<script>
+
+var res = `
+BBBBBBBBBBBBBBBBBBBBBBBBBBB
+BMB---------------------B B
+BBB---------------------BBB
+BBB---------------------BBB
+BBB---------------------BBB
+BBB---------------------BBB
+BBB---------------------BBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBB++++++++++++++++BBBBBB
+BBBBB++BBBBB+++++++++BBBBBB
+BBBBB++BBBBB+++++++++BBBBBB
+BBBBB++BBBBB+++++++++BBBBBB
+BBBBB++++++++++++++++BBBBBB
+
+┣━┒ ┣─┒ ┣━┒
+┟━┃ ┍╄┓ ┟━│ ╃━
+┝─┃ ┣╈┤ ┣━┃ / ╈
+┗━┘ ┗┸┛ └━┛/┃┻-..
+╂─┸─╂┎──
+┃ ┎┒ ┃┠─┒
+╂ ┃┃ ╂╂─┚
+┚ ┚┖ ┚┖──────
+
+
+
+  ▅▅▅▅▅▅▅　　　▅▅▅▅▅　　　▅
+　　 ▅▅█▅▅　　　　█　▅　█　　　　█
+　　 █▅█▅ █　　　   █　█　█　　　　█
+　 ▅█▅█▅ █▅　　　◢ ◤▋　▅　　▼
+　　 █　　▅█　　　██◤　 ███　　　 ●
+
+
+`
+
+/* 样式代码 */
+var styleTitle1 = `
+font-size: 20px;
+font-weight: 700;
+color: rgb(95, 58, 252);
+`
+var styleTitle2 = `
+font-style: oblique;
+font-size:14px;
+color: rgb(95, 58, 252);
+font-weight: 400;
+`
+var styleContent = `
+color: auto;
+`
+   
+/* 内容代码 */
+var title1 = '🌒 恭喜你看到这里'
+var title2 = 'Congratulations on seeing here'
+var content = `
+画家的洒脱：
+远离资本家和疯癫的政客，
+带着鲜花和无数的腿
+向宇宙深处奔跑。
+
+昨天跨过了今天，
+带走了明天和我的今天，
+今天把我变成明天的样子。
+当我醒来，
+惊讶地发现，
+我就是我。
+明天的你，
+还是你吗？
+
+🏠网站:  https://mrsunny.top/
+📫邮箱:  qiusen1008@foxmail.com（欢迎打扰）
+
+`
+console.log(`%c${res} %c${title1} %c${title2}
+%c${content}`, styleContent, styleTitle1, styleTitle2, styleContent)
+
+</script>
+         
       <!--[if lte IE 9]>
       <p class="browserupgrade">你的浏览器<strong>版本过低</strong>！请 <a href="https://browsehappy.com/">升级你的浏览器</a> 后再访问网站。</p>
       <![endif]-->
@@ -115,9 +225,16 @@
                         </nav>
                      </div>
                   </div>
+
                   <div class="col-xxl-3 col-xl-3 col-lg-2 col-md-8 col-6">
                      <div class="header__action d-flex align-items-center justify-content-end">
-                        <div class="header__login header__login-2 d-none d-sm-block"> </div>
+                        <div class="header__login header__login-2 d-none d-sm-block">
+                           <a href="sign-in.html">◯ 深色模式</a>
+
+
+
+
+                        </div>
                         <div class="header__btn d-none d-xl-block">
                            <a href="app-download.html" class="m-btn m-btn-2" target="_self">下载应用</a>
                         </div>
@@ -375,7 +492,24 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
                            <div class="footer__widget-content">
                               <div class="footer__subscribe">
                                  <p>声明：本网站不具有任何商业用途，部分素材来源于网络。如果侵犯了你的权益，请联系删除。</p>
-                                 
+                                 <!-- <div class="footer__subscribe-input">
+                                    <form action="#">
+                                       <input type="email" placeholder="Email">
+                                       <button type="submit" class="m-btn">Subscribe!</button>
+                                    </form>
+                                 </div> -->
+
+                                 <div class="footer__widget-content">
+                                    <div class="footer__social mb-30">
+                                       <h4>Follow our Socials</h4>
+                                       <ul>
+                                          <li><a href="#" class="fb"><i class="fab fa-facebook-f"></i></a></li>
+                                          <li><a href="#" class="tw"><i class="fab fa-twitter"></i></a></li>
+                                          <li><a href="#" class="pin"><i class="fab fa-pinterest-p"></i></a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+
                               </div>
                            </div>
                         </div>
@@ -402,7 +536,11 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
                         </div>
                         <div class="col-xxl-6 col-xl-6 col-md-6">
                            <div class="footer__bottom-link footer__bottom-link-2 wow fadeInUp text-md-end" data-wow-delay=".8s">
-                              
+                              <ul>
+                                 <li><a href="#">Licence</a></li>
+                                 <li><a href="#">Privacy Policy </a></li>
+                                 <li><a href="#">Affiliate Notice</a></li>
+                              </ul>
                            </div>
                         </div>
                      </div>
