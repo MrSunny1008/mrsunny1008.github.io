@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="color-scheme" content="light dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <link rel="icon" href="/png_favicon.png" type=" image/png" />
+    <title>MrSunny浏览器主页</title>
+    <link rel="stylesheet" href="./homepage.css">
+    <style></style>
+</head>
+
+<body>
+    <div class='frosted-glass'></div>
+    <div id="content">
+        <div class="search_part"><a class="logo" onclick="window.via.cmd(257);" title="书签"><img
+                    src="https://mrsunny.top/start/logo-auto_top.png"
+                    style="margin-left:auto;margin-right:auto;height:45px"></a>
+            <form onsubmit="return search()" class="search_bar" title="搜索"><button onclick="search()" id="search_submit"
+                    value="" aria-label="网页前进">
+                    <div class="search icon"></div>
+                </button><span><input class="search" onfocus="showButton()" onblur="hideButton()" type="text" value=""
+                        autocomplete="off" id="search_input" title="搜索"></span></form>
+        </div>
+        <div id="bookmark_part">
+            <div id="box_container">
+                <div class="box">
+                    <p class="title" style="background:#82a2a100;">捷</p>
+                    <div class="overlay"
+                        style="background: url('../icons/quark/home_link.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">捷径</p><a href="https://h5.mse.360.cn/newnavi.html#/home" title="捷径" target="_blank"></a>
+                </div>
+                <div class="box">
+                    <p class="title" style="background:#cfb36000;">荐</p>
+                    <div class="overlay"
+                        style="background: url('../icons/quark/home_recommend.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">推荐</p><a href="https://mrsunny.top/start/start-light.html" title="推荐" target="_blank"></a>
+                </div>
+                <div class="box">
+                    <p class="title" style="background:#99986800;">收</p>
+                    <div class="overlay"
+                        style="background: url('../icons/quark/home_started.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">书签</p><a href="#" target="_blank" title="书签"></a>
+                </div>
+                <div class="box">
+                    <p class="title" style="background:#7bca9100;">学</p>
+                    <div class="overlay"
+                        style="background: url('../icons/quark/home_study.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">学习</p><a href="https://www.zxx.edu.cn/"
+                        title="学习" target="_blank"></a>
+                </div>
+                <div class="box">
+                    <p class="title" style="background:#a2ac9d00;">译</p>
+                    <div class="overlay"
+                        style="background: url('../icons/quark/home_translate.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">翻译</p><a href="https://fanyi.baidu.com/"
+                        title="翻译" target="_blank"></a>
+                </div>
+                <div class="box">
+                    <p class="title" style="background:#d3a96900;">文</p>
+                    <div class="overlay"
+                        style="background: url('../icons/quark/home_doc.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">文库</p><a href="https://wenku.baidu.com/"  target="_blank" title="文库"></a>
+                </div>
+                <div class="box">
+                    <p class="title" style="background:#67ca8100;">学</p>
+                    <div class="overlay"
+                        style="background: url('../icons/quark/home_scholar.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">学术</p><a href="https://xueshu.baidu.com/" title="学术" target="_blank"></a>
+                </div>
+                <div class="box">
+                    <p class="title" style="background:#67ca8100;">工</p>
+                    <div class="overlay"
+                        style="background: url('../icons/quark/home_tools.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">工具</p><a href="https://tool.lu/" title="工具" target="_blank"></a>
+                </div>
+                <div class="box">
+                    <p class="title" style="background:#67ca8100;">绩</p>
+                    <div class="overlay"
+                        style="background: url('../icons/quark/home_grade.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">成绩</p><a href="https://www.haofenshu.com/" title="成绩" target="_blank"></a>
+                </div>
+                <div class="box">
+                    <p class="title" style="background:#67ca8100;">热</p>
+                    <div class="overlay"
+                        style="background: url('../icons/quark/home_ribao.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">热榜</p><a href="https://h5.mse.360.cn/24thresou.html#/
+                    " title="热榜" target="_blank"></a>
+                </div>
+                <div class="box">
+                    <p class="title" style="background:#67ca8100;">盘</p>
+                    <div class="overlay"
+                        style="background: url('../icons/quark/home_cloud.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">网盘</p><a href="https://www.aliyundrive.com/drive" title="网盘" target="_blank"></a>
+                </div>
+                <div class="box">
+                    <p class="title" style="background:#67ca8100;">实</p>
+                    <div class="overlay"
+                        style="background: url('../icons/quark/home_lab.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">实验</p><a href="https://mrsunny.top/404" title="实验" target="_blank"></a>
+                </div>
+
+
+            </div>
+        </div>
+        <script
+            type="text/javascript">function showButton() { document.getElementById("search_submit").style.display = "block" } function hideButton() { var a = document.getElementById("search_input").value; "" == a && (document.getElementById("search_submit").style.display = "none") } function search() { var a = document.getElementById("search_input").value; return "" != a && (window.via.searchText(a), document.getElementById("search_input").value = ""), !1 }</script>
+        <script charset="gbk" src="./opensug.js"></script>
+        <script
+            type="text/javascript">function show(str) { var searchbox = document.getElementById("search_input"); searchbox.innerHTML = str; searchbox.blur(); search(); } var params = { "XOffset": 0, "YOffset": 0, "fontColor": "#666666", "fontColorHI": "#FFF", "fontSize": "14px", "borderColor": "#eee", "bgcolorHI": "#7B90E3", "sugSubmit": false }; BaiduSuggestion.bind("search_input", params, show); </script>
+    </div>
+</body>
+
+</html>
