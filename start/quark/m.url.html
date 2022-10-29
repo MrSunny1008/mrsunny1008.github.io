@@ -19,13 +19,67 @@
             font-size: 28px;
             float: left;
 line-height: 30px;        }
+.header-card{
+    background-color: #fbfbfcf9;
+    -webkit-box-shadow: 0px 3px 10px rgba(194, 194, 194, 0.502);
+    -moz-box-shadow: 0px 3px 10px rgba(194, 194, 194, 0.502);
+    box-shadow: 0px 3px 10px rgba(194, 194, 194, 0.502);
+    margin:0;border:0;
+    padding: 0px 18px 0px 19px;
+    position: fixed;
+    width: 100%;
+    max-width: 600px;
+    z-index: 30;
+}
+
+.header-content {
+    margin-left: 0;
+    height: 60PX;
+}
+.warning {
+    background-color: #fcf8e3;
+    border-color: #c09853;
+    color: #c09853;
+   width: 100%;
+   padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 3px 10px rgba(194, 194, 194, 0.502);
+    -moz-box-shadow: 0px 3px 10px rgba(194, 194, 194, 0.502);
+    box-shadow: 0px 3px 10px rgba(194, 194, 194, 0.502);
+
+}
     </style>
 </head>
 
 <body>
     <div class='frosted-glass'></div>
 
-    <div id="content" style="top:0px;">
+    <!--这是网页顶栏header-->
+    <header>
+        <div class="header-card">
+            <div class="header-content">
+                <div style="padding-top: 20px;margin-bottom:20px;max-width: 300px;padding-left: 25px;min-height: 30px;">
+                    <a href="#" target="_self" ><div style="float: left;font-size: 17px;background-image: url(./ico-on.gif); background-position: center bottom;background-size: 18px auto;background-repeat: no-repeat;padding-bottom: 5px;color: #000;"><b>捷径</b></div></a>
+                    <a href="#" target="_self" ><div style="float: left;margin-left: 28px;font-size: 17px;color: #919191;">网址导航</div></a>
+                </div>
+
+
+                <div class="warning">
+                    <p>
+                        该功能正在开发中
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </header>
+    <!--网页顶栏header结束-->
+
+    <div id="content" style="top:80px;">
         <!-- <div class="search_part"><a class="logo" onclick="window.via.cmd(257);" title="书签"><img
                     src="https://mrsunny.top/start/logo-auto_top.png"
                     style="margin-left:auto;margin-right:auto;height:45px"></a>
@@ -35,10 +89,10 @@ line-height: 30px;        }
                 </button><span><input class="search" onfocus="showButton()" onblur="hideButton()" type="text" value=""
                         autocomplete="off" id="search_input" title="搜索"></span></form>
         </div> -->
-        <div style="padding-top: 20px;margin-bottom:20px;max-width: 300px;padding-left: 25px;min-height: 30px;">
+        <!-- <div style="padding-top: 20px;margin-bottom:20px;max-width: 300px;padding-left: 25px;min-height: 30px;">
             <a href="#" target="_self" ><div style="float: left;font-size: 17px;background-image: url(./ico-on.gif); background-position: center bottom;background-size: 18px auto;background-repeat: no-repeat;padding-bottom: 5px;color: #000;"><b>捷径</b></div></a>
             <a href="#" target="_self" ><div style="float: left;margin-left: 28px;font-size: 17px;color: #919191;">网址导航</div></a>
-        </div>
+        </div> -->
         <div id="bookmark_part">
             <h1 class="title-diy"><span>▮</span>搜索引擎</h1>
             <div id="box_container">
