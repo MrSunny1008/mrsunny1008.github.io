@@ -11,14 +11,16 @@
     <style>
         .title-diy {
             text-align: left;
-            font-size: 24px;
+            font-size: 20px;
             padding: 10px 0px 10px 15px;
             max-width: 300px;
         }
         .title-diy span {
-            font-size: 28px;
+            font-size: 20px;
             float: left;
-line-height: 30px;        }
+            line-height: 27px;    
+            color: #2928ff;    
+        }
 .header-card{
     background-color: #fbfbfcf9;
     -webkit-box-shadow: 0px 3px 10px rgba(194, 194, 194, 0.502);
@@ -27,9 +29,21 @@ line-height: 30px;        }
     margin:0;border:0;
     padding: 0px 18px 0px 19px;
     position: fixed;
-    width: 100%;
-    max-width: 600px;
+
     z-index: 30;
+}
+@media screen and (min-width: 600px) {
+    .header-card{
+        width: 100%;
+    max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-card{
+        width: 100%;
+    max-width: 100vw;
+    }
 }
 
 .header-content {
@@ -59,13 +73,14 @@ line-height: 30px;        }
     <header>
         <div class="header-card">
             <div class="header-content">
-                <div style="padding-top: 20px;margin-bottom:20px;max-width: 300px;padding-left: 25px;min-height: 30px;">
+                <div style="padding-top: 20px;margin-bottom:20px;max-width: 600px;padding-left: 25px;min-height: 30px;">
                     <a href="#" target="_self" ><div style="float: left;font-size: 17px;background-image: url(./ico-on.gif); background-position: center bottom;background-size: 18px auto;background-repeat: no-repeat;padding-bottom: 5px;color: #000;"><b>捷径</b></div></a>
                     <a href="#" target="_self" ><div style="float: left;margin-left: 28px;font-size: 17px;color: #919191;">网址导航</div></a>
+                    <a href="./m.start.html" target="_self"><div style="float: right;margin-right: 0px;font-size: 17px;color: #919191;"><img src="./home.png" style="height: 25px;"></div></a>
                 </div>
 
-
-                <div class="warning">
+<p style="max-height: 10px;">&nbsp;</p>
+                <div class="warning" style="margin-top: 0px;">
                     <p>
                         该功能正在开发中
                     </p>
@@ -94,7 +109,9 @@ line-height: 30px;        }
             <a href="#" target="_self" ><div style="float: left;margin-left: 28px;font-size: 17px;color: #919191;">网址导航</div></a>
         </div> -->
         <div id="bookmark_part">
-            <h1 class="title-diy"><span>▮</span>搜索引擎</h1>
+            <div style="min-height: 30px;"></div>
+            <!-- ▮▯▮▊▋▉▍▌▎▐▕┃ -->
+            <h1 class="title-diy"><span>▋</span>搜索引擎</h1>
             <div id="box_container">
 
                 <div class="box">
@@ -177,7 +194,7 @@ line-height: 30px;        }
             </div>
         </div>
         <div id="bookmark_part">
-            <h1 class="title-diy"><span>▮</span>首页</h1>
+            <h1 class="title-diy"><span> ▋</span>首页</h1>
                 <div id="box_container">
                     <div class="box">
                         <p class="title" style="background:#82a2a100;">捷</p>
