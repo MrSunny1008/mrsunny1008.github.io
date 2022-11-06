@@ -1,0 +1,25 @@
+.diy-white {
+color: #1a152e;
+}
+
+.diy-logo {
+    background-image: url(../img/index/logo/logo_hd.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto 100%;
+}
+.diy-logo-white {
+    background-image: url(../img/index/logo/logo-white_hd.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto 100%;
+}
+.diy-qrcode {
+    background-image: url(../img/index/logo/qrcode.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto 100%;
+}
+
+
+
