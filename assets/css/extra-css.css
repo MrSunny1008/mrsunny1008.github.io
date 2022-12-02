@@ -21,5 +21,8 @@ color: #1a152e;
     background-size: auto 100%;
 }
 
-
+html {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+    -webkit-filter: grayscale(100%);
+  }
 
