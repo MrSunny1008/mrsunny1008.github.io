@@ -19,6 +19,28 @@ body {
     text-align: center;
 }
 
+/* 默认模式 */
+.img-logo {
+    background-image: url(https://mrsunny.top/start/logo-auto_top.png);
+}
+
+/* 深色模式 */
+@media (prefers-color-scheme: dark) {
+.img-logo {
+    background-image: url(https://mrsunny.top/assets/img/index/logo/logo-white_top.png);
+}
+}
+/* 浅色模式 */
+@media (prefers-color-scheme: light) {
+.img-logo {
+    background-image: url(https://mrsunny.top/assets/img/index/logo/logo_top.png);
+}
+
+}
+
+
+
+
 #content {
     position: absolute;
     max-width: 600px;
@@ -88,7 +110,7 @@ span {
 }
 
 .search.icon {
-    color: #1b1b1b;
+    /* color: #1b1b1b; */
     width: 12px;
     height: 12px;
     border: solid 2px currentColor;
@@ -141,14 +163,14 @@ span {
 }
 
 .search_bar {
-    border: 2px solid rgba(0, 0, 0, 0.94);
+    border: 2px solid ;
     border-radius: 13px;
-    background: rgba(255, 255, 255, 0.17);
+    background: rgba(255, 255, 255, 0.034);
 }
 
 #search_input,
 #search_submit {
-    color: #1b1b1b;
+    color: auto;
 }
 
 .bdSug_wpr {
@@ -240,7 +262,7 @@ span {
     text-overflow: clip;
     -o-text-overflow: clip;
     ms-text-overflow: clip;
-    color: #1b1b1b;
+    /* color: #1b1b1b; */
     font-size: 10px;
 }
 

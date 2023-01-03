@@ -17,9 +17,10 @@
 <body>
     <div class='frosted-glass'></div>
     <div id="content">
-        <div class="search_part"><a class="logo" onclick="window.via.cmd(257);" title="书签"><img
-                    src="https://mrsunny.top/start/logo-auto_top.png"
-                    style="margin-left:auto;margin-right:auto;height:45px"></a>
+        <div class="search_part"><a class="logo" onclick="window.via.cmd(257);" title="书签">
+            <div class="img-logo" style="background-size: 100% auto;background-repeat: no-repeat;background-position: 0 0;margin-left:auto;margin-right:auto;height:55px;width: 240px;max-width: 90vw;"></div>
+            <!-- <img src="https://mrsunny.top/start/logo-auto_top.png" style="margin-left:auto;margin-right:auto;height:45px"> -->
+        </a>
             <form onsubmit="return search()" class="search_bar" title="搜索"><button onclick="search()" id="search_submit"
                     value="" aria-label="网页前进">
                     <div class="search icon"></div>
@@ -47,7 +48,7 @@
                     <div class="overlay"
                         style="background: url('../icons/quark/home_started.png') no-repeat;background-size: cover;background-position:center center;">
                     </div>
-                    <p class="url">书签</p><a href="#" target="_blank" title="书签"></a>
+                    <p class="url">书签</p><a onclick="window.via.cmd(257);" target="_blank" title="书签"></a>
                 </div>
                 <div class="box">
                     <p class="title" style="background:#7bca9100;">学</p>
