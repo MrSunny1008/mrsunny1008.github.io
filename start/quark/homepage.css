@@ -29,13 +29,24 @@ body {
 .img-logo {
     background-image: url(https://mrsunny.top/assets/img/index/logo/logo-white_top.png);
 }
+.search.icon {
+    color: #ffffff;
+}
+#search_input {
+    color: #ffffff;
+}
 }
 /* 浅色模式 */
 @media (prefers-color-scheme: light) {
 .img-logo {
     background-image: url(https://mrsunny.top/assets/img/index/logo/logo_top.png);
 }
-
+.search.icon {
+    color: #1b1b1b;
+}
+#search_input {
+    color: #000000;
+}
 }
 
 
