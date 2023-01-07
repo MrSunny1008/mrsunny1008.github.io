@@ -35,6 +35,9 @@ body {
 #search_input {
     color: #ffffff;
 }
+.auto-dark {
+    filter: invert(100%);   
+}
 }
 /* 浅色模式 */
 @media (prefers-color-scheme: light) {
@@ -46,6 +49,9 @@ body {
 }
 #search_input {
     color: #000000;
+}
+.auto-dark {
+    filter: invert(0%);   
 }
 }
 

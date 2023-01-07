@@ -17,9 +17,10 @@
 <body>
     <div class='frosted-glass'></div>
     <div id="content">
-        <div class="search_part"><a class="logo" onclick="window.via.cmd(257);" title="书签"><img
-                    src="https://mrsunny.top/start/logo-auto_top.png"
-                    style="margin-left:auto;margin-right:auto;height:45px"></a>
+        <div class="search_part"><a class="logo" onclick="window.via.cmd(257);" title="书签">
+            <div class="img-logo" style="background-size: 100% auto;background-repeat: no-repeat;background-position: 0 0;margin-left:auto;margin-right:auto;height:55px;width: 240px;max-width: 90vw;"></div>
+            <!-- <img src="https://mrsunny.top/start/logo-auto_top.png" style="margin-left:auto;margin-right:auto;height:45px"> -->
+        </a>
             <form onsubmit="return search()" class="search_bar" title="搜索"><button onclick="search()" id="search_submit"
                     value="" aria-label="网页前进">
                     <div class="search icon"></div>
@@ -33,7 +34,7 @@
                     <div class="overlay"
                         style="background: url('../icons/quark/home_link.png') no-repeat;background-size: cover;background-position:center center;">
                     </div>
-                    <p class="url">捷径</p><a href="https://h5.mse.360.cn/newnavi.html#/home" title="捷径" target="_blank"></a>
+                    <p class="url">捷径</p><a href="./m.url.html" title="捷径" target="_blank"></a>
                 </div>
                 <div class="box">
                     <p class="title" style="background:#cfb36000;">荐</p>
@@ -47,7 +48,7 @@
                     <div class="overlay"
                         style="background: url('../icons/quark/home_started.png') no-repeat;background-size: cover;background-position:center center;">
                     </div>
-                    <p class="url">书签</p><a href="#" target="_blank" title="书签"></a>
+                    <p class="url">书签</p><a onclick="window.via.cmd(257);" target="_blank" title="书签"></a>
                 </div>
                 <div class="box">
                     <p class="title" style="background:#7bca9100;">学</p>
@@ -115,6 +116,24 @@
                     </div>
                     <p class="url">实验</p><a href="https://mrsunny.top/404" title="实验" target="_blank"></a>
                 </div>
+
+
+                <div class="box">
+                    <p class="title" style="background:#67ca8100;">B</p>
+                    <div class="overlay"
+                        style="background: url('../icons/quark/baidu.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">百度</p><a href="https://www.baidu.com/" title="实验" target="_blank"></a>
+                </div>
+                <div class="box">
+                    <p class="title" style="background:#67ca8100;">G</p>
+                    <div class="overlay"
+                        style="background: url('../icons/quark/google.png') no-repeat;background-size: cover;background-position:center center;">
+                    </div>
+                    <p class="url">谷歌</p><a href="https://www.google.com/" title="实验" target="_blank"></a>
+                </div>
+
+
 
 
             </div>
