@@ -36,6 +36,51 @@
       <script src="../anti-selfish-browser/Browser.js"></script>
       <script src="../anti-selfish-browser/anti-selfish-browser.js"></script>
 <style>
+/*视频挂载*/
+.iframe_video {
+    position: relative;
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .iframe_video {
+        height: 15em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .iframe_video {
+        height: 20em;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .iframe_video {
+        height: 30em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .iframe_video {
+        height: 40em;
+    }
+}
+
+.iframe_cross {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%
+}
+
+.iframe_cross iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0
+}
+
    @media screen and (min-width: 768px) {
 
 }
@@ -287,11 +332,27 @@ The full screen by default, makes it more troublesome to use.
 
 
 
-                        <p><h4>&nbsp;&nbsp;使用方式:<br>&nbsp;&nbsp;Tutorial</h4></p>
-                        <a href="https://www.bilibili.com/video/BV1pK411k7iN/?share_source=copy_web&vd_source=cac6bfbe291fc5aca98be5a3d0800ba7" target="_blank">
-                        <div class="postbox__thumb postbox__thumb-2 fix w-img mb-30">
-                           <img src="../assets/img/blog/content/005-Edge儿童模式主题/BiliCover.jpg" alt="">
-                        </div> </a>                       
+                        <p><h4>&nbsp;&nbsp;使用方式:<br>&nbsp;&nbsp;Tutorial<span style="color: red;">&nbsp;&nbsp;&nbsp;Please view English Version of the video On YouTube.</span></h4></p>
+
+
+      
+
+                        <!-- <div class="postbox__wrapper">
+                           <div class="postbox__thumb postbox__thumb-2 fix w-img mb-30">
+                              <div class="postbox__thumb postbox__video">
+                                 <img src="../assets/img/blog/content/005-Edge儿童模式主题/BiliCover.jpg" alt="">
+                                 <div class="postbox__play">
+                                    <a href="https://player.bilibili.com/player.html?aid=478030856&cid=97183639&page=1" data-fancybox><i
+                                          class="fas fa-play"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div> -->
+
+                        
+                        <iframe class="iframe_video" src="https://player.bilibili.com/player.html?aid=478030856&cid=97183639&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>                        
+                        <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/VeKKmjyEJ3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
 
                         <table width="100%" ><tr width="100%">
                              
