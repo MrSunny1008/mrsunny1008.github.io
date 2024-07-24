@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.feedback {
+    display: block;
+    margin-top: 2px;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: #b7583b;
+}
+
+.btn {
+    width: 320px;height: 40px;line-height: 16px;text-align: center;background-color: #ffffff;color: #5f3afc;border:2px solid #5f3afc;-moz-border-radius: 0.5em;-webkit-border-radius: 0.5em;border-radius: 0.5em;-webkit-box-shadow: 5px 5px 16px #5e3afc1d;-moz-box-shadow: 5px 5px 16px #5e3afc23;box-shadow: 5px 5px 16px #5e3afc1e;font-size: 16px;padding-bottom: 1px;letter-spacing:1px;margin-top: 15px;
+    transition: background-color 0.3s ease;
+    margin-left: auto;margin-right: auto;
+}
+.btn:hover {
+    background-color: #5f3afc;color: #ffffff;border:2px solid #5f3afc;
+    -webkit-border-radius: 1em;border-radius: 0.5em;-webkit-box-shadow: 5px 5px 16px #5e3afc50;-moz-box-shadow: 5px 5px 16px #5e3afc4f;box-shadow: 5px 5px 16px #5e3afc53;
+}
+
+.lable {
+    padding-top: 3px;padding-bottom: 3px;border:2px solid #5f3afc;-moz-border-radius: 1em;-webkit-border-radius: 1em;border-radius: 0.5em;background-color: #ffffff;color: #5f3afc;
+}
