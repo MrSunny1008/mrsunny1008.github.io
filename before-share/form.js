@@ -128,6 +128,7 @@ function checkAnswers() {
     }else {
         document.getElementById('password').style.display = 'block';
         document.getElementById('wrong').style.display = 'block';
+        document.getElementById('password2').style.display = 'block';
     }
     
 }
