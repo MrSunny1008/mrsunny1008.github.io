@@ -30,6 +30,8 @@ body {
     -webkit-border-radius: 1em;border-radius: 0.5em;-webkit-box-shadow: 5px 5px 16px #5e3afc50;-moz-box-shadow: 5px 5px 16px #5e3afc4f;box-shadow: 5px 5px 16px #5e3afc53;
 }
 
+
+
 .lable {
     padding-top: 3px;padding-bottom: 3px;border:2px solid #5f3afc;-moz-border-radius: 1em;-webkit-border-radius: 1em;border-radius: 0.5em;background-color: #ffffff;color: #5f3afc;
 }

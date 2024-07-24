@@ -125,5 +125,9 @@ function checkAnswers() {
     // Redirect if all correct
     if (allCorrect) {
         window.location.href = './passward.html'; // 将此处的URL替换为目标网页的URL
+    }else {
+        document.getElementById('password').style.display = 'block';
+        document.getElementById('wrong').style.display = 'block';
     }
+    
 }

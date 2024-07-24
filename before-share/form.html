@@ -54,7 +54,7 @@
         
         </script>
         
-
+<a name="backtotop"></a>
     <div style="margin:0;border:0;padding:0;width:100%">
         <div style="background-color: white;-webkit-box-shadow: 0px 3px 10px rgb(194, 194, 194);-moz-box-shadow: 0px 3px 10px rgb(194, 194, 194);box-shadow: 0px 3px 10px rgb(194, 194, 194);margin:0;border:0;padding:0;">
             <div style="margin-left: 3%;height: 75PX;margin-right: 3%;">
@@ -156,18 +156,28 @@
                             &nbsp;
                         </p>
 
+                    <div id="password" style="display: none;">
+                        <p style="text-align: center;color: red;font-size: 18px;">测试未通过，请检查答案后重新提交</p>
+                    </div>
+                    <p style="text-align: center;">
+                        <table style="width: 100%; margin-left: auto;margin-right: auto;"><tr style="width: 100%; margin-left: auto;margin-right: auto;"><td style="width: 100%; margin-left: auto;margin-right: auto;">
+                            <a href="#backtotop" style="text-decoration: none; ">
+                            <div style="width: 100%;margin-left: auto;margin-right: auto;text-align: center;">
+                                <button type="button"  class="btn" id="wrong" style=" margin-left: auto;margin-right: auto;display: none;">返回顶部-检查</button>
+                            </div></a>
+                        </td></tr></table>    
+                    </p>
+
 
                         <p style="text-align: center;">
                             <table style="width: 100%; margin-left: auto;margin-right: auto;"><tr style="width: 100%; margin-left: auto;margin-right: auto;"><td style="width: 100%; margin-left: auto;margin-right: auto;">
                                 <div style="width: 100%;margin-left: auto;margin-right: auto;text-align: center;">
-                                    <button type="button" onclick="checkAnswers()" class="btn"  style=" margin-left: auto;margin-right: auto;">我已完成所有题目</button>
+                                    <button type="button" onclick="checkAnswers()" class="btn" style=" margin-left: auto;margin-right: auto;">我已完成所有题目</button>
                                 </div>
                             </td></tr></table>    
                         </p>
                     </form>
-                    <!-- <div id="password" style="display: none;">
-                        <p>Congratulations! The password is: <strong>secret123</strong></p>
-                    </div> -->
+
                     <script src="./form.js"></script>
 
                     <p style="margin-top: 30px;text-align: left;width: 100%;margin-left: auto;margin-right: auto;max-width: 450px;"><b>提示：</b>可以修改答案后再次提交，全部正确后即可查看密码。</p>
