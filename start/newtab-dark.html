@@ -14,45 +14,52 @@
       // 当窗口大小改变时再次检查宽度
       window.onresize = checkWindowWidth;
   </script>
-      <script>
-        // 检测Cookie并根据用户选择的主题切换网页
-        function getCookie(cname) {
-            const name = cname + "=";
-            const decodedCookie = decodeURIComponent(document.cookie);
-            const ca = decodedCookie.split(';');
-            for(let i = 0; i < ca.length; i++) {
-                let c = ca[i];
-                while (c.charAt(0) == ' ') {
-                    c = c.substring(1);
-                }
-                if (c.indexOf(name) == 0) {
-                    return c.substring(name.length, c.length);
-                }
+   <script>
+    // 检测Cookie并根据用户选择的主题切换网页
+    function getCookie(cname) {
+        const name = cname + "=";
+        const decodedCookie = decodeURIComponent(document.cookie);
+        const ca = decodedCookie.split(';');
+        for(let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
             }
-            return "";
-        }
-
-        function followSystemTheme() {
-            const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-            if (systemPrefersDark) {
-                window.location.href = "newtab-dark.html";
-            } else {
-                window.location.href = "newtab.html";
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
             }
         }
+        return "";
+    }
 
-        (function() {
-            const theme = getCookie("theme") || "system";
-            if (theme === "dark") {
-                window.location.href = "newtab-dark.html";
-            } else if (theme === "light") {
-                window.location.href = "newtab.html";
-            } else {
-                followSystemTheme();
+    function followSystemTheme() {
+        const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (systemPrefersDark) {
+            if (window.location.pathname !== "/dark.html") {
+                window.location.href = "dark.html";
             }
-        })();
-    </script>
+        } else {
+            if (window.location.pathname !== "/light.html") {
+                window.location.href = "light.html";
+            }
+        }
+    }
 
+    (function() {
+        const theme = getCookie("theme") || "system";
+        if (theme === "dark") {
+            if (window.location.pathname !== "/dark.html") {
+                window.location.href = "dark.html";
+            }
+        } else if (theme === "light") {
+            if (window.location.pathname !== "/start/newtab.html") {
+                window.location.href = "newtab.html";
+            }
+        } else {
+            followSystemTheme();
+        }
+    })();
+</script>
 
    <head>
       <meta charset="utf-8">
