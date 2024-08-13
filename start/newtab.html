@@ -1,6 +1,5 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-
    <script>
       function checkWindowWidth() {
           if (window.innerWidth < 1000) {
@@ -14,52 +13,9 @@
       // 当窗口大小改变时再次检查宽度
       window.onresize = checkWindowWidth;
   </script>
-   <script>
-    // 检测Cookie并根据用户选择的主题切换网页
-    function getCookie(cname) {
-        const name = cname + "=";
-        const decodedCookie = decodeURIComponent(document.cookie);
-        const ca = decodedCookie.split(';');
-        for(let i = 0; i < ca.length; i++) {
-            let c = ca[i];
-            while (c.charAt(0) == ' ') {
-                c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-                return c.substring(name.length, c.length);
-            }
-        }
-        return "";
-    }
+  
 
-    function followSystemTheme() {
-        const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if (systemPrefersDark) {
-            if (window.location.pathname !== "/start/newtab-dark.html") {
-                window.location.href = "newtab-dark.html";
-            }
-        } else {
-            if (window.location.pathname !== "/start/newtab.html") {
-                window.location.href = "newtab.html";
-            }
-        }
-    }
 
-    (function() {
-        const theme = getCookie("theme") || "system";
-        if (theme === "dark") {
-            if (window.location.pathname !== "/start/newtab-dark.html") {
-                window.location.href = "newtab-dark.html";
-            }
-        } else if (theme === "light") {
-            if (window.location.pathname !== "/start/newtab.html") {
-                window.location.href = "newtab.html";
-            }
-        } else {
-            followSystemTheme();
-        }
-    })();
-</script>
    <head>
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -1723,10 +1679,8 @@ li a.favicon {
 <div id="doc-main" class="container2">
    <div id="doc-main-hd" class="hd">
 
-    <button id="theme-toggle" onclick="toggleTheme()">切换主题</button>
-    <button id="system-theme" onclick="followSystemTheme()">跟随系统</button>
-    
 
+  
 
 
 
@@ -1772,7 +1726,7 @@ li a.favicon {
 
               </div>   
      </div>
-     <script src="./newtab-search.js"></script>
+     <script src="./newtab-search - 副本.js"></script>
 
 <!-- <br>---------------
 
