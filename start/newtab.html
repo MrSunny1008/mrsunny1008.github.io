@@ -833,12 +833,13 @@ li a.favicon {
     color: #333;
     float: left;
     font-size: 14px;
-    height: 36px;
+    height: 38px;
     line-height: 36px;
     margin-right: -1px;
     outline: none;
     overflow: hidden;
-    padding-left: 37px;
+    padding-left: 40px;
+    /* padding-left: 37px; */
     position: relative;
     width: 100%;
     z-index: 1
@@ -960,7 +961,10 @@ li a.favicon {
 }
 
 #longlong .tuan {
-    background-position: 12px -725px
+    background-image: url(./icons/dark.png);
+}
+#longlong .tuan2 {
+    background-image: url(./icons/light.png);
 }
 
 #longlong .mobile {
@@ -1423,7 +1427,20 @@ li a.favicon {
    border-radius: 6px;
 }
 
-
+/* 隐藏的内容 */
+#hiddenElement {
+            display: none; /* 初始状态隐藏 */
+        }
+#toggleButton {
+    background-color: #00000000;
+    margin-left: 10px;
+}
+/* .light-show {
+    display: none;
+} */
+.dark-show {
+    display: none;
+}
 
 </style>
 
@@ -1461,8 +1478,10 @@ li a.favicon {
                   <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-6">
                      <div class="logo">
                         <a href="../index.html">
-                           <img src="../assets/img/index/logo/logo_hd.png" alt="logo" style="height: 30px;">
-                        </a>
+                            <img src="../assets/img/index/logo/logo_hd.png" alt="logo" style="height: 30px;" class="light-show">
+                            <img src="../assets/img/index/logo/logo-white_hd.png" alt="logo" style="height: 30px;" class="dark-show">
+                         </a>
+ 
                      </div>
                   </div>
                   <div class="col-xxl-7 col-xl-7 col-lg-8 d-none d-lg-block">
@@ -1764,29 +1783,34 @@ li a.favicon {
                        <a href="#" target="_self" class="tab-item home">我的主页</a>
                    </li>
                    <li id="longlong-channel-news">
-                       <a href="https://mrsunny.top/search/" class="tab-item search" target="_self">搜索模式</a>
+                       <a href="https://mrsunny.top/start/" class="tab-item search" target="_self">搜索模式</a>
                    </li>
                    <li id="longlong-channel-tv">
-                       <a href="https://mrsunny.top/recommend/recommend_music.html" class="tab-item music" target="_self">音乐相关</a>
+                       <a href="" class="tab-item music" target="_self">音乐相关</a>
                    </li>
                    <li id="longlong-channel-movie">
-                       <a href="https://mrsunny.top/404_building.html" class="tab-item videos" target="_self">视频相关</a>
+                       <a href="" class="tab-item videos" target="_self">视频相关</a>
                    </li>
                    <li id="longlong-channel-game">
-                       <a href="https://mrsunny.top/interest.html" class="tab-item games" target="_self">游戏相关</a>
+                       <a href="" class="tab-item games" target="_self">游戏相关</a>
                    </li>
                    <li id="longlong-channel-novel">
-                       <a href="https://mrsunny.top/recommend/recommend_app.html" class="tab-item soft-dwload" target="_self">软件下载</a>
+                       <a href="" class="tab-item soft-dwload" target="_self">软件下载</a>
                    </li>
                    <li id="longlong-channel-travel">
-                       <a href="https://mrsunny.top/404_building.html" class="tab-item dev-tools" target="_self">开发工具</a>
+                       <a href="" class="tab-item dev-tools" target="_self">开发工具</a>
                    </li>
                    <li id="longlong-channel-mall">
                        <a href="https://mrsunny.top/" class="tab-item website" target="_self">网站主页</a>
                    </li>
-                   <li id="longlong-channel-tuan">
-                       <a href="./start-dark.html" class="tab-item dark" target="_self">夜间模式</a>
-                   </li>
+
+                   <li id="longlong-channel-tuan" class="light-show">
+                    <a href="./newtab-dark.html" class="tab-item dark" target="_self">夜间模式</a>
+
+                </li>
+                    <li id="longlong-channel-tuan2" class="dark-show">
+                     <a href="./newtab.html" class="tab-item light" target="_self">日间模式</a>
+                     </li>
                </ul>
            </div>
        </div>
@@ -1840,23 +1864,28 @@ li a.favicon {
                        <li><a href="https://cn.bing.com/" class="favicon"  style="background-image:url(./icons/color/Bing.png);">Bing必应</a></li>
                        <li><a href="https://www.sogou.com/" class="favicon"  style="background-image:url(./icons/color//Sougou.png);">搜狗搜索</a></li>
                        <li><a href="https://www.so.com/" class="favicon"  style="background-image:url(./icons/color/Haosou.png);">360搜索</a></li>
+
+                       <!-- <li><a href="https://quark.sm.cn/" class="favicon"
+                        style="background-image:url(./icons/color/Quark.png);">夸克搜索</a></li> -->
+
+                        <li><a href="https://quark.sm.cn/" class="favicon"
+                            style="background-image:url(./icons/color/Smss.png);">神马搜索</a></li>
+    
                        <li><a href="https://www.toutiao.com/?wid=1662804125327" class="favicon"
                        style="background-image:url(./icons/color/Toutiao.png);">头条搜索</a></li>
                        <li><a href="https://www.chinaso.com/" class="favicon"  style="background-image:url(./icons/color/Chinaso.png);">中国搜索</a></li>
+
+                       <li><a href="https://mijisou.com/" class="favicon"  style="background-image:url(./icons/color/Mijisou.png);">秘迹搜索</a></li>
+           
                        
                        <li><a href="https://www.google.com/" class="favicon"  style="background-image:url(./icons/color/Google.png);">Google</a></li>
-                       <li><a href="https://fsoufsou.com/" class="favicon"
-                           style="background-image:url(./icons/color/Fsearch.png);">Fsou-F搜</a>
-                           </li>
+
                        
                        <li><a href="https://search.yahoo.com/" class="favicon"  style="background-image:url(./icons/color/Yahoo.png);">Yahoo雅虎</a></li>
-                       <li><a href="https://mijisou.com/" class="favicon"  style="background-image:url(./icons/color/Mijisou.png);">秘迹搜索</a></li>
+            
                        
-                       <li><a href="https://m.sm.cn/" class="favicon"
-                           style="background-image:url(./icons/color/Smss.png);">神马搜索</a></li>
-                       
-                       <li><a href="https://mengso.com/?q=fuck" class="favicon"
-                       style="background-image:url(./icons/color/Mengsou.png);">萌搜</a></li>
+                       <!-- <li><a href="https://mengso.com/?q=fuck" class="favicon"
+                       style="background-image:url(./icons/color/Mengsou.png);">萌搜</a></li> -->
                        <li><a href="https://duckduckgo.com/" class="favicon"  style="background-image:url(./icons/color/Duckduckgo.png);">DuckGo</a></li>
                        
                        
@@ -1866,7 +1895,9 @@ li a.favicon {
                        <li><a href="https://goobe.io/" class="favicon"
                            style="background-image:url(./icons/color/Goobe.png);">goobe</a></li>
                        
-
+                           <li><a href="https://fsoufsou.com/" class="favicon"
+                            style="background-image:url(./icons/color/Fsearch.png);">Fsou-F搜</a>
+                            </li>
 
 
 
@@ -1878,39 +1909,18 @@ li a.favicon {
                </div>
                <div id="mysite-section">
                   <ul class="list gclearfix">
-                      <li><a href="https://www.baidu.com" class="favicon"  style="background-image:url(./icons/color/Baidu.png);">百度一下</a></li>
-                      <li><a href="https://cn.bing.com/" class="favicon"  style="background-image:url(./icons/color/Bing.png);">Bing必应</a></li>
-                      <li><a href="https://www.sogou.com/" class="favicon"  style="background-image:url(./icons/color//Sougou.png);">搜狗搜索</a></li>
-                      <li><a href="https://www.so.com/" class="favicon"  style="background-image:url(./icons/color/Haosou.png);">360搜索</a></li>
-                      <li><a href="https://www.toutiao.com/?wid=1662804125327" class="favicon"
-                      style="background-image:url(./icons/color/Toutiao.png);">头条搜索</a></li>
-                      <li><a href="https://www.chinaso.com/" class="favicon"  style="background-image:url(./icons/color/Chinaso.png);">中国搜索</a></li>
-                      
-                      <li><a href="https://www.google.com/" class="favicon"  style="background-image:url(./icons/color/Google.png);">Google</a></li>
-                      <li><a href="https://fsoufsou.com/" class="favicon"
-                          style="background-image:url(./icons/color/Fsearch.png);">Fsou-F搜</a>
-                          </li>
-                      
-                      <li><a href="https://search.yahoo.com/" class="favicon"  style="background-image:url(./icons/color/Yahoo.png);">Yahoo雅虎</a></li>
-                      <li><a href="https://mijisou.com/" class="favicon"  style="background-image:url(./icons/color/Mijisou.png);">秘迹搜索</a></li>
-                      
-                      <li><a href="https://m.sm.cn/" class="favicon"
-                          style="background-image:url(./icons/color/Smss.png);">神马搜索</a></li>
-                      
-                      <li><a href="https://mengso.com/?q=fuck" class="favicon"
-                      style="background-image:url(./icons/color/Mengsou.png);">萌搜</a></li>
-                      <li><a href="https://duckduckgo.com/" class="favicon"  style="background-image:url(./icons/color/Duckduckgo.png);">DuckGo</a></li>
-                      
-                      
-                      <li><a href=" https://yandex.com/" class="favicon"
-                          style="background-image:url(./icons/color/Yandex.png);">Yandex</a></li>
-                      
-                      <li><a href="https://goobe.io/" class="favicon"
-                          style="background-image:url(./icons/color/Goobe.png);">goobe</a></li>
-                      
+                      <li><a href="https://chatgpt.com/" class="favicon"  style="background-image:url(./icons/color/Chatgpt.png);">Chat GPT</a></li>
+                      <li><a href="https://qianxun.vivo.com/?via=onetts.com#/explore" class="favicon"  style="background-image:url(./icons/color/Lanxin.png);">蓝心千询</a></li>
+
+                      <li><a href="https://tongyi.aliyun.com/qianwen/" class="favicon"  style="background-image:url(./icons/color/Tongyi.png);">通义千问</a></li>
+                      <li><a href="https://yiyan.baidu.com/" class="favicon"
+                      style="background-image:url(./icons/color/Wenxin.png);">文心一言</a></li>
 
 
-
+                      <li><a href="https://www.doubao.com/chat/" class="favicon"  style="background-image:url(./icons/color/Chinaso.png);">豆包AI</a></li>
+                      
+                      <li><a href="https://kimi.moonshot.cn/" class="favicon"  style="background-image:url(./icons/color/Kimi.png);">Kimi AI</a></li>
+                      <li><a href="https://www.onetts.com/" class="favicon"  style="background-image:url(./icons/color/AIurl.png);">AI导航页</a></li>
 
 
 
@@ -1928,29 +1938,59 @@ li a.favicon {
                            style="background-image:url(./icons/color/Bilibili.png);">哔哩哔哩</a></li>
                        <li><a href="https://www.ixigua.com/?wid_try=1" class="favicon"
                            style="background-image:url(./icons/color/Xigua.png);">西瓜视频</a></li>
+                           <li><a href="https://www.douyin.com/" class="favicon"
+                            style="background-image:url(./icons/color/Tiktok.png);">抖音短视频</a></li>
                        <li><a href="https://www.zhihu.com/" class="favicon"
                            style="background-image:url(./icons/color/Zhihu.png);"> 知 乎 </a></li>
                        <li><a href="https://tieba.baidu.com/" class="favicon"
                            style="background-image:url(./icons/color/Baidu-tieba.png);">百度贴吧</a></li>
+
+                                <li><a href="https://www.lofter.com/front/login" class="favicon"
+                                    style="background-image:url(./icons/color/Lofter.png);">Lofter乐乎</a></li>
+
+                            <!-- <li><a href="https://twitter.com/" class="favicon"
+                                style="background-image:url(./icons/color/X.png);">Twitter(X)</a></li> -->
                        <li><a href="https://twitter.com/" class="favicon"
-                           style="background-image:url(./icons/color/Twitter.png);">Twitter</a></li>
+                           style="background-image:url(./icons/color/Twitter.png);">X-Twitter</a></li>
                        <li><a href="https://www.facebook.com/" class="favicon"
                            style="background-image:url(./icons/color/Facebook.png);">Facebook</a></li>
                        <li><a href="https://www.youtube.com/" class="favicon"
                            style="background-image:url(./icons/color/Youtube.png);">YouTube</a></li>
-                       <li><a href="https://www.instagram.com/" class="favicon"
-                           style="background-image:url(./icons/color/instagram.png);">Instagram</a></li>
+                       <li><a href="https://www.instagram.com/" class="favicon" 
+                        style="background-image:url(./icons/color/instagram.png);">Instagram</a></li>
+
+ 
+                            <li><a href="https://www.reddit.com/" class="favicon"
+                                style="background-image:url(./icons/color/Redit.png);">Redit</a></li>
+
                        <li><a href="https://www.pinterest.com/" class="favicon"
                            style="background-image:url(./icons/color/Pinterest.png);">Pinterest</a></li>
-                       <li><a href="https://www.pixiv.net/" class="favicon"
-                           style="background-image:url(./icons/color/Pixiv.png);">Pixiv</a></li>
+                            <li><a href="https://www.tiktok.com/" class="favicon"
+                                style="background-image:url(./icons/color/Tiktok.png);">Tik Tok</a></li>                           
+                           <li><a href="https://www.pixiv.net/" class="favicon"
+                            style="background-image:url(./icons/color/Pixiv.png);">Pixiv</a></li>
+
+
+    
+                            
+
+                            <li><a href="https://mail.google.com/" class="favicon"
+                                style="background-image:url(./icons/color/QQ-music.png);">QQ音乐</a></li>
+                            <li><a href="https://mail.google.com/" class="favicon"
+                                style="background-image:url(./icons/color/Neteasy-music.png);">网易云音乐</a></li>
+                                <li><a href="https://open.spotify.com/" class="favicon"
+                                    style="background-image:url(./icons/color/Spotify.png);">Spotify</a></li>
+    
+
                        <li><a href="https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5" class="favicon"
                            style="background-image:url(./icons/color/Wikipedia.png);">维基百科</a></li>
 
+                           <li><a href="https://baike.baidu.com/" class="favicon"
+                            style="background-image:url(./icons/color/Baidu-baike.png);">百度百科</a></li>
+                        
+ 
 
 
-                       <li><a href="https://baike.baidu.com/" class="favicon"
-                           style="background-image:url(./icons/color/Baidu-baike.png);">百度百科</a></li>
                       
                        <li><a href="https://github.com/" class="favicon"
                            style="background-image:url(./icons/color/Github.png);">Github</a></li>
@@ -1959,12 +1999,6 @@ li a.favicon {
                        <li><a href="https://www.fandom.com/explore-zh?uselang=zh" class="favicon"
                            style="background-image:url(./icons/color/Fandom.png);">Fandom</a></li>
 
-                       <li><a href="https://www.lofter.com/front/login" class="favicon"
-                           style="background-image:url(./icons/color/Lofter.png);">Lofter乐乎</a></li>
-                       <li><a href="https://mail.google.com/" class="favicon"
-                           style="background-image:url(./icons/color/QQ-music.png);">QQ音乐</a></li>
-                       <li><a href="https://mail.google.com/" class="favicon"
-                           style="background-image:url(./icons/color/Neteasy-music.png);">网易云音乐</a></li>
 
 
                        
@@ -1982,12 +2016,37 @@ li a.favicon {
                            style="background-image:url(./icons/color/126-mail.png);">126邮箱</a></li>
                        <li><a href="https://mail.google.com/" class="favicon"
                            style="background-image:url(./icons/color/139-mail.png);">139邮箱</a></li>
-
+                     <li><a href="https://www.taobao.com/" class="favicon"
+                           style="background-image:url(./icons/color/Taobao.png);">淘宝</a><span class="split">·</span><a href="https://www.tmall.com/">天猫</a></li>
                        <li><a href="https://www.amazon.cn/" class="favicon"
                            style="background-image:url(./icons/color/Amazon.png);">亚马逊</a></li>
-                       <li><a href="https://www.taobao.com/" class="favicon"
-                           style="background-image:url(./icons/color/Taobao.png);">淘宝</a><span class="split">·</span><a href="https://www.tmall.com/">天猫</a></li>
-                       
+  
+
+                        
+
+                        <li><a href="https://v.qq.com/" class="favicon"  style="background-image:url(./icons/color/Tencent-tv.png);">腾讯视频</a></li>
+                             <li><a href="https://www.iqiyi.com/" class="favicon"
+                            style="background-image:url(./icons/color/Iqiyi.png);"> 爱奇艺iQYI</a>
+                            </li>                      
+                        <li><a href="https://www.youku.com/" class="favicon"
+                            style="background-image:url(./icons/color/Youku.png);">优酷视频</a></li>
+                        
+                        <li><a href="https://www.mgtv.com/" class="favicon"
+                        style="background-image:url(./icons/color/Mgtv.png);">芒果TV</a></li>
+                       <li><a href="https://intro.limestart.cn/" class="favicon"
+                            style="background-image:url(./icons/color/Qingning.png);">青柠起始页</a></li>
+                                               
+                        <li><a href="https://hao.360.com/sub/yingshi_website_nav.html" class="favicon"  style="background-image:url(./icons/color/Website.png);">360导航</a></li>
+                        
+                        
+  
+                        <li><a href="https://store.steampowered.com/" class="favicon"
+                            style="background-image:url(./icons/color/Steam.png);">Steam</a></li>
+                        
+                             <li><a href="https://www.4399.com/" class="favicon"
+                              style="background-image:url(./icons/color/4399.png);">4399</a></li>
+  
+  
                      
 
                    </ul>
@@ -2005,19 +2064,140 @@ li a.favicon {
                    <h2 class="title">常用酷站</h2>
                </div>
                <div class="cool-site-bd g-box-bd">
+                <div class="panel">
+                    <div class="nav">
+                        <a href="https://www.onetts.com/">AI-通塔师导航</a>
+                        <a href="https://www.glookai.com/">轱辘凯AI工具·导航</a>
+
+                        <a href="https://www.jyshare.com/search-sites/">搜索引擎大全</a>                        
+                        <!-- <a href="https://www.bilibili.com/">视频</a>
+                        <a href="https://music.qq.com">音乐</a>
+                        <a href="https://www.zhihu.com/">问答</a>
+                        <a href="https://tieba.baidu.com/">贴吧</a>
+                        <a href="https://baike.baidu.com/">百科</a> -->
+                        <button id="toggleButton">设置</button>
+
+
+                    </div>
+                    <div id="hiddenElement">
+                        <div class="item" data-item="mall">
+                            <h3 class="subtitle"><a href="" style="color: red;">隐藏</a></h3>
+                            <ul class="list">
+                                <li><a href="https://xhamster.com/">Xhamster</a></li>
+                                <li><a href="https://www.xvideos.com/" style="color: red;">Xvideos</a></li>
+                                <li><a href="https://pornhub.com/" style="color: red;">PornHub</a></li>
+                                <li><a href="https://theporndude.com/zh" style="color: red;">其他网址导航</a></li>
+                                <!-- <li><a href="https://map.qq.com/">腾讯地图</a>
+                                </li>
+                                <li><a href="https://earth.google.com/web/"> Google Earth</a></li>
+                                <li><a href="https://www.tianditu.gov.cn/">国家地理信息</a></li> -->
+                            </ul>
+                            <a href="https://theporndude.com/zh/top-porn-tube-sites" class="more">更多»</a>
+                        </div>                        
+                        </div>
+    
+                    <div class="item" data-item="car">
+                        <h3 class="subtitle"><a href="https://chatgpt.com/">聊天</a></h3>
+                        <ul class="list">
+                            <li><a href="https://www.onetts.com/ai-chatbot/">相关网址导航</a></li>
+
+                            <li><a href="https://chatgpt.com/">Chat GPT</a></li>
+                            <li><a href="https://tongyi.aliyun.com/qianwen/">通义千问</a></li>
+                            <li><a href="https://yiyan.baidu.com/">文心一言</a></li>
+                            <li><a href="https://qianxun.vivo.com/?via=onetts.com#/explore">蓝心千询</a></li>
+                            <li><a href="https://www.doubao.com/chat/">豆包</a></li>
+                            <li><a href="https://kimi.moonshot.cn/">Kimi AI</a></li>
+
+                            
+                           
+                        </ul>
+                        <a href="https://www.onetts.com/ai-chatbot/" class="more">更多»</a>
+                    </div>
+                    <div class="item">
+                        <h3 class="subtitle"><a href="https://www.iqiyi.com/">影视</a></h3>
+                        <ul class="list">
+                            
+                            <li><a href="https://hao.360.com/sub/yingshi_website_nav.html">影视网址导航</a></li>
+
+                            <li><a href="https://www.bilibili.com/">哔哩哔哩视频</a></li>
+                            <li><a href="https://www.ixigua.com/?wid_try=1">西瓜视频</a></li>
+                            <li><a href="https://www.iqiyi.com/">爱奇艺</a></li>
+                            <li><a href="https://v.qq.com/">腾讯视频</a></li>
+                            <li><a href="https://www.youku.com/">优酷视频</a></li>
+                            <li><a href="https://www.mgtv.com/">芒果TV</a></li>
+                        </ul>
+                        <a href="https://hao.360.com/sub/yingshi_website_nav.html" class="more">更多»</a>
+                    </div>
+                    <div class="item" data-item="mall">
+                        <h3 class="subtitle"><a href="https://music.qq.com">音乐</a></h3>
+                        <ul class="list">
+                             <li><a href="https://music.apple.com/cn/browse">Apple Music</a></li>
+                           
+                            <li><a href="https://music.qq.com">QQ音乐</a></li>
+                            <li><a href="https://music.163.com">网易云音乐</a></li>
+                            
+                            <li><a href="https://www.kugou.com">酷狗音乐</a></li>
+                            
+                            <li><a href="https://music.91q.com/">百度音乐</a></li>
+                            <li><a href="https://www.kuwo.cn/">酷我音乐</a></li>
+                            <li><a href="https://open.spotify.com/">Spotify</a></li>
+                        </ul>
+                        <a href="https://hao.360.com/sub/yinyue_website_nav.html" class="more">更多»</a>
+                    </div>
+
+
+
+
+
+
+                    <script>
+                        // 获取按钮和隐藏元素
+                        const button = document.getElementById('toggleButton');
+                        const hiddenElement = document.getElementById('hiddenElement');
+                
+                        // 添加点击事件监听器
+                        button.addEventListener('click', () => {
+                            // 切换元素的显示状态
+                            if (hiddenElement.style.display === 'none') {
+                                hiddenElement.style.display = 'block';
+                                button.textContent = '隐藏显示内容▲';
+                            } else {
+                                hiddenElement.style.display = 'none';
+                                button.textContent = '显示更多内容▼';
+                            }
+                        });
+                    </script>
+
+                    <!-- <div class="item" data-item="mall">
+                        <h3 class="subtitle"><a href="https://map.baidu.com/">地图</a></h3>
+                        <ul class="list">
+                            <li><a href="https://map.baidu.com/">百度地图</a></li>
+                            <li><a href="https://cn.bing.com/maps?FORM=Z9LH2">Bing地图</a></li>
+                            <li><a href="https://maps.google.co.jp/maps?hl=zh-CN&tab=vl">Google Map</a></li>
+                            <li><a href="https://gaode.com">高德地图</a></li>
+                            <li><a href="https://map.qq.com/">腾讯地图</a>
+                            </li>
+                            <li><a href="https://earth.google.com/web/"> Google Earth</a></li>
+                            <li><a href="https://www.tianditu.gov.cn/">国家地理信息</a></li>
+                        </ul>
+                        <a href="https://www.bing.com/search?q=%E5%9C%B0%E5%9B%BE&qs=n&form=QBRE&sp=-1&pq=ditu&sc=10-4&sk=&cvid=E525239F07DF49EA9035AA1C47E4BD18&ghsh=0&ghacc=0&ghpl=" class="more">更多»</a>
+                    </div> -->
+
+
+                </div>
                    <div class="panel">
                        <div class="nav">
-                           <a href="https://www.bing.com/?scope=images&nr=1&FORM=NOFORM">图片</a>
+                           <a href="https://www.bing.com/?scope=images&nr=1&FORM=NOFORM">搜索图片</a>
                            <a href="https://www.bilibili.com/">视频</a>
                            <a href="https://music.qq.com">音乐</a>
                            <a href="https://map.baidu.com/">地图</a>
                            <a href="https://www.zhihu.com/">问答</a>
                            <a href="https://tieba.baidu.com/">贴吧</a>
                            <a href="https://baike.baidu.com/">百科</a>
-                           <a href="https://www.baidu.com/">搜索引擎</a>
+                           <a href="https://www.jyshare.com/search-sites/">搜索引擎大全</a>
                        </div>
                        <div class="item" data-item="car">
-                           <h3 class="subtitle"><a href="https://www.bing.com/?scope=images&nr=1&FORM=NOFORM">图片</a></h3>
+                           <h3 class="subtitle"><a href="https://www.bing.com/?scope=images&nr=1&FORM=NOFORM">搜图</a></h3>
                            <ul class="list">
                                <li><a href="https://image.baidu.com">百度图片</a></li>
                                <li><a href="https://www.bing.com/?scope=images&nr=1&FORM=NOFORM">Bing图片</a></li>
@@ -2061,7 +2241,7 @@ li a.favicon {
                                <li><a href="https://music.apple.com/cn/browse">Apple Music</a></li>
                                <li><a href="https://open.spotify.com/">Spotify</a></li>
                            </ul>
-                           <a href="https://www.bing.com/search?q=%E9%9F%B3%E4%B9%90&qs=n&form=QBRE&sp=-1&pq=yyue&sc=10-4&sk=&cvid=BCB4E0610FBF480B905C8915F436BD5D&ghsh=0&ghacc=0&ghpl=" class="more">更多»</a>
+                           <a href="https://hao.360.com/sub/yinyue_website_nav.html" class="more">更多»</a>
                        </div>
                        <div class="item" data-item="mall">
                            <h3 class="subtitle"><a href="https://map.baidu.com/">地图</a></h3>

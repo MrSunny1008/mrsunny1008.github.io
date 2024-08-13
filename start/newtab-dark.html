@@ -1,6 +1,5 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-
    <script>
       function checkWindowWidth() {
           if (window.innerWidth < 1000) {
@@ -14,52 +13,8 @@
       // 当窗口大小改变时再次检查宽度
       window.onresize = checkWindowWidth;
   </script>
-   <script>
-    // 检测Cookie并根据用户选择的主题切换网页
-    function getCookie(cname) {
-        const name = cname + "=";
-        const decodedCookie = decodeURIComponent(document.cookie);
-        const ca = decodedCookie.split(';');
-        for(let i = 0; i < ca.length; i++) {
-            let c = ca[i];
-            while (c.charAt(0) == ' ') {
-                c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-                return c.substring(name.length, c.length);
-            }
-        }
-        return "";
-    }
+  
 
-    function followSystemTheme() {
-        const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if (systemPrefersDark) {
-            if (window.location.pathname !== "/start/newtab-dark.html") {
-                window.location.href = "newtab-dark.html";
-            }
-        } else {
-            if (window.location.pathname !== "/start/newtab.html") {
-                window.location.href = "newtab.html";
-            }
-        }
-    }
-
-    (function() {
-        const theme = getCookie("theme") || "system";
-        if (theme === "dark") {
-            if (window.location.pathname !== "/start/newtab-dark.html") {
-                window.location.href = "newtab-dark.html";
-            }
-        } else if (theme === "light") {
-            if (window.location.pathname !== "/start/newtab.html") {
-                window.location.href = "newtab.html";
-            }
-        } else {
-            followSystemTheme();
-        }
-    })();
-</script>
 
    <head>
       <meta charset="utf-8">
@@ -71,9 +26,9 @@
       <!--  favicon.icon -->
       <link rel="shortcut icon" type="image/x-icon" href="../assets/img/png_favicon.png">
       <!-- CSS here -->
-      <link rel="stylesheet" href="../assets/css/preloader.css">
-      <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-      <link rel="stylesheet" href="../assets/css/slick.css">
+      <!-- <link rel="stylesheet" href="../assets/css/preloader.css"> -->
+      <!-- <link rel="stylesheet" href="../assets/css/bootstrap.min.css"> -->
+      <!-- <link rel="stylesheet" href="../assets/css/slick.css"> -->
       <link rel="stylesheet" href="../assets/css/meanmenu.css">
       <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
       <link rel="stylesheet" href="../assets/css/animate.min.css">
@@ -82,11 +37,18 @@
       <link rel="stylesheet" href="../assets/css/fontAwesome5Pro.css">
       <link rel="stylesheet" href="../assets/css/elegantFont.css">
       <link rel="stylesheet" href="../assets/css/default.css">
-      <link rel="stylesheet" href="../assets/css/style.css">
+      <!-- <link rel="stylesheet" href="../assets/css/style.css"> -->
       <!-- 自定义css -->
-      <link rel="stylesheet" href="../assets/css/extra-css.css">
+      <!-- <link rel="stylesheet" href="../assets/css/extra-css.css"> -->
       <link rel="stylesheet" href="../assets/css/mourning-mod.css">
       <!-- 自定义css结束 -->
+
+<!-- 深色css -->
+      <link rel="stylesheet" href="../assets/css/dark/bootstrap.min.css">
+      <link rel="stylesheet" href="../assets/css/dark/slick.css">
+      <link rel="stylesheet" href="../assets/css/dark/style.css">
+      <link rel="stylesheet" href="../assets/css/dark/extra-css.css">
+<!-- 深色结束 -->
 
 
 
@@ -100,7 +62,7 @@
 <style>
     
 #doc-bd {
-    background-image: url(./bac3-pic.png);
+    background-image: url(./bac1-dark-pic.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% auto ;
@@ -202,7 +164,7 @@ del {
 
 a {
     cursor: pointer;
-    color: #333;
+    color: #adbac7;
 }
 /* a:link {
     text-decoration: none;
@@ -264,7 +226,7 @@ input::-ms-clear {
 }
 
 .blue {
-    color: #07519a !important
+    color: #5f3afc !important
 }
 
 .g-box {
@@ -285,7 +247,7 @@ input::-ms-clear {
 }
 
 .dot {
-    background-color: #323232;
+    background-color: #ffffff;
     display: inline-block;
     height: 2px;
     width: 2px
@@ -298,7 +260,7 @@ input::-ms-clear {
 }
 
 .radius1 {
-    background: #fff;
+    background: rgb(36, 36, 36);
     display: block;
     font-size: 0;
     height: 1px;
@@ -376,7 +338,7 @@ a:active {
 .g-pic .txt-bg,
 .g-pic .mask {
     bottom: 0;
-    color: #efefef;
+    color: #242424;
     left: 0;
     position: absolute;
     text-align: center;
@@ -384,7 +346,7 @@ a:active {
 }
 
 .g-pic .txt-bg {
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
     opacity: 0.7;
     z-index: 1;
     filter: alpha(opacity=70)
@@ -396,7 +358,7 @@ a:active {
 }
 
 .g-pic .mask {
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
     opacity: 0;
     z-index: 3;
     filter: Alpha(opacity=0)
@@ -420,11 +382,11 @@ a:active {
 }
 
 #doc {
-    background: #f3f3f3 url(./line2-pic.jpg) repeat-x 0 -485px
+    background: #121522 url(./line2-pic.jpg) repeat-x 0 -485px
 }
 
 #doc-view {
-    color: #333;
+    color: rgb(255, 255, 255);
     width: 100%
 }
 
@@ -494,17 +456,16 @@ html {
 #hot-site,
 #iguess,
 #category-tools {
-    -moz-box-shadow: 0 1px 2px #d3d3d3;
-    -webkit-box-shadow: 0 1px 2px #d3d3d3;
-    box-shadow: 0 1px 2px #d3d3d3
-}
+            -moz-box-shadow: 0 1px 2px #7b7b7b5b;
+            -webkit-box-shadow: 0 1px 2px #7b7b7b5b;
+            box-shadow: 0 1px 2px #7b7b7b5b
+        }
 
-#honghong {
-    -moz-box-shadow: 0 1px 2px #d3d3d3;
-    -webkit-box-shadow: 0 1px 2px #d3d3d3;
-    box-shadow: 0 1px 2px #d3d3d3
-}
-
+        #honghong {
+            -moz-box-shadow: 0 1px 2px #7b7b7b5b;
+            -webkit-box-shadow: 0 1px 2px #7b7b7b5b;
+            box-shadow: 0 1px 2px #7b7b7b5b
+        }
 #honghong,
 #lifestyle {
     width: 238px
@@ -539,39 +500,39 @@ width: 100%;}
 
 #honghong.g-box,
 #lifestyle.g-box {
-    background-color: #fcfcfc;
-    border-color: #c9c9c9
-}
+            background-color: #22272e;
+            border-color: #8c8c8c3f
+        }
 
-#hot-site.g-box {
-    background-color: #fff;
-    border-color: #c9c9c9
-}
+        #hot-site.g-box {
+            background-color: #22272e;
+            border-color: #8c8c8c1f
+        }
 
-#cool-site.g-box {
-    background-color: #fff;
-    border-color: #c9c9c9
-}
+        #cool-site.g-box {
+            background-color: #22272e;
+            border-color: #8c8c8c69
+        }
 
-#iguess.g-box {
-    background-color: #fff;
-    border-color: #c9c9c9
-}
+        #iguess.g-box {
+            background-color: #22272e;
+            border-color: #8c8c8c2d
+        }
 
-#category-tools.g-box {
-    background-color: #fcfcfc;
-    border-color: #c9c9c9
-}
+        #category-tools.g-box {
+            background-color: #22272e;
+            border-color: #8c8c8c68
+        }
 
-#footer.g-box {
-    background-color: #f8f8f8;
-    border-color: #e4e4e400
-}
+        #footer.g-box {
+            background-color: #242424;
+            border-color: #ffffff62
+        }
 
-#copyright.g-box {
-    background-color: #f8f8f800;
-    border-color: #7e7e7e00
-}
+        #copyright.g-box {
+            background-color: #15181c;
+            border-color: #f2f2f221
+        }
 
 #cool-site.g-box {
     border-width: 1px
@@ -607,7 +568,7 @@ width: 100%;}
 }
 
 #mysite-section {
-    background: url(./line-pic-newtab.png) no-repeat center bottom;
+    /* background: url(./line-pic-newtab.png) no-repeat center bottom; */
     padding-top: 6px;
     padding-bottom: 5px;
     position: relative;
@@ -733,7 +694,7 @@ width: 100%;}
 }
 
 #cool-site .nav {
-    background-color: #f2efff;
+    background-color: #1d202e;
     height: 30px;
     margin: 0 0 4px -1px;
     overflow: hidden
@@ -748,12 +709,12 @@ width: 100%;}
 }
 
 #cool-site .hover {
-    background: #f3fafe
-}
+            background: #343434
+        }
 
-#category-tools .subtitle a {
-    color: #5f3afc
-}
+        #category-tools .subtitle a {
+            color: #5f3afc
+        }
 
 #category-tools .list li {
     padding-left: 26px;
@@ -761,7 +722,7 @@ width: 100%;}
 }
 
 #cool-site .nav a {
-    border-left: 1px solid #c2d2e2;
+    border-left: 1px solid #c2d2e26c;
     float: left;
     line-height: 1.2;
     margin-top: 7px;
@@ -769,7 +730,7 @@ width: 100%;}
 }
 
 #category-tools .list li a {
-    color: #333
+    color: #adbac7
 }
 
 #cool-site .item .subtitle {
@@ -834,7 +795,7 @@ li a.favicon {
 
 #cool-site .nav a,
 #cool-site .item .subtitle a {
-    color: #07519a
+    color: #5f3afc
 }
 
 #cool-site .nav a:hover,
@@ -854,7 +815,7 @@ li a.favicon {
 }
 
 #longlong {
-    border-right: solid 1px #c9cbce;
+    border-right: solid 1px #c9cbce5d;
     overflow: hidden;
     z-index: 2
 }
@@ -871,27 +832,28 @@ li a.favicon {
 }
 
 #longlong .tab-item {
-    background-color: #fff;
-    border-width: 1px;
-    border-style: solid dotted;
-    border-color: #c9cbce #fff #c9cbce #c9cbce;
-    color: #333;
+    background-color: #222222ad;
+            border-width: 1px;
+            border-style: solid dotted;
+            border-color: #c9cbce2e rgba(255, 255, 255, 0.176) #c9cbce43 #c9cbce35;
+            color: #ced8e4;
     float: left;
     font-size: 14px;
-    height: 36px;
+    height: 38px;
     line-height: 36px;
     margin-right: -1px;
     outline: none;
     overflow: hidden;
-    padding-left: 37px;
+    padding-left: 40px;
+    /* padding-left: 37px; */
     position: relative;
     width: 100%;
     z-index: 1
 }
 
 #longlong .tab-item:hover {
-    background-color: #eceef1;
-    border-color: #c9cbce transparent #c9cbce #c9cbce;
+    background-color: #3a3a3a;
+    border-color: #c9cbce29 transparent #5f3afc #c9cbce26;
     text-decoration: none;
     z-index: 2
 }
@@ -902,7 +864,7 @@ li a.favicon {
     border-top-width: 2px;
     border-bottom-width: 0;
     border-style: solid;
-    border-color: #5f3afc #c9cbce #fff;
+    border-color: #5f3afc #c9cbce70 rgba(255, 255, 255, 0.338);
     line-height: 34px;
     z-index: 3
 }
@@ -913,7 +875,7 @@ li a.favicon {
 
 #longlong .tuan,
 #longlong .tuan:hover {
-    border-color: #c9cbce
+    border-color: #c9cbce72
 }
 
 #longlong-iframe {
@@ -1005,7 +967,10 @@ li a.favicon {
 }
 
 #longlong .tuan {
-    background-position: 12px -725px
+    background-image: url(./icons/dark.png);
+}
+#longlong .tuan2 {
+    background-image: url(./icons/light.png);
 }
 
 #longlong .mobile {
@@ -1141,7 +1106,7 @@ li a.favicon {
 }
 
 #copyright .copyright-bd {
-    color: #595959;
+    color: #c6c6c6;
     font-size: 12px;
     height: 40px;
     line-height: 40px;
@@ -1153,7 +1118,7 @@ li a.favicon {
 }
 
 .ie6 #longlong .tab-item:hover {
-    border-right-color: #c9cbce
+    border-right-color: #c9cbce68
 }
 
 #copyright a,
@@ -1189,7 +1154,7 @@ li a.favicon {
 
 .tips-fb .fb,
 .tips-fb .fb:hover {
-    color: #FFF
+    color: rgb(43, 43, 43)
 }
 
 .tips-fb .fb-online {
@@ -1215,13 +1180,13 @@ li a.favicon {
 }
 
 #search-input {
-    background: #fff;
+    background: #22272e94;
     border-width: 2px;
     border-style: solid;
-    border-color: #5f3afc;
-    -moz-box-shadow: inset 1px 1px 1px #dedede;
+    border-color: #5e3afc9e;
+    /* -moz-box-shadow: inset 1px 1px 1px #dedede;
     -webkit-box-shadow: inset 1px 1px 1px #dedede;
-    box-shadow: inset 1px 1px 1px #dedede;
+    box-shadow: inset 1px 1px 1px #dedede; */
     display: inline;
     float: left;
     height: 44px;
@@ -1234,7 +1199,7 @@ li a.favicon {
 }
 
 #search-btn {
-    background-color: #5f3afc;
+    background-color: #5e3afcb3;
     background-repeat: no-repeat;
     background-position: 0 0;
     border: 0;
@@ -1246,7 +1211,7 @@ li a.favicon {
     overflow: hidden;
     text-align: center;
     width: 82px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     -moz-border-radius: 0.3em;
     -webkit-border-radius: 0.3em;
     border-radius: 0 0.9em 0.9em 0;
@@ -1254,8 +1219,8 @@ li a.favicon {
 }
 
 #doc-hd {
-    background-color: #fefded;
-    border-bottom: solid 1px #d5d5d5;
+    background-color: #191d2e;
+            border-bottom: solid 1px #d5d5d5;
     height: 35px;
     line-height: 35px
 }
@@ -1280,6 +1245,7 @@ li a.favicon {
     padding: 0 14px;
     width: 408px;
     letter-spacing:1px;
+    color: #ffffff;
 }
 
 #lifestyle .lifestyle-hd,
@@ -1318,9 +1284,9 @@ li a.favicon {
     /* border-width: 2px; */
     /* border-color: #5f3afc; */
     /* background-color: #fbfbfb; */
-    background-color: #5f3afc;
-    background-position: 0 -33px;
-    color: #fff;
+    background-color: #5e3afcef;
+            background-position: 0 -33px;
+            color: rgb(248, 248, 248);
     text-decoration: none
 }
 
@@ -1333,7 +1299,7 @@ li a.favicon {
 }
 
 #lifestyle .lifestyle-hd .title {
-    color: #323232;
+    color: #ffffff;
     float: left;
     font-size: 12px;
     font-weight: 400;
@@ -1348,7 +1314,7 @@ li a.favicon {
 }
 
 #lifestyle .lifestyle-bd .text {
-    border: 1px solid #b8b8b8;
+    border: 1px solid #b8b8b871;
     height: 18px;
     line-height: 18px;
     padding-left: 2px;
@@ -1367,8 +1333,8 @@ li a.favicon {
 }
 
 #search .form-group .shadowtop {
-    border-top: 1px solid #dedede;
-    border-bottom: 1px solid #f4f4f4;
+    border-top: 1px solid #dedede64;
+            border-bottom: 1px solid #f4f4f468;
     height: 0;
     left: 1px;
     overflow: hidden;
@@ -1379,31 +1345,31 @@ li a.favicon {
 }
 
 #search .form-group .shadowleft {
-    border-left: 1px solid #dedede;
-    border-right: 1px solid #f4f4f4;
-    height: 30px;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    width: 0
-}
+            border-left: 1px solid #dedede7a;
+            border-right: 1px solid #f4f4f46d;
+            height: 30px;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 0
+        }
 
-#lifestyle .lifestyle-hd .tab li {
-    border-right: 1px solid #868686;
-    display: inline;
-    float: left;
-    font-size: 12px;
-    height: 15px;
-    line-height: 15px;
-    margin-left: 6px;
-    padding-right: 6px;
-    position: relative
-}
+        #lifestyle .lifestyle-hd .tab li {
+            border-right: 1px solid #86868682;
+            display: inline;
+            float: left;
+            font-size: 12px;
+            height: 15px;
+            line-height: 15px;
+            margin-left: 6px;
+            padding-right: 6px;
+            position: relative
+        }
 
-#lifestyle .lifestyle-hd .tab li a {
-    color: #868686
-}
+        #lifestyle .lifestyle-hd .tab li a {
+            color: #868686
+        }
 
 #lifestyle .lifestyle-hd .tab .last {
     border-right: none
@@ -1468,7 +1434,21 @@ li a.favicon {
    border-radius: 6px;
 }
 
-
+/* 隐藏的内容 */
+#hiddenElement {
+            display: none; /* 初始状态隐藏 */
+        }
+#toggleButton {
+    background-color: #00000000;
+    margin-left: 10px;
+    color: #adbac7;
+}
+.light-show {
+    display: none;
+}
+/* .dark-show {
+    display: none;
+} */
 
 </style>
 
@@ -1506,7 +1486,8 @@ li a.favicon {
                   <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-6">
                      <div class="logo">
                         <a href="../index.html">
-                           <img src="../assets/img/index/logo/logo_hd.png" alt="logo" style="height: 30px;">
+                           <img src="../assets/img/index/logo/logo_hd.png" alt="logo" style="height: 30px;" class="light-show">
+                           <img src="../assets/img/index/logo/logo-white_hd.png" alt="logo" style="height: 30px;" class="dark-show">
                         </a>
                      </div>
                   </div>
@@ -1667,7 +1648,7 @@ li a.favicon {
 
          <!-- bg shape area start -->
          <div class="bg-shape">
-            <img src="./bac3-pic.png" alt="">
+            <img src="./bac2-dark-pic.png" alt="">
          </div>
          <!-- bg shape area end -->
 
@@ -1685,15 +1666,15 @@ li a.favicon {
                                  </div>
                               </li>
                               <li>
-                                 <h6 style="font-size: 18px;"><a href="../about_me.html">MrSunny</a></h6>
-                                 <div id="show_time" style="font-size: 16px;color: #55545b;">  
+                                 <h6 style="font-size: 18px;"><a href="../about_me.html" style="color:white">MrSunny</a></h6>
+                                 <div id="show_time" style="font-size: 16px;color: #c2c2c2;">  
 
                                  <!-- <span>Jan.19th,2023
                                 </span> -->
                               </li>
                            </ul>
                         </div>                        
-                        <h2 class="page__title">【起始页】欢迎回来</h2>
+                        <h2 class="page__title" style="color: rgb(211, 211, 211);">【起始页】欢迎回来</h2>
                         <p style="padding-left: 12px; font-size: 20px;padding-top: 10px;">&nbsp;「To My Friend」Welcome  to The New Tab！</p>
 
                      </div>
@@ -1724,10 +1705,8 @@ li a.favicon {
 <div id="doc-main" class="container2">
    <div id="doc-main-hd" class="hd">
 
-    <button id="theme-toggle" onclick="toggleTheme()">切换主题</button>
-    <button id="system-theme" onclick="followSystemTheme()">跟随系统</button>
-    这是深色
 
+  
 
 
 
@@ -1807,33 +1786,39 @@ li a.favicon {
            <div id="longlong">
                <ul>
                 
-                   <li class="on" id="longlong-channel-home" style="background-color: rgba(255, 255, 255, 0.712);">
+                   <li class="on" id="longlong-channel-home" style="background-color: rgba(91, 90, 90, 0.295);">
                        <a href="#" target="_self" class="tab-item home">我的主页</a>
                    </li>
                    <li id="longlong-channel-news">
-                       <a href="https://mrsunny.top/search/" class="tab-item search" target="_self">搜索模式</a>
+                       <a href="https://mrsunny.top/start/" class="tab-item search" target="_self">搜索模式</a>
                    </li>
                    <li id="longlong-channel-tv">
-                       <a href="https://mrsunny.top/recommend/recommend_music.html" class="tab-item music" target="_self">音乐相关</a>
+                       <a href="" class="tab-item music" target="_self">音乐相关</a>
                    </li>
                    <li id="longlong-channel-movie">
-                       <a href="https://mrsunny.top/404_building.html" class="tab-item videos" target="_self">视频相关</a>
+                       <a href="" class="tab-item videos" target="_self">视频相关</a>
                    </li>
                    <li id="longlong-channel-game">
-                       <a href="https://mrsunny.top/interest.html" class="tab-item games" target="_self">游戏相关</a>
+                       <a href="" class="tab-item games" target="_self">游戏相关</a>
                    </li>
                    <li id="longlong-channel-novel">
-                       <a href="https://mrsunny.top/recommend/recommend_app.html" class="tab-item soft-dwload" target="_self">软件下载</a>
+                       <a href="" class="tab-item soft-dwload" target="_self">软件下载</a>
                    </li>
                    <li id="longlong-channel-travel">
-                       <a href="https://mrsunny.top/404_building.html" class="tab-item dev-tools" target="_self">开发工具</a>
+                       <a href="" class="tab-item dev-tools" target="_self">开发工具</a>
                    </li>
                    <li id="longlong-channel-mall">
                        <a href="https://mrsunny.top/" class="tab-item website" target="_self">网站主页</a>
                    </li>
-                   <li id="longlong-channel-tuan">
-                       <a href="./start-dark.html" class="tab-item dark" target="_self">夜间模式</a>
-                   </li>
+
+                   <li id="longlong-channel-tuan" class="light-show">
+                    <a href="./newtab-dark.html" class="tab-item dark" target="_self">夜间模式</a>
+
+                </li>
+                    <li id="longlong-channel-tuan2" class="dark-show">
+                     <a href="./newtab.html" class="tab-item light" target="_self">日间模式</a>
+                     </li>
+
                </ul>
            </div>
        </div>
@@ -1883,37 +1868,44 @@ li a.favicon {
            <div id="hot-site" class="gmodule g-box">
                <div id="mysite-section">
                    <ul class="list gclearfix">
-                       <li><a href="https://www.baidu.com" class="favicon"  style="background-image:url(./icons/color/Baidu.png);">百度一下</a></li>
-                       <li><a href="https://cn.bing.com/" class="favicon"  style="background-image:url(./icons/color/Bing.png);">Bing必应</a></li>
-                       <li><a href="https://www.sogou.com/" class="favicon"  style="background-image:url(./icons/color//Sougou.png);">搜狗搜索</a></li>
-                       <li><a href="https://www.so.com/" class="favicon"  style="background-image:url(./icons/color/Haosou.png);">360搜索</a></li>
+                       <li><a href="https://www.baidu.com" class="favicon"  style="background-image:url(./icons/dark/Baidu.png);">百度一下</a></li>
+                       <li><a href="https://cn.bing.com/" class="favicon"  style="background-image:url(./icons/dark/Bing.png);">Bing必应</a></li>
+                       <li><a href="https://www.sogou.com/" class="favicon"  style="background-image:url(./icons/dark//Sougou.png);">搜狗搜索</a></li>
+                       <li><a href="https://www.so.com/" class="favicon"  style="background-image:url(./icons/dark/Haosou.png);">360搜索</a></li>
+
+                       <!-- <li><a href="https://quark.sm.cn/" class="favicon"
+                        style="background-image:url(./icons/dark/Quark.png);">夸克搜索</a></li> -->
+
+                        <li><a href="https://quark.sm.cn/" class="favicon"
+                            style="background-image:url(./icons/dark/Smss.png);">神马搜索</a></li>
+    
                        <li><a href="https://www.toutiao.com/?wid=1662804125327" class="favicon"
-                       style="background-image:url(./icons/color/Toutiao.png);">头条搜索</a></li>
-                       <li><a href="https://www.chinaso.com/" class="favicon"  style="background-image:url(./icons/color/Chinaso.png);">中国搜索</a></li>
+                       style="background-image:url(./icons/dark/Toutiao.png);">头条搜索</a></li>
+                       <li><a href="https://www.chinaso.com/" class="favicon"  style="background-image:url(./icons/dark/Chinaso.png);">中国搜索</a></li>
+
+                       <li><a href="https://mijisou.com/" class="favicon"  style="background-image:url(./icons/dark/Mijisou.png);">秘迹搜索</a></li>
+           
                        
-                       <li><a href="https://www.google.com/" class="favicon"  style="background-image:url(./icons/color/Google.png);">Google</a></li>
-                       <li><a href="https://fsoufsou.com/" class="favicon"
-                           style="background-image:url(./icons/color/Fsearch.png);">Fsou-F搜</a>
-                           </li>
+                       <li><a href="https://www.google.com/" class="favicon"  style="background-image:url(./icons/dark/Google.png);">Google</a></li>
+
                        
-                       <li><a href="https://search.yahoo.com/" class="favicon"  style="background-image:url(./icons/color/Yahoo.png);">Yahoo雅虎</a></li>
-                       <li><a href="https://mijisou.com/" class="favicon"  style="background-image:url(./icons/color/Mijisou.png);">秘迹搜索</a></li>
+                       <li><a href="https://search.yahoo.com/" class="favicon"  style="background-image:url(./icons/dark/Yahoo.png);">Yahoo雅虎</a></li>
+            
                        
-                       <li><a href="https://m.sm.cn/" class="favicon"
-                           style="background-image:url(./icons/color/Smss.png);">神马搜索</a></li>
-                       
-                       <li><a href="https://mengso.com/?q=fuck" class="favicon"
-                       style="background-image:url(./icons/color/Mengsou.png);">萌搜</a></li>
-                       <li><a href="https://duckduckgo.com/" class="favicon"  style="background-image:url(./icons/color/Duckduckgo.png);">DuckGo</a></li>
+                       <!-- <li><a href="https://mengso.com/?q=fuck" class="favicon"
+                       style="background-image:url(./icons/dark/Mengsou.png);">萌搜</a></li> -->
+                       <li><a href="https://duckduckgo.com/" class="favicon"  style="background-image:url(./icons/dark/Duckduckgo.png);">DuckGo</a></li>
                        
                        
                        <li><a href=" https://yandex.com/" class="favicon"
-                           style="background-image:url(./icons/color/Yandex.png);">Yandex</a></li>
+                           style="background-image:url(./icons/dark/Yandex.png);">Yandex</a></li>
                        
                        <li><a href="https://goobe.io/" class="favicon"
-                           style="background-image:url(./icons/color/Goobe.png);">goobe</a></li>
+                           style="background-image:url(./icons/dark/Goobe.png);">goobe</a></li>
                        
-
+                           <li><a href="https://fsoufsou.com/" class="favicon"
+                            style="background-image:url(./icons/dark/Fsearch.png);">Fsou-F搜</a>
+                            </li>
 
 
 
@@ -1925,39 +1917,18 @@ li a.favicon {
                </div>
                <div id="mysite-section">
                   <ul class="list gclearfix">
-                      <li><a href="https://www.baidu.com" class="favicon"  style="background-image:url(./icons/color/Baidu.png);">百度一下</a></li>
-                      <li><a href="https://cn.bing.com/" class="favicon"  style="background-image:url(./icons/color/Bing.png);">Bing必应</a></li>
-                      <li><a href="https://www.sogou.com/" class="favicon"  style="background-image:url(./icons/color//Sougou.png);">搜狗搜索</a></li>
-                      <li><a href="https://www.so.com/" class="favicon"  style="background-image:url(./icons/color/Haosou.png);">360搜索</a></li>
-                      <li><a href="https://www.toutiao.com/?wid=1662804125327" class="favicon"
-                      style="background-image:url(./icons/color/Toutiao.png);">头条搜索</a></li>
-                      <li><a href="https://www.chinaso.com/" class="favicon"  style="background-image:url(./icons/color/Chinaso.png);">中国搜索</a></li>
-                      
-                      <li><a href="https://www.google.com/" class="favicon"  style="background-image:url(./icons/color/Google.png);">Google</a></li>
-                      <li><a href="https://fsoufsou.com/" class="favicon"
-                          style="background-image:url(./icons/color/Fsearch.png);">Fsou-F搜</a>
-                          </li>
-                      
-                      <li><a href="https://search.yahoo.com/" class="favicon"  style="background-image:url(./icons/color/Yahoo.png);">Yahoo雅虎</a></li>
-                      <li><a href="https://mijisou.com/" class="favicon"  style="background-image:url(./icons/color/Mijisou.png);">秘迹搜索</a></li>
-                      
-                      <li><a href="https://m.sm.cn/" class="favicon"
-                          style="background-image:url(./icons/color/Smss.png);">神马搜索</a></li>
-                      
-                      <li><a href="https://mengso.com/?q=fuck" class="favicon"
-                      style="background-image:url(./icons/color/Mengsou.png);">萌搜</a></li>
-                      <li><a href="https://duckduckgo.com/" class="favicon"  style="background-image:url(./icons/color/Duckduckgo.png);">DuckGo</a></li>
-                      
-                      
-                      <li><a href=" https://yandex.com/" class="favicon"
-                          style="background-image:url(./icons/color/Yandex.png);">Yandex</a></li>
-                      
-                      <li><a href="https://goobe.io/" class="favicon"
-                          style="background-image:url(./icons/color/Goobe.png);">goobe</a></li>
-                      
+                      <li><a href="https://chatgpt.com/" class="favicon"  style="background-image:url(./icons/dark/Chatgpt.png);">Chat GPT</a></li>
+                      <li><a href="https://qianxun.vivo.com/?via=onetts.com#/explore" class="favicon"  style="background-image:url(./icons/dark/Lanxin.png);">蓝心千询</a></li>
+
+                      <li><a href="https://tongyi.aliyun.com/qianwen/" class="favicon"  style="background-image:url(./icons/dark/Tongyi.png);">通义千问</a></li>
+                      <li><a href="https://yiyan.baidu.com/" class="favicon"
+                      style="background-image:url(./icons/dark/Wenxin.png);">文心一言</a></li>
 
 
-
+                      <li><a href="https://www.doubao.com/chat/" class="favicon"  style="background-image:url(./icons/dark/Chinaso.png);">豆包AI</a></li>
+                      
+                      <li><a href="https://kimi.moonshot.cn/" class="favicon"  style="background-image:url(./icons/dark/Kimi.png);">Kimi AI</a></li>
+                      <li><a href="https://www.onetts.com/" class="favicon"  style="background-image:url(./icons/dark/AIurl.png);">AI导航页</a></li>
 
 
 
@@ -1968,73 +1939,122 @@ li a.favicon {
                <div id="famous-section">
                    <ul class="list gclearfix">
                        <li><a href="https://weibo.com/" class="favicon"
-                           style="background-image:url(./icons/color/Weibo.png);">新浪微博</a></li>
+                           style="background-image:url(./icons/dark/Weibo.png);">新浪微博</a></li>
                        <li><a href="https://qzone.qq.com/" class="favicon"
-                           style="background-image:url(./icons/color/QQzone.png);">QQ空间</a></li>
+                           style="background-image:url(./icons/dark/QQzone.png);">QQ空间</a></li>
                        <li><a href="https://www.bilibili.com/" class="favicon"
-                           style="background-image:url(./icons/color/Bilibili.png);">哔哩哔哩</a></li>
+                           style="background-image:url(./icons/dark/Bilibili.png);">哔哩哔哩</a></li>
                        <li><a href="https://www.ixigua.com/?wid_try=1" class="favicon"
-                           style="background-image:url(./icons/color/Xigua.png);">西瓜视频</a></li>
+                           style="background-image:url(./icons/dark/Xigua.png);">西瓜视频</a></li>
+                           <li><a href="https://www.douyin.com/" class="favicon"
+                            style="background-image:url(./icons/dark/Tiktok.png);">抖音短视频</a></li>
                        <li><a href="https://www.zhihu.com/" class="favicon"
-                           style="background-image:url(./icons/color/Zhihu.png);"> 知 乎 </a></li>
+                           style="background-image:url(./icons/dark/Zhihu.png);"> 知 乎 </a></li>
                        <li><a href="https://tieba.baidu.com/" class="favicon"
-                           style="background-image:url(./icons/color/Baidu-tieba.png);">百度贴吧</a></li>
+                           style="background-image:url(./icons/dark/Baidu-tieba.png);">百度贴吧</a></li>
+
+                                <li><a href="https://www.lofter.com/front/login" class="favicon"
+                                    style="background-image:url(./icons/dark/Lofter.png);">Lofter乐乎</a></li>
+
+                            <!-- <li><a href="https://twitter.com/" class="favicon"
+                                style="background-image:url(./icons/dark/X.png);">Twitter(X)</a></li> -->
                        <li><a href="https://twitter.com/" class="favicon"
-                           style="background-image:url(./icons/color/Twitter.png);">Twitter</a></li>
+                           style="background-image:url(./icons/dark/Twitter.png);">X-Twitter</a></li>
                        <li><a href="https://www.facebook.com/" class="favicon"
-                           style="background-image:url(./icons/color/Facebook.png);">Facebook</a></li>
+                           style="background-image:url(./icons/dark/Facebook.png);">Facebook</a></li>
                        <li><a href="https://www.youtube.com/" class="favicon"
-                           style="background-image:url(./icons/color/Youtube.png);">YouTube</a></li>
-                       <li><a href="https://www.instagram.com/" class="favicon"
-                           style="background-image:url(./icons/color/instagram.png);">Instagram</a></li>
+                           style="background-image:url(./icons/dark/Youtube.png);">YouTube</a></li>
+                       <li><a href="https://www.instagram.com/" class="favicon" 
+                        style="background-image:url(./icons/dark/instagram.png);">Instagram</a></li>
+
+ 
+                            <li><a href="https://www.reddit.com/" class="favicon"
+                                style="background-image:url(./icons/dark/Redit.png);">Redit</a></li>
+
                        <li><a href="https://www.pinterest.com/" class="favicon"
-                           style="background-image:url(./icons/color/Pinterest.png);">Pinterest</a></li>
-                       <li><a href="https://www.pixiv.net/" class="favicon"
-                           style="background-image:url(./icons/color/Pixiv.png);">Pixiv</a></li>
+                           style="background-image:url(./icons/dark/Pinterest.png);">Pinterest</a></li>
+                            <li><a href="https://www.tiktok.com/" class="favicon"
+                                style="background-image:url(./icons/dark/Tiktok.png);">Tik Tok</a></li>                           
+                           <li><a href="https://www.pixiv.net/" class="favicon"
+                            style="background-image:url(./icons/dark/Pixiv.png);">Pixiv</a></li>
+
+
+    
+                            
+
+                            <li><a href="https://mail.google.com/" class="favicon"
+                                style="background-image:url(./icons/dark/QQ-music.png);">QQ音乐</a></li>
+                            <li><a href="https://mail.google.com/" class="favicon"
+                                style="background-image:url(./icons/dark/Neteasy-music.png);">网易云音乐</a></li>
+                                <li><a href="https://open.spotify.com/" class="favicon"
+                                    style="background-image:url(./icons/dark/Spotify.png);">Spotify</a></li>
+    
+
                        <li><a href="https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5" class="favicon"
-                           style="background-image:url(./icons/color/Wikipedia.png);">维基百科</a></li>
+                           style="background-image:url(./icons/dark/Wikipedia.png);">维基百科</a></li>
+
+                           <li><a href="https://baike.baidu.com/" class="favicon"
+                            style="background-image:url(./icons/dark/Baidu-baike.png);">百度百科</a></li>
+                        
+ 
 
 
-
-                       <li><a href="https://baike.baidu.com/" class="favicon"
-                           style="background-image:url(./icons/color/Baidu-baike.png);">百度百科</a></li>
                       
                        <li><a href="https://github.com/" class="favicon"
-                           style="background-image:url(./icons/color/Github.png);">Github</a></li>
+                           style="background-image:url(./icons/dark/Github.png);">Github</a></li>
                        <li><a href="https://www.csdn.net/" class="favicon"
-                           style="background-image:url(./icons/color/CSDN.png);">CSDN 社区</a></li>
+                           style="background-image:url(./icons/dark/CSDN.png);">CSDN 社区</a></li>
                        <li><a href="https://www.fandom.com/explore-zh?uselang=zh" class="favicon"
-                           style="background-image:url(./icons/color/Fandom.png);">Fandom</a></li>
+                           style="background-image:url(./icons/dark/Fandom.png);">Fandom</a></li>
 
-                       <li><a href="https://www.lofter.com/front/login" class="favicon"
-                           style="background-image:url(./icons/color/Lofter.png);">Lofter乐乎</a></li>
-                       <li><a href="https://mail.google.com/" class="favicon"
-                           style="background-image:url(./icons/color/QQ-music.png);">QQ音乐</a></li>
-                       <li><a href="https://mail.google.com/" class="favicon"
-                           style="background-image:url(./icons/color/Neteasy-music.png);">网易云音乐</a></li>
 
 
                        
                      
                        
                        <li><a href="https://mail.qq.com/" class="favicon"
-                           style="background-image:url(./icons/color/Tencent.png);">QQ邮箱</a></li>
+                           style="background-image:url(./icons/dark/Tencent.png);">QQ邮箱</a></li>
                        <li><a href="https://mail.163.com/" class="favicon"
-                           style="background-image:url(./icons/color/163-mail.png);">163邮箱</a></li>
+                           style="background-image:url(./icons/dark/163-mail.png);">163邮箱</a></li>
                        <li><a href="https://outlook.live.com/" class="favicon"
-                           style="background-image:url(./icons/color/Outlook_old.png);">Outlook</a></li>
+                           style="background-image:url(./icons/dark/Outlook_old.png);">Outlook</a></li>
                        <li><a href="https://mail.google.com/" class="favicon"
-                           style="background-image:url(./icons/color/G-mail_old.png);">Gmail</a></li>
+                           style="background-image:url(./icons/dark/G-mail_old.png);">Gmail</a></li>
                        <li><a href="https://mail.google.com/" class="favicon"
-                           style="background-image:url(./icons/color/126-mail.png);">126邮箱</a></li>
+                           style="background-image:url(./icons/dark/126-mail.png);">126邮箱</a></li>
                        <li><a href="https://mail.google.com/" class="favicon"
-                           style="background-image:url(./icons/color/139-mail.png);">139邮箱</a></li>
-
+                           style="background-image:url(./icons/dark/139-mail.png);">139邮箱</a></li>
+                     <li><a href="https://www.taobao.com/" class="favicon"
+                           style="background-image:url(./icons/dark/Taobao.png);">淘宝</a><span class="split">·</span><a href="https://www.tmall.com/">天猫</a></li>
                        <li><a href="https://www.amazon.cn/" class="favicon"
-                           style="background-image:url(./icons/color/Amazon.png);">亚马逊</a></li>
-                       <li><a href="https://www.taobao.com/" class="favicon"
-                           style="background-image:url(./icons/color/Taobao.png);">淘宝</a><span class="split">·</span><a href="https://www.tmall.com/">天猫</a></li>
-                       
+                           style="background-image:url(./icons/dark/Amazon.png);">亚马逊</a></li>
+  
+
+                        
+
+                        <li><a href="https://v.qq.com/" class="favicon"  style="background-image:url(./icons/dark/Tencent-tv.png);">腾讯视频</a></li>
+                             <li><a href="https://www.iqiyi.com/" class="favicon"
+                            style="background-image:url(./icons/dark/Iqiyi.png);"> 爱奇艺iQYI</a>
+                            </li>                      
+                        <li><a href="https://www.youku.com/" class="favicon"
+                            style="background-image:url(./icons/dark/Youku.png);">优酷视频</a></li>
+                        
+                        <li><a href="https://www.mgtv.com/" class="favicon"
+                        style="background-image:url(./icons/dark/Mgtv.png);">芒果TV</a></li>
+                       <li><a href="https://intro.limestart.cn/" class="favicon"
+                            style="background-image:url(./icons/dark/Qingning.png);">青柠起始页</a></li>
+                                               
+                        <li><a href="https://hao.360.com/sub/yingshi_website_nav.html" class="favicon"  style="background-image:url(./icons/dark/Website.png);">360导航</a></li>
+                        
+                        
+  
+                        <li><a href="https://store.steampowered.com/" class="favicon"
+                            style="background-image:url(./icons/dark/Steam.png);">Steam</a></li>
+                        
+                             <li><a href="https://www.4399.com/" class="favicon"
+                              style="background-image:url(./icons/dark/4399.png);">4399</a></li>
+  
+  
                      
 
                    </ul>
@@ -2052,19 +2072,140 @@ li a.favicon {
                    <h2 class="title">常用酷站</h2>
                </div>
                <div class="cool-site-bd g-box-bd">
+                <div class="panel">
+                    <div class="nav">
+                        <a href="https://www.onetts.com/">AI-通塔师导航</a>
+                        <a href="https://www.glookai.com/">轱辘凯AI工具·导航</a>
+
+                        <a href="https://www.jyshare.com/search-sites/">搜索引擎大全</a>                        
+                        <!-- <a href="https://www.bilibili.com/">视频</a>
+                        <a href="https://music.qq.com">音乐</a>
+                        <a href="https://www.zhihu.com/">问答</a>
+                        <a href="https://tieba.baidu.com/">贴吧</a>
+                        <a href="https://baike.baidu.com/">百科</a> -->
+                        <button id="toggleButton">设置</button>
+
+
+                    </div>
+                    <div id="hiddenElement">
+                        <div class="item" data-item="mall">
+                            <h3 class="subtitle"><a href="" style="color: #5f3afc;">隐藏</a></h3>
+                            <ul class="list">
+                                <li><a href="https://xhamster.com/">Xhamster</a></li>
+                                <li><a href="https://www.xvideos.com/" style="color: #5f3afc;">Xvideos</a></li>
+                                <li><a href="https://pornhub.com/" style="color: #5f3afc;">PornHub</a></li>
+                                <li><a href="https://theporndude.com/zh" style="color: #5f3afc;">其他网址导航</a></li>
+                                <!-- <li><a href="https://map.qq.com/">腾讯地图</a>
+                                </li>
+                                <li><a href="https://earth.google.com/web/"> Google Earth</a></li>
+                                <li><a href="https://www.tianditu.gov.cn/">国家地理信息</a></li> -->
+                            </ul>
+                            <a href="https://theporndude.com/zh/top-porn-tube-sites" class="more">更多»</a>
+                        </div>                        
+                        </div>
+    
+                    <div class="item" data-item="car">
+                        <h3 class="subtitle"><a href="https://chatgpt.com/">聊天</a></h3>
+                        <ul class="list">
+                            <li><a href="https://www.onetts.com/ai-chatbot/">相关网址导航</a></li>
+
+                            <li><a href="https://chatgpt.com/">Chat GPT</a></li>
+                            <li><a href="https://tongyi.aliyun.com/qianwen/">通义千问</a></li>
+                            <li><a href="https://yiyan.baidu.com/">文心一言</a></li>
+                            <li><a href="https://qianxun.vivo.com/?via=onetts.com#/explore">蓝心千询</a></li>
+                            <li><a href="https://www.doubao.com/chat/">豆包</a></li>
+                            <li><a href="https://kimi.moonshot.cn/">Kimi AI</a></li>
+
+                            
+                           
+                        </ul>
+                        <a href="https://www.onetts.com/ai-chatbot/" class="more">更多»</a>
+                    </div>
+                    <div class="item">
+                        <h3 class="subtitle"><a href="https://www.iqiyi.com/">影视</a></h3>
+                        <ul class="list">
+                            
+                            <li><a href="https://hao.360.com/sub/yingshi_website_nav.html">影视网址导航</a></li>
+
+                            <li><a href="https://www.bilibili.com/">哔哩哔哩视频</a></li>
+                            <li><a href="https://www.ixigua.com/?wid_try=1">西瓜视频</a></li>
+                            <li><a href="https://www.iqiyi.com/">爱奇艺</a></li>
+                            <li><a href="https://v.qq.com/">腾讯视频</a></li>
+                            <li><a href="https://www.youku.com/">优酷视频</a></li>
+                            <li><a href="https://www.mgtv.com/">芒果TV</a></li>
+                        </ul>
+                        <a href="https://hao.360.com/sub/yingshi_website_nav.html" class="more">更多»</a>
+                    </div>
+                    <div class="item" data-item="mall">
+                        <h3 class="subtitle"><a href="https://music.qq.com">音乐</a></h3>
+                        <ul class="list">
+                             <li><a href="https://music.apple.com/cn/browse">Apple Music</a></li>
+                           
+                            <li><a href="https://music.qq.com">QQ音乐</a></li>
+                            <li><a href="https://music.163.com">网易云音乐</a></li>
+                            
+                            <li><a href="https://www.kugou.com">酷狗音乐</a></li>
+                            
+                            <li><a href="https://music.91q.com/">百度音乐</a></li>
+                            <li><a href="https://www.kuwo.cn/">酷我音乐</a></li>
+                            <li><a href="https://open.spotify.com/">Spotify</a></li>
+                        </ul>
+                        <a href="https://hao.360.com/sub/yinyue_website_nav.html" class="more">更多»</a>
+                    </div>
+
+
+
+
+
+
+                    <script>
+                        // 获取按钮和隐藏元素
+                        const button = document.getElementById('toggleButton');
+                        const hiddenElement = document.getElementById('hiddenElement');
+                
+                        // 添加点击事件监听器
+                        button.addEventListener('click', () => {
+                            // 切换元素的显示状态
+                            if (hiddenElement.style.display === 'none') {
+                                hiddenElement.style.display = 'block';
+                                button.textContent = '隐藏显示内容▲';
+                            } else {
+                                hiddenElement.style.display = 'none';
+                                button.textContent = '显示更多内容▼';
+                            }
+                        });
+                    </script>
+
+                    <!-- <div class="item" data-item="mall">
+                        <h3 class="subtitle"><a href="https://map.baidu.com/">地图</a></h3>
+                        <ul class="list">
+                            <li><a href="https://map.baidu.com/">百度地图</a></li>
+                            <li><a href="https://cn.bing.com/maps?FORM=Z9LH2">Bing地图</a></li>
+                            <li><a href="https://maps.google.co.jp/maps?hl=zh-CN&tab=vl">Google Map</a></li>
+                            <li><a href="https://gaode.com">高德地图</a></li>
+                            <li><a href="https://map.qq.com/">腾讯地图</a>
+                            </li>
+                            <li><a href="https://earth.google.com/web/"> Google Earth</a></li>
+                            <li><a href="https://www.tianditu.gov.cn/">国家地理信息</a></li>
+                        </ul>
+                        <a href="https://www.bing.com/search?q=%E5%9C%B0%E5%9B%BE&qs=n&form=QBRE&sp=-1&pq=ditu&sc=10-4&sk=&cvid=E525239F07DF49EA9035AA1C47E4BD18&ghsh=0&ghacc=0&ghpl=" class="more">更多»</a>
+                    </div> -->
+
+
+                </div>
                    <div class="panel">
                        <div class="nav">
-                           <a href="https://www.bing.com/?scope=images&nr=1&FORM=NOFORM">图片</a>
+                           <a href="https://www.bing.com/?scope=images&nr=1&FORM=NOFORM">搜索图片</a>
                            <a href="https://www.bilibili.com/">视频</a>
                            <a href="https://music.qq.com">音乐</a>
                            <a href="https://map.baidu.com/">地图</a>
                            <a href="https://www.zhihu.com/">问答</a>
                            <a href="https://tieba.baidu.com/">贴吧</a>
                            <a href="https://baike.baidu.com/">百科</a>
-                           <a href="https://www.baidu.com/">搜索引擎</a>
+                           <a href="https://www.jyshare.com/search-sites/">搜索引擎大全</a>
                        </div>
                        <div class="item" data-item="car">
-                           <h3 class="subtitle"><a href="https://www.bing.com/?scope=images&nr=1&FORM=NOFORM">图片</a></h3>
+                           <h3 class="subtitle"><a href="https://www.bing.com/?scope=images&nr=1&FORM=NOFORM">搜图</a></h3>
                            <ul class="list">
                                <li><a href="https://image.baidu.com">百度图片</a></li>
                                <li><a href="https://www.bing.com/?scope=images&nr=1&FORM=NOFORM">Bing图片</a></li>
@@ -2108,7 +2249,7 @@ li a.favicon {
                                <li><a href="https://music.apple.com/cn/browse">Apple Music</a></li>
                                <li><a href="https://open.spotify.com/">Spotify</a></li>
                            </ul>
-                           <a href="https://www.bing.com/search?q=%E9%9F%B3%E4%B9%90&qs=n&form=QBRE&sp=-1&pq=yyue&sc=10-4&sk=&cvid=BCB4E0610FBF480B905C8915F436BD5D&ghsh=0&ghacc=0&ghpl=" class="more">更多»</a>
+                           <a href="https://hao.360.com/sub/yinyue_website_nav.html" class="more">更多»</a>
                        </div>
                        <div class="item" data-item="mall">
                            <h3 class="subtitle"><a href="https://map.baidu.com/">地图</a></h3>
