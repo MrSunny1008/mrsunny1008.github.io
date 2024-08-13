@@ -1,0 +1,32 @@
+.diy-white {
+color: rgb(255, 255, 255);
+}
+
+.diy-logo {
+    background-image: url(../img/index/logo/logo-white_hd.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto 100%;
+}
+.diy-logo-white {
+    background-image: url(../img/index/logo/logo-white_hd.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto 100%;
+}
+.diy-qrcode {
+    background-image: url(../img/index/logo/qrcode-dark.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto 100%;
+}
+/* .diy-img-dark {
+    padding: 0;
+    margin: 0;
+   background-color: rgba(0, 0, 0, 0.87);
+} */
+
+img {
+    -webkit-filter: brightness(90%); /*考虑浏览器兼容性：兼容 Chrome, Safari, Opera */
+filter: brightness(90%);
+}
