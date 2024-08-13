@@ -1238,8 +1238,8 @@ li a.favicon {
     line-height: 20px;
     margin-top: 10px;
     outline: 0;
-    padding: 0 14px;
-    width: 408px;
+    padding: 0 0 0 14px;
+    width: 460px;
     letter-spacing:1px;
 }
 
@@ -1443,6 +1443,14 @@ li a.favicon {
 .dark-show {
     display: none;
 }
+#clear-button{
+    background-color: #00000000;float: right;margin-right: 15px;font-size: 18px;line-height: 18px;margin-top: 9.5px;color: #8686864a;}
+    #clear-button:hover{
+        color: #868686e1;}
+        #clear-button:active{
+            color: #868686cf;}
+            #clear-button:focus{
+                color: #8686864a;}
 
 </style>
 
@@ -1722,10 +1730,17 @@ li a.favicon {
 
                   <input type="text" name="wd" autocomplete="off" 
                       qsuginited="1" value=""id="search-query">
+                      <button onclick="clearSearch()" id="clear-button">×</button>
 
               </div>
                  <button id="search-btn" type="submit" class="" onclick="performSearch()">搜索</button>
-           
+
+                 <script>
+                     function clearSearch() {
+                         document.getElementById("search-query").value = "";
+                     }
+                 </script>
+                 
      
              </div>
 

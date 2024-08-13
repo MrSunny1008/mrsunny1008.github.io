@@ -1244,8 +1244,8 @@ li a.favicon {
     line-height: 20px;
     margin-top: 10px;
     outline: 0;
-    padding: 0 14px;
-    width: 408px;
+    padding: 0 0 0 14px;
+    width: 460px;
     letter-spacing:1px;
     color: #ffffff;
 }
@@ -1451,7 +1451,14 @@ li a.favicon {
 /* .dark-show {
     display: none;
 } */
-
+#clear-button{
+    background-color: #00000000;float: right;margin-right: 15px;font-size: 18px;line-height: 18px;margin-top: 9.5px;color: #868686c5;}
+    #clear-button:hover{
+        color: #e3e3e3e1;}
+        #clear-button:active{
+            color: #ddddddcf;}
+            #clear-button:focus{
+                color: #868686c5;}
 </style>
 
    </head>
@@ -1729,10 +1736,16 @@ li a.favicon {
 
                   <input type="text" name="wd" autocomplete="off" 
                       qsuginited="1" value=""id="search-query">
+                      <button onclick="clearSearch()" id="clear-button">×</button>
 
               </div>
                  <button id="search-btn" type="submit" class="" onclick="performSearch()">搜索</button>
-           
+                 <script>
+                    function clearSearch() {
+                        document.getElementById("search-query").value = "";
+                    }
+                </script>
+    
      
              </div>
 
@@ -1868,7 +1881,7 @@ li a.favicon {
             <td style="width: max-content;max-width: 920px;padding-left: 18px;">
        <div class="f-r" bone="right-var">
            <div id="hot-site" class="gmodule g-box">
-               <div id="mysite-section">
+               <div id="mysite-section" style="border-bottom: #c2c2c215 1px solid;">
                    <ul class="list gclearfix">
                        <li><a href="https://www.baidu.com" class="favicon"  style="background-image:url(./icons/dark/Baidu.png);">百度一下</a></li>
                        <li><a href="https://cn.bing.com/" class="favicon"  style="background-image:url(./icons/dark/Bing.png);">Bing必应</a></li>
@@ -1919,7 +1932,7 @@ li a.favicon {
                     
                    </ul>
                </div>
-               <div id="mysite-section">
+               <div id="mysite-section" style="border-bottom: #c2c2c215 1px solid;">
                   <ul class="list gclearfix">
                       <li><a href="https://chatgpt.com/" class="favicon"  style="background-image:url(./icons/dark/Chatgpt.png);">Chat GPT</a></li>
                       <li><a href="https://qianxun.vivo.com/?via=onetts.com#/explore" class="favicon"  style="background-image:url(./icons/dark/Lanxin.png);">蓝心千询</a></li>
