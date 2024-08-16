@@ -40,6 +40,9 @@ body {
     background-color: #fc3a3a;color: #ffffff;border:2px solid #fc3a3a;
     -webkit-border-radius: 1em;border-radius: 0.5em;
 }
-
+.btn2:visited {
+    background-color: #fc3a3a;color: #ffffff;border:2px solid #fc3a3a;
+    -webkit-border-radius: 1em;border-radius: 0.5em;
+}
 
 
