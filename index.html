@@ -458,9 +458,9 @@ console.log(`%c${res} %c${title1} %c${title2}
                      </div>
                   </div>
                </div>
-               <div class="row">
+               <div class="row" id="article-list">
 
-
+<!-- 
                   <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
                      <div class="product__item white-bg mb-30 wow fadeInUp" data-wow-delay=".5s">
                         <div class="product__thumb">
@@ -606,7 +606,7 @@ console.log(`%c${res} %c${title1} %c${title2}
                         </div>
                      </div>
                   </div>
-                  
+                   -->
                </div>
                <div class="row">
                   <div class="col-xxl-12">
@@ -621,6 +621,62 @@ console.log(`%c${res} %c${title1} %c${title2}
 
 
 
+<script>
+   const DEFAULT_IMAGE = "/assets/img/blog/index-000.jpg";
+
+fetch("articles.json")
+  .then(res => res.json())
+  .then(data => {
+    // 假设编号越大越新（按 id 字符串倒序排序）
+    const latestArticles = data.sort((a, b) => b.id.localeCompare(a.id)).slice(0, 6);
+
+    const container = document.getElementById("article-list");
+
+    latestArticles.forEach(article => {
+      const summaryHtml = (article.summary || "").split("\n").map(p => `<p>${p}</p>`).join("");
+      const sources = article.sources?.join(" ； ") || "";
+      const tags = (article.tags || []).map(t => `<span>${t}</span>`).join(" ");
+      const coverImg = article.coverImg || DEFAULT_IMAGE;
+
+      const card = document.createElement("div");
+      card.className = "col-xxl-4 col-xl-4 col-lg-4 col-md-6";
+      card.innerHTML = `
+                  
+                     <div class="product__item white-bg mb-30 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="product__thumb">
+                           <div class="product__thumb-inner fix w-img">
+                              <a href="${article.url}" targrt="_blank">
+                              <img src="${article.coverImg}" alt="">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="blog__content-2">
+                           <div class="postbox__meta d-flex">                              
+                              <div class="postbox__tag-2">
+                                 <div style="height: 8px;"></div>
+                                 <a href="about_me.html">MrSunny,</a>
+                              </div>
+                              <div class="postbox__time">
+                                 <div style="height: 8px;"></div>
+                                 <span>${sources} </span>
+                              </div>
+                           </div>
+                           <h3 class="blog__title-2"><a href="${article.url}" targrt="_blank">${article.title}</a></h3>
+                           ${summaryHtml}
+                           <a href="${article.url}" targrt="_blank" class="link-btn"><i class="fal fa-arrow-right"></i>查看详情</a>
+                           <div style="height: 17px;"></div>
+                        </div>
+                     </div>
+                  
+      `;
+      container.appendChild(card);
+    });
+  })
+  .catch(err => console.error("首页加载失败", err));
+
+</script>
+
+                 
 
                   <!-- cta area start -->
                   <section class="cta__area pt-110 pb-60" style="background-image: url(./assets/img/index/background/cold-light.png);background-repeat: no-repeat;background-position: right top;background-size:100% 100%;padding-top: 0px;padding-bottom: 0px;">
